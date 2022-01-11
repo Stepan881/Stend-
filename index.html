@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=`, initial-scale=1.0">
+  <link rel="stylesheet" href="./build/css/style.min.css">
+  <!-- <meta http-equiv="refresh" content="1;URL=./app/pages.html" /> -->
+  <title>UX/UI</title>
+</head>
+
+<style>
+  a,
+  h1,
+  textarea {
+    width: 100%;
+    font-family: 'Exo 2', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2rem;
+    height: auto;
+  }
+
+  h1 {
+    color: blue;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+
+  main {
+    width: calc(100% - 25rem);
+  }
+
+  a {
+    text-align: right;
+    padding: 0.5rem;
+    display: block;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: red;
+  }
+
+  .pages {
+    position: fixed;
+    width: 23rem;
+    top: 0;
+    right: 15rem;
+    text-align: right; 
+    padding: 10rem 0;
+  }
+
+  h1,
+  textarea,
+  .ui-block {
+    margin-bottom: 2rem;
+  }
+  .ui-block  {
+    margin-bottom: 10rem;
+  }
+</style>
+
+<body style="min-height: 200vh;">
+  <div class="container" style="display: flex; position: relative; padding: 10rem 0;">
+    <main>
+
+
+      <div class="ui-block">
+        <br>
+        <h1>LOGO</h1>
+        <textarea cols="30" rows="5">
+          <a href="#" class="logo">
+            <img src="./img/logo.svg" alt="logo">
+          </a>
+        </textarea>
+
+        <a href="#" class="logo">
+          <img src="./build/img/logo.svg" alt="logo">
+        </a>
+        <br>
+        <hr>
+      </div>
+
+      
+      <div class="ui-block">
+        <br>
+        <h1>title - 45px_120%_800_Exo 2</h1>
+        <textarea cols="30" rows="5">
+          <div class="title">услуги</div>
+        </textarea>
+
+        <div class="title">услуги</div>
+        
+        <br>
+        <hr>
+      </div>
+
+    </main>
+    <div class="pages">
+      <h1>Страницы</h1>
+      <a href="./">Каталог</a>
+      <a href="./">Каталог_банкет</a>
+    </div>
+  </div>
+</body>
+
+</html>
