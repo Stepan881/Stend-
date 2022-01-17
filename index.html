@@ -28,6 +28,8 @@
     text-transform: uppercase;
     font-size: 4rem;
     margin-top: 2rem;
+    width: 100%;
+    text-align: right;
   }
 
   main {
@@ -50,7 +52,7 @@
     width: 23rem;
     top: 0;
     right: 15rem;
-    text-align: right; 
+    text-align: right;
     padding: 10rem 0;
   }
 
@@ -58,52 +60,151 @@
   textarea,
   .ui-block {
     margin-bottom: 2rem;
+    
   }
-  .ui-block  {
+  textarea {
+    width: 50%;
+    margin-left: auto;
+  }
+  .ui-block {
     margin-bottom: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
 </style>
 
 <body style="min-height: 200vh;">
-  <div class="container" style="display: flex; position: relative; padding: 10rem 0;">
+  <div class="container text" style="display: flex; position: relative; padding: 10rem 0;">
     <main>
 
 
       <div class="ui-block">
-        <br>
+   
         <h1>LOGO</h1>
         <textarea cols="30" rows="5">
-          <a href="#" class="logo">
+          <a href="./index.html" class="logo">
             <img src="./img/logo.svg" alt="logo">
           </a>
         </textarea>
 
-        <a href="#" class="logo">
+        <a href="#!" class="logo">
           <img src="./build/img/logo.svg" alt="logo">
         </a>
-        <br>
-        <hr>
+    
       </div>
 
-      
+
       <div class="ui-block">
-        <br>
+  
         <h1>title - 45px_120%_800_Exo 2</h1>
         <textarea cols="30" rows="5">
           <div class="title">услуги</div>
         </textarea>
 
         <div class="title">услуги</div>
-        
-        <br>
-        <hr>
+
+   
       </div>
+
+      <div class="ui-block">
+    
+        <h1>sub-title - 20px_120%_300_Exo 2</h1>
+        <textarea cols="30" rows="5">
+          <div class="sub-title">Доставка и оплата</div>
+        </textarea>
+
+        <div class="sub-title">Доставка и оплата</div>
+      </div>
+
+      <div class="ui-block">
+        <h1>button - dark</h1>
+        <textarea cols="30" rows="5">
+          <a class="btn" href="#">
+            <span>Показать ещё</span>
+          </a>
+        </textarea>
+
+        <a class="btn" href="#">
+          <span>Показать ещё</span>
+        </a>
+      </div>
+
+      <div class="ui-block">
+        <h1>button - light</h1>
+        <textarea cols="30" rows="5">
+          <a class="btn btn__light" href="#">
+            <span>Показать ещё</span>
+          </a>
+        </textarea>
+        <a class="btn btn__light" href="#">
+          <span>Показать ещё</span>
+        </a>
+      </div>
+
+      <div class="ui-block">
+        <h1>button - arr0w</h1>
+        <textarea cols="30" rows="5">
+          <a class="btn btn__arrow" href="#">
+            <span></span>
+          </a>
+        </textarea>
+        <a class="btn btn__arrow" href="#">
+          <span style="background-image: url(./build/img/icon/arrow-btn.svg);"></span>
+        </a></div>
+
+
+      <div class="ui-block">
+        <h1>button - eye</h1>
+        <textarea cols="30" rows="5">
+          <a class="btn btn__eye" href="#">
+            <span></span>
+          </a>
+        </textarea>
+        <a class="btn btn__eye" href="#">
+          <span style="background-image: url(./build/img/icon/eye.svg);"></span>
+        </a>
+        </div>
+
+        <div class="ui-block">
+          <h1>Фон</h1>
+          <textarea cols="30" rows="5">
+            <div class="bg-filter"></div>
+          </textarea>
+          <div class="bg-filter" style="padding: 5rem;">bg-filter</div>
+        </div>
+
+        <div class="ui-block">
+          <h1>Фон</h1>
+          <textarea cols="30" rows="5">
+            <div class="bg-filter bg-filter__dark"></div>
+          </textarea>
+          <div class="bg-filter bg-filter__dark" style="padding: 5rem;">bg-filter bg-filter__dark</div>
+        </div>
+
+        
+        <div class="ui-block">
+          <h1>text  - 18px 150% 400 Euclid Circular A</h1>
+          <textarea cols="30" rows="5">
+            <div class="text">
+              <p>text</p>
+              <span>text</span>
+            </div>
+          </textarea>
+          <div class="text">
+            <p>text content text content text content</p>
+            <span>text content text content text content</span>
+            <p>text content text content text content</p>
+          </div>
+        </div>
 
     </main>
     <div class="pages">
       <h1>Страницы</h1>
-      <a href="./">Каталог</a>
-      <a href="./">Каталог_банкет</a>
+      <a href="./catalog-services.html">Каталог_услуги</a>
+      <a href="./catalog-banquet.html">Каталог_банкет</a>
     </div>
   </div>
 </body>
