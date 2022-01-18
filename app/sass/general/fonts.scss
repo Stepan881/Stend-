@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Euclid Circular A';
+    src: url('../fonts/EuclidCircularA-Bold.eot');
+    src: local('Euclid Circular A Bold'), local('../fonts/EuclidCircularA-Bold'), url('../fonts/EuclidCircularA-Bold.eot') format('embedded-opentype'), url('../fonts/EuclidCircularA-Bold.woff2') format('woff2'), url('../fonts/EuclidCircularA-Bold.woff') format('woff'), url('../fonts/EuclidCircularA-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Circular A';
+    src: url('../fonts/EuclidCircularA-Light.eot');
+    src: local('Euclid Circular A Light'), local('../fonts/EuclidCircularA-Light'), url('../fonts/EuclidCircularA-Light.eot') format('embedded-opentype'), url('../fonts/EuclidCircularA-Light.woff2') format('woff2'), url('../fonts/EuclidCircularA-Light.woff') format('woff'), url('../fonts/EuclidCircularA-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Circular A';
+    src: url('../fonts/EuclidCircularA-BoldItalic.eot');
+    src: local('Euclid Circular A Bold Italic'), local('../fonts/EuclidCircularA-BoldItalic'), url('../fonts/EuclidCircularA-BoldItalic.eot') format('embedded-opentype'), url('../fonts/EuclidCircularA-BoldItalic.woff2') format('woff2'), url('../fonts/EuclidCircularA-BoldItalic.woff') format('woff'), url('../fonts/EuclidCircularA-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Euclid Circular A';
+    src: url('../fonts/EuclidCircularA-LightItalic.eot');
+    src: local('Euclid Circular A Light Italic'), local('../fonts/EuclidCircularA-LightItalic'), url('../fonts/EuclidCircularA-LightItalic.eot') format('embedded-opentype'), url('../fonts/EuclidCircularA-LightItalic.woff2') format('woff2'), url('../fonts/EuclidCircularA-LightItalic.woff') format('woff'), url('../fonts/EuclidCircularA-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Euclid Circular A';
+    src: url('../fonts/EuclidCircularA-Regular.eot');
+    src: local('Euclid Circular A Regular'), local('../fonts/EuclidCircularA-Regular'), url('../fonts/EuclidCircularA-Regular.eot') format('embedded-opentype'), url('../fonts/EuclidCircularA-Regular.woff2') format('woff2'), url('../fonts/EuclidCircularA-Regular.woff') format('woff'), url('../fonts/EuclidCircularA-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Circular A';
+    src: url('EuclidCircularA-SemiBold.eot');
+    src: local('Euclid Circular A SemiBold'), local('../fonts/EuclidCircularA-SemiBold'), url('../fonts/EuclidCircularA-SemiBold.eot') format('embedded-opentype'), url('../fonts/EuclidCircularA-SemiBold.woff2') format('woff2'), url('../fonts/EuclidCircularA-SemiBold.woff') format('woff'), url('../fonts/EuclidCircularA-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Circular A';
+    src: url('EuclidCircularA-Medium.eot');
+    src: local('Euclid Circular A Medium'), local('../fonts/EuclidCircularA-Medium'), url('../fonts/EuclidCircularA-Medium.eot') format('embedded-opentype'), url('../fonts/EuclidCircularA-Medium.woff2') format('woff2'), url('../fonts/EuclidCircularA-Medium.woff') format('woff'), url('../fonts/EuclidCircularA-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Circular A';
+    src: url('../fonts/EuclidCircularA-Italic.eot');
+    src: local('Euclid Circular A Italic'), local('../fonts/EuclidCircularA-Italic'), url('../fonts/EuclidCircularA-Italic.eot') format('embedded-opentype'), url('../fonts/EuclidCircularA-Italic.woff2') format('woff2'), url('../fonts/EuclidCircularA-Italic.woff') format('woff'), url('../fonts/EuclidCircularA-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Euclid Circular A';
+    src: url('../fonts/EuclidCircularA-SemiBoldItalic.eot');
+    src: local('Euclid Circular A SemiBold Italic'), local('../fonts/EuclidCircularA-SemiBoldItalic'), url('../fonts/EuclidCircularA-SemiBoldItalic.eot') format('embedded-opentype'), url('../fonts/EuclidCircularA-SemiBoldItalic.woff2') format('woff2'), url('../fonts/EuclidCircularA-SemiBoldItalic.woff') format('woff'), url('../fonts/EuclidCircularA-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Euclid Circular A';
+    src: url('../fonts/EuclidCircularA-MediumItalic.eot');
+    src: local('Euclid Circular A Medium Italic'), local('../fonts/EuclidCircularA-MediumItalic'), url('../fonts/EuclidCircularA-MediumItalic.eot') format('embedded-opentype'), url('../fonts/EuclidCircularA-MediumItalic.woff2') format('woff2'), url('../fonts/EuclidCircularA-MediumItalic.woff') format('woff'), url('../fonts/EuclidCircularA-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+//  ACrobat
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Thin'), local('Exo2-Thin'), url('../fonts/exo2thin.woff2') format('woff2'), url('../fonts/exo2thin.woff') format('woff'), url('../fonts/exo2thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Thin Italic'), local('Exo2-ThinItalic'), url('../fonts/exo2thinitalic.woff2') format('woff2'), url('../fonts/exo2thinitalic.woff') format('woff'), url('../fonts/exo2thinitalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Extra Light'), local('Exo2-ExtraLight'), url('../fonts/exo2extralight.woff2') format('woff2'), url('../fonts/exo2extralight.woff') format('woff'), url('../fonts/exo2extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Extra Light Italic'), local('Exo2-ExtraLightItalic'), url('../fonts/exo2extralightitalic.woff2') format('woff2'), url('../fonts/exo2extralightitalic.woff') format('woff'), url('../fonts/exo2extralightitalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Light'), local('Exo2-Light'), url('../fonts/exo2light.woff2') format('woff2'), url('../fonts/exo2light.woff') format('woff'), url('../fonts/exo2light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Light Italic'), local('Exo2-LightItalic'), url('../fonts/exo2lightitalic.woff2') format('woff2'), url('../fonts/exo2lightitalic.woff') format('woff'), url('../fonts/exo2lightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2'), local('Exo2-Regular'), url('../fonts/exo2.woff2') format('woff2'), url('../fonts/exo2.woff') format('woff'), url('../fonts/exo2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Italic'), local('Exo2-Italic'), url('../fonts/exo2italic.woff2') format('woff2'), url('../fonts/exo2italic.woff') format('woff'), url('../fonts/exo2italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Medium'), local('Exo2-Medium'), url('../fonts/exo2medium.woff2') format('woff2'), url('../fonts/exo2medium.woff') format('woff'), url('../fonts/exo2medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Medium Italic'), local('Exo2-MediumItalic'), url('../fonts/exo2mediumitalic.woff2') format('woff2'), url('../fonts/exo2mediumitalic.woff') format('woff'), url('../fonts/exo2mediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Semi Bold'), local('Exo2-SemiBold'), url('../fonts/exo2semibold.woff2') format('woff2'), url('../fonts/exo2semibold.woff') format('woff'), url('../fonts/exo2semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Semi Bold Italic'), local('Exo2-SemiBoldItalic'), url('../fonts/exo2semibolditalic.woff2') format('woff2'), url('../fonts/exo2semibolditalic.woff') format('woff'), url('../fonts/exo2semibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Bold'), local('Exo2-Bold'), url('../fonts/exo2bold.woff2') format('woff2'), url('../fonts/exo2bold.woff') format('woff'), url('../fonts/exo2bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Bold Italic'), local('Exo2-BoldItalic'), url('../fonts/exo2bolditalic.woff2') format('woff2'), url('../fonts/exo2bolditalic.woff') format('woff'), url('../fonts/exo2bolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Extra Bold'), local('Exo2-ExtraBold'), url('../fonts/exo2extrabold.woff2') format('woff2'), url('../fonts/exo2extrabold.woff') format('woff'), url('../fonts/exo2extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Extra Bold Italic'), local('Exo2-ExtraBoldItalic'), url('../fonts/exo2extrabolditalic.woff2') format('woff2'), url('../fonts/exo2extrabolditalic.woff') format('woff'), url('../fonts/exo2extrabolditalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Black'), local('Exo2-Black'), url('../fonts/exo2black.woff2') format('woff2'), url('../fonts/exo2black.woff') format('woff'), url('../fonts/exo2black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: local('Exo 2 Black Italic'), local('Exo2-BlackItalic'), url('../fonts/exo2blackitalic.woff2') format('woff2'), url('../fonts/exo2blackitalic.woff') format('woff'), url('../fonts/exo2blackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}

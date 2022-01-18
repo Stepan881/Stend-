@@ -1,0 +1,111 @@
+.about {
+    margin-bottom: 20rem;
+    .container {
+        width: 150.1rem;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__left {
+        padding-top: 2.5rem;
+        width: 71.2rem;
+        margin-right: 14.7rem;
+        padding-top: 5rem;
+        .all-btn {
+            width: 18.1rem;
+            height: 5.9rem;
+        }
+    }
+    &__right {
+        width: 64.1rem;
+        display: flex;
+    }
+    &__title {
+        font-family: 'Exo 2', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #434248;
+        margin-bottom: 3.6rem;
+        display: flex;
+        flex-direction: column;
+        span {
+            display: inline-block;
+            margin-bottom: 2.7rem;
+            width: 100%;
+        }
+        strong {
+            font-weight: 800;
+            font-size: 4.5rem;
+            width: 100%;
+            line-height: 5.4rem;
+        }
+    }
+    &__right-image {
+        display: inline-block;
+        width: 28rem;
+        height: 35rem;
+        box-shadow: 0px 2rem 10rem rgba(67, 66, 72, 0.2);
+        border-radius: 2rem;
+        margin-right: 5.1rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__right-text {
+        padding-top: 2rem;
+        width: 31.1rem;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 140%;
+        color: #434248;
+        strong {
+            display: inline-block;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+        span {
+            display: inline-block;
+            width: 100%;
+        }
+    }
+    &__catering {
+        padding-top: 7rem;
+        display: flex;
+    }
+    &__catering-image {
+        width: 47.3rem;
+        height: 39.3rem;
+        box-shadow: 0px 2rem 10rem rgba(67, 66, 72, 0.42);
+        border-radius: 2rem;
+        display: inline-block;
+        margin-right: 4.2rem;
+    }
+    &__catering-inner {
+        width: 83.1rem;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 150%;
+        color: #434248;
+    }
+    &__catering-title {
+        margin-bottom: 3rem;
+    }
+    &__catering-text {
+        p {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            font-weight: 400;
+            line-height: 3rem;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

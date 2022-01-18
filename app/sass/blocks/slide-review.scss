@@ -1,0 +1,58 @@
+.slide-review {
+
+  &__wrapper {
+    width: 32rem;
+  }
+
+  &__img {
+    position: relative;
+    z-index: 2;
+
+    img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    top: 50%;
+    background: #434248;
+    box-shadow: 10px 20px 40px rgba(67, 66, 72, 0.3);
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__content {
+    text-align: center;
+    padding: 15.1rem 3.5rem 5.3rem;
+    position: relative;
+    margin-top: -18.5rem;
+    .btn {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+    }
+
+    @media (max-width: $mobile-width) {
+      padding: 20rem 1rem 9rem 1rem;
+    }
+  }
+
+  &__title {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 150%;
+    margin-bottom: 2rem;
+    @media (max-width: $mobile-width) {
+      font-size: 3.2rem ;
+    }
+  }
+}

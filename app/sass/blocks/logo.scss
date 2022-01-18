@@ -1,0 +1,9 @@
+.logo {
+  height: 5.52rem;
+  width: 22.44rem;
+
+  @media (max-width: $mobile-width) {
+    width: 30rem;
+    height: 12.6rem;
+    } 
+}

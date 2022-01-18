@@ -1,0 +1,164 @@
+.popular {
+    margin-bottom: 19rem;
+    .container {
+        width: 149.4rem;
+    }
+    &__wrapper {
+        position: relative;
+        padding-left: 6.7rem;
+        padding-right: 6.7rem;
+    }
+    &__title {
+        font-family: 'Exo 2', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 4.5rem;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #434248;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5.94rem;
+    }
+    &__slide {
+        width: 31rem;
+        height: 45.8rem;
+        display: inline-block;
+    }
+    &__table {
+        width: 31rem;
+        height: 45.8rem;
+        display: inline-block;
+        position: relative;
+        padding-top: 14.5rem;
+    }
+    &__table-box {
+        position: relative;
+        width: 31rem;
+        height: 30.4rem;
+        background: linear-gradient(149.74deg, rgba(221, 220, 221, 0.8) 1.03%, rgba(251, 251, 251, 0.8) 99.31%);
+        box-shadow: inset 0.2rem 0.3rem 0.4rem rgba(255, 255, 255, 0.5), inset -0.2rem -0.4rem 0.4rem rgba(67, 66, 72, 0.2);
+        border-radius: 2rem;
+        z-index: 1;
+        padding-top: 12rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__table-image {
+        width: 22rem;
+        height: 22rem;
+        display: inline-block;
+        position: absolute;
+        top: 2.1rem;
+        z-index: 2;
+        left: 15%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0px 2rem 2rem rgba(36, 36, 36, 0.2));
+        }
+    }
+    &__table-name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 110%;
+        text-align: center;
+        color: #434248;
+        margin-bottom: 2.2rem;
+    }
+    &__table-ing {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 110%;
+        text-align: center;
+        margin-bottom: 1.8rem;
+    }
+    &__table-price {
+        p {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 4rem;
+            line-height: 110%;
+            text-align: center;
+            color: #434248;
+            display: flex;
+        }
+        span {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 110%;
+            text-align: center;
+            color: #434248;
+            position: relative;
+            top: 0rem;
+        }
+    }
+    &__table-btns {
+        position: absolute;
+        bottom: -3rem;
+        display: flex;
+        .all-btn {
+            width: 5.9rem;
+            height: 5.9rem;
+            box-shadow: 0.5rem 1rem 3rem rgba(67, 66, 72, 0.1);
+            border-radius: 2rem 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #FFFFFF;
+            margin-right: 4rem;
+            img {
+                width: 2.9rem;
+                height: 2rem;
+                position: relative;
+                top: 0.1rem;
+            }
+        }
+        .all-btn:last-child {
+            margin-right: 0;
+            background: #434248;
+            box-shadow: 0.5rem 1rem 3rem rgba(67, 66, 72, 0.3);
+            img {
+                width: 3.2rem;
+                height: 2.3rem;
+                top: -0.1rem;
+                right: 0.1rem;
+            }
+        }
+    }
+    &__swiper-wrapper {
+        padding-bottom: 3rem;
+    }
+}
+
+.popular-button-next,
+.popular-button-prev {
+    height: 4.8rem;
+    width: 2.4rem;
+    position: absolute;
+    top: 57%;
+    cursor: pointer;
+}
+
+.popular-button-next {
+    background-image: url(../img/icon/next.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    right: -0.2rem;
+}
+
+.popular-button-prev {
+    background-image: url(../img/icon/prev.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: -0.2rem;
+}

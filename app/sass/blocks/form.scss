@@ -1,0 +1,94 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+  .title {
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 120%;
+    margin-bottom: 1.2rem;
+  }
+
+  &__title {
+
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 150%;
+
+    margin-bottom: 2rem;
+    
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &__sub-title {}
+
+
+
+  fieldset {
+    border: 0.15rem solid $c;
+    border-radius: 4.0rem 1rem;
+    width: 24.5rem;
+   
+  height: 7.5rem;
+
+    &:focus {
+      border: 0.15rem solid #52DD79;
+    }
+    
+    &.form__big {
+      width: 50.5rem; 
+    }
+  }
+
+  legend {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 150%;
+    margin-left: 3rem;
+    margin-bottom: -1.4rem;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 1;
+
+  }
+
+  label {
+    width: 100%;
+    height: 100%;
+
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  input {
+    width: 100%;
+    height: 3rem;
+
+    padding: 0 3rem;
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.0rem;
+    line-height: 150%;
+    color: $c;
+    border: none;
+    background: inherit;
+  }
+
+  button {
+    width: 24.5rem;
+  }
+
+
+}

@@ -1,0 +1,99 @@
+.reviews {
+
+  &__wrapper {
+
+    display: flex;
+    padding: 8rem 3.5rem;
+    justify-content: space-between;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+    }
+  }
+
+
+  &__content {
+    width: 60rem;
+
+    @media (max-width: $mobile-width) {}
+  }
+
+
+  .sub-title {
+    margin-bottom: 0.5rem;
+
+    @media (max-width: $mobile-width) {}
+  }
+
+
+  .title {
+    margin-bottom: 3rem;
+
+    @media (max-width: $mobile-width) {}
+  }
+
+
+  &__info {
+    margin-bottom: 4.3rem;
+    margin-top: 4.3rem;
+    display: flex;
+
+    @media (max-width: $mobile-width) {}
+  }
+
+
+  &__item {
+    // margin-bottom: 4.7rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 6rem;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column-reverse;
+    }
+
+    span:not(:last-child) {
+
+      margin-bottom: 0;
+
+      @media (max-width: $mobile-width) {}
+    }
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+
+    @media (max-width: $mobile-width) {}
+  }
+
+  strong {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 150%;
+    display: inline-flex;
+
+    @media (max-width: $mobile-width) {}
+  }
+
+  &__star {
+    display: flex;
+    width: 2rem;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.7289 1.44418L13.4889 4.99288C13.7289 5.48687 14.3689 5.9607 14.9089 6.05143L18.0989 6.58576C20.1389 6.92853 20.6189 8.42059 19.1489 9.8925L16.6689 12.3927C16.2489 12.8161 16.0189 13.6327 16.1489 14.2175L16.8589 17.3125C17.4189 19.7623 16.1289 20.71 13.9789 19.4296L10.9889 17.6452C10.4489 17.3226 9.55893 17.3226 9.00893 17.6452L6.01893 19.4296C3.87893 20.71 2.57893 19.7522 3.13893 17.3125L3.84893 14.2175C3.97893 13.6327 3.74893 12.8161 3.32893 12.3927L0.848932 9.8925C-0.611068 8.42059 -0.141067 6.92853 1.89893 6.58576L5.08893 6.05143C5.61893 5.9607 6.25893 5.48687 6.49893 4.99288L8.25893 1.44418C9.21893 -0.481393 10.7789 -0.481393 11.7289 1.44418Z' fill='%23434248'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 2rem 2rem;
+    background-position: center;
+    margin-left: 1rem;
+    margin-top: -0.2rem;
+
+    @media (max-width: $mobile-width) {}
+  }
+
+
+
+
+
+
+}

@@ -1,0 +1,100 @@
+.benefits {
+    margin-bottom: 19rem;
+    .container {
+        width: 150.1rem;
+    }
+    &__left {
+        width: 47rem;
+        margin-right: 4.5rem;
+        padding-top: 3rem;
+    }
+    &__title {
+        font-family: 'Exo 2', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #434248;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        span {
+            display: inline-block;
+        }
+        strong {
+            font-weight: 800;
+            font-size: 4.5rem;
+            line-height: 5.4rem;
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: #434248;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__table {
+        background: linear-gradient(149.74deg, rgba(221, 220, 221, 0.8) 1.03%, rgba(251, 251, 251, 0.8) 99.31%);
+        box-shadow: inset 0.2rem 0.3rem 0.4rem rgba(255, 255, 255, 0.5), inset -0.2rem -0.4rem 0.4rem rgba(67, 66, 72, 0.2);
+        border-radius: 2rem;
+        width: 30rem;
+        height: 33rem;
+        padding-top: 3.3rem;
+        padding-left: 3.4rem;
+        padding-bottom: 4.1rem;
+        padding-right: 3rem;
+        margin-right: 4.3rem;
+    }
+    &__table:nth-child(3n) {
+        margin-right: 0;
+    }
+    &__table-inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3.5rem;
+    }
+    &__table-number {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.2rem;
+        line-height: 150%;
+        text-align: right;
+        color: #434248;
+        margin-top: auto;
+        span {
+            position: relative;
+            top: -1rem;
+        }
+    }
+    &__table-icon {
+        width: 5.8rem;
+        height: 6.3rem;
+    }
+    &__table-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 125%;
+        color: #434248;
+        margin-bottom: 3rem;
+        span {
+            display: inline-block;
+            width: 100%;
+        }
+    }
+    &__table-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: #434248;
+    }
+    &__right {
+        display: flex;
+    }
+}

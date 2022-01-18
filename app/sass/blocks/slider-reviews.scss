@@ -1,0 +1,26 @@
+.slider-reviews {
+
+  &__wrapper {
+    
+    display: flex;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    padding: 5rem;
+    
+		@media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+
+  &__prew {}
+
+  &__next {
+    transform: rotate(180deg);
+  }
+}

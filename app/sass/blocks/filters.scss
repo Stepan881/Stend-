@@ -1,0 +1,97 @@
+.filters {
+
+
+	&__wrapper {
+		margin-right: 6rem;
+		width: 28.3rem;
+
+		@media (max-width: $mobile-width) {
+			width: 100%;
+		}
+	}
+
+	&__list {
+		background: linear-gradient(149.74deg, rgba(67, 66, 72, 0.9) 1.03%, rgba(39, 38, 44, 0.9) 99.31%);
+		box-shadow: inset 0.2rem 0.3rem 0.4rem rgba(255, 255, 255, 0.5), inset -0.2rem -0.4rem 0.4rem rgba(67, 66, 72, 0.2);
+		backdrop-filter: blur(2rem);
+		/* Note: backdrop-filter has minimal browser support */
+		border-radius: 2rem;
+		padding: 1.3rem 2.5rem;
+		width: 32rem;
+		margin-bottom: 4rem;
+
+		@media (max-width: $mobile-width) {
+			width: 100%;
+		}
+	}
+
+	&__title {
+
+
+		font-style: normal;
+		font-weight: 600;
+		font-size: 2.5rem;
+		display: inline-block;
+		line-height: 110%;
+		color: #FFFFFF;
+		width: 100%;
+
+		position: relative;
+		align-items: center;
+
+		@media (max-width: $mobile-width) {
+			font-size: 4rem;
+			// font-weight: 800;
+			padding: 1rem 3.7rem 3.3rem;
+		}
+
+	}
+
+	&__arrow {
+		color: #FFFFFF;
+		top: 0;
+		right: 0;
+		display: flex;
+		padding: 1.7rem 0 1.7rem;
+		width: 100%;
+
+
+		display: flex;
+		align-items: center;
+		
+		img {
+			width: 1.3rem;
+			height: 1rem;
+			margin-left: auto;
+			margin-right: 0.7rem;
+		}
+
+		@media (max-width: $mobile-width) {}
+	}
+
+	&__sub-menu {
+		padding: 2.8rem 1rem 1rem 0;
+
+		border-top: 0.1rem solid rgba(255, 255, 255, 0.3);
+		
+		margin-top: 1rem;
+		// display: none;
+
+
+
+		li {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 2rem;
+			line-height: 110%;
+			color: #FFFFFF;
+			position: relative;
+			padding-right: 0.2rem;
+			margin-bottom: 2rem;
+
+			@media (max-width: $mobile-width) {}
+		}
+	}
+
+	&__item {}
+}

@@ -1,0 +1,275 @@
+.page-review {
+
+  &__wrapper {
+    display: flex;
+    padding-bottom: 9rem;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+      padding-bottom: 12rem;
+    }
+  }
+
+  &__wrapper-pos {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+      position: relative;
+      padding-bottom: 14rem;
+    }
+  }
+
+  &__block {
+    @media (max-width: $mobile-width) {}
+
+    p {
+      font-family: "Euclid Circular A";
+
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.8rem;
+      line-height: 23px;
+      margin-bottom: 3rem;
+      width: 44.1rem;
+
+      @media (max-width: $mobile-width) {
+        margin-bottom: 4rem;
+        width: 90%;
+        font-size: 3.6rem;
+
+      }
+    }
+
+
+  }
+
+  &__pagination {
+    @media (max-width: $mobile-width) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+    }
+  }
+
+  &__score {
+    margin-left: 9.5rem;
+
+    @media (max-width: $mobile-width) {
+      margin-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    font-family: "Euclid Circular A";
+    margin-bottom: 6.3rem;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 4rem;
+    }
+  }
+
+  &__head {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: 7.2rem;
+
+    @media (max-width: $mobile-width) {
+      font-size: 10rem;
+      line-height: 12rem;
+     
+
+    }
+  }
+
+  &__info {
+    margin-left: 1.6rem;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      &:first-child {
+        font-weight: bold;
+        font-size: 2.3rem;
+        line-height: 2.9rem;
+      }
+
+      &:last-child {
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+      }
+
+
+    }
+
+    @media (max-width: $mobile-width) {
+
+    }
+  }
+
+  &__item {
+
+    padding-left: 3rem;
+    margin-bottom: 6.3rem;
+
+
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 5.0rem;
+      background: #52DD79;
+      border-radius: 1rem;
+      height: calc(100% + 2.2rem);
+      display: flex;
+      left: 0;
+      top: -1.1rem;
+      z-index: -1;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+
+      &::before {
+        width: 7.8rem;
+      }
+    }
+  }
+
+  &__count {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.0rem;
+    line-height: 4.8rem;
+
+    @media (max-width: $mobile-width) {
+      font-size: 6rem;
+      line-height: 7.2rem;
+    }
+  }
+
+  &__name {
+    font-family: "Euclid Circular A";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    margin-left: 1.6rem;
+
+    @media (max-width: $mobile-width) {
+      font-size: 3.2rem;
+      line-height: 4rem;
+      margin-left: 0;
+    }
+  }
+
+  .container {
+    @media (max-width: $mobile-width) {}
+  }
+
+ 
+
+  .title {
+    margin-bottom: 2rem;
+    width: 44.1rem;
+    margin-right: 12.1rem;
+
+    font-size: 6rem;
+    line-height: 6.5rem;
+
+
+    @media (max-width: $mobile-width) {
+      width: 35rem;
+
+      font-size: 6rem;
+      line-height: 120%;
+    }
+  }
+
+  .lighter {
+    font-weight: normal;
+
+    @media (max-width: $mobile-width) {
+      font-weight: 300;
+    }
+  }
+
+  .btn {
+    margin-bottom: 10rem;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 9rem;
+
+    }
+  }
+
+  .bg-filter {
+    @media (max-width: $mobile-width) {}
+  }
+
+  .slide-review {
+    @media (max-width: $mobile-width) {}
+  }
+
+  .slide-review__img {
+    filter: drop-shadow(10px 20px 40px rgba(67, 66, 72, 0.3));
+    width: 54.5rem;
+    height: 71.7rem;
+    display: flex;
+
+    @media (max-width: $mobile-width) {}
+
+    img {
+      margin: auto;
+      width: 100%;
+      height: 55.7rem;
+      object-fit: contain;
+
+      @media (max-width: $mobile-width) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .btn {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+      @media (max-width: $mobile-width) {
+        left: auto;
+        right: 0;
+        top: 0;
+        width: 10rem;
+        height: 10rem;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .slide-review__circle {
+    margin: auto;
+    width: 36.4rem;
+    height: 36.4rem;
+
+    @media (max-width: $mobile-width) {}
+  }
+}

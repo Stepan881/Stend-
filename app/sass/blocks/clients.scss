@@ -1,0 +1,69 @@
+.clients {
+    padding-bottom: 20.6em;
+    .container {
+        width: 150rem;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6rem;
+        h2 {
+            font-family: 'Exo 2', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 4.5rem;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: #434248;
+        }
+        .all-btn {
+            width: 22.7rem;
+            height: 5.9rem;
+            margin-top: -0.9rem;
+        }
+    }
+    &__table {
+        width: 36rem;
+        height: 16rem;
+        background: linear-gradient(149.74deg, rgba(221, 220, 221, 0.8) 1.03%, rgba(251, 251, 251, 0.8) 99.31%);
+        box-shadow: inset 0.2rem 0.3rem 0.4rem rgba(255, 255, 255, 0.5), inset -0.2rem -0.4rem 0.4rem rgba(67, 66, 72, 0.2);
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2rem;
+        img {
+            object-fit: contain;
+            width: auto;
+            height: auto;
+        }
+    }
+    &__table:last-child {
+        margin-right: 0;
+    }
+    &__tables {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    &__tables:last-child {
+        margin-bottom: 0;
+    }
+    &__table--big {
+        width: 74rem;
+        height: 16rem;
+    }
+    &__table-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.2rem;
+        line-height: 150%;
+        color: #434248;
+        span {
+            font-weight: 600;
+            font-size: 5rem;
+            line-height: 150%;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    }
+}

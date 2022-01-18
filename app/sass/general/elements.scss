@@ -1,0 +1,141 @@
+.btn {
+
+	padding: 0 4.0rem;
+	height: 5.9rem;
+	text-transform: initial;
+	background: #434248;
+	color: #FFFFFF;
+	box-shadow: 0.5rem 1rem 3rem rgba(67, 66, 72, 0.3);
+	border-radius: 4rem 1rem;
+	border: none;
+	display: inline-flex;
+	width: auto;
+	justify-content: center;
+	align-items: center;
+
+	font-family: "Euclid Circular A";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.8rem;
+	line-height: 150%;
+
+
+	@media (max-width: $mobile-width) {
+		font-size: 3.2rem;      
+		width: calc(28.5rem * 2);
+		height: 11.2rem;
+		justify-content: center;
+		margin: 0 auto;
+
+		box-shadow: 1rem 2rem 6rem rgba(67, 66, 72, 0.3);
+		border-radius: 8rem 2rem;
+	}
+
+
+
+	&__arrow {
+		padding: 0 1.7rem;
+		border-radius: 2rem 0.5rem;
+
+		span {
+			background-image: url(../img/icon/arrow-btn.svg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 2.5rem 1rem;
+			width: 2.5rem;
+			height: 1rem;
+		}
+	}
+
+	&__eye {
+		padding: 0 1.7rem;
+		border-radius: 2rem 0.5rem;
+		@media (max-width: $mobile-width) {
+			width: 10rem;
+			height: 10rem;
+		}
+		span {
+			background-image: url(../img/icon/eye.svg);
+			width: 2.4rem;
+			height: 2.0rem;
+			background-size: 2.4rem 2rem;
+			@media (max-width: $mobile-width) {
+				width: 5rem;
+				height: 5rem;
+				background-size: 5rem;
+			}
+		}
+	}
+
+	&__light {
+		background: #FFFFFF;
+		color: $c;
+	}
+}
+
+.title {
+	font-family: 'Exo 2', sans-serif;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 4.5rem;
+	line-height: 120%;
+	color: $c;
+
+	@media (max-width: $mobile-width) {
+		font-size: 6rem;
+	}
+}
+
+.sub-title {
+	font-family: 'Exo 2', sans-serif;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 2rem;
+	line-height: 120%;
+	color: $c;
+
+	@media (max-width: $mobile-width) {
+		font-size: 3.6rem;
+	}
+}
+
+.bg-filter {
+	background: linear-gradient(149.74deg, rgba(221, 220, 221, 0.8) 1.03%, rgba(251, 251, 251, 0.8) 99.31%);
+	box-shadow: inset 0.2rem 0.3rem 0.4rem rgba(255, 255, 255, 0.5), inset -0.2rem -0.4rem 0.4rem rgba(67, 66, 72, 0.2);
+	backdrop-filter: blur(10.0rem);
+	border-radius: 2.0rem;
+
+	&__dark {
+		background: linear-gradient(149.74deg, rgba(67, 66, 72, 0.9) 1.03%, rgba(39, 38, 44, 0.9) 99.31%);
+		box-shadow: inset .1rem .2rem .4rem rgba(255, 255, 255, 0.2), inset -0.2rem -0.4rem 0.4rem rgba(67, 66, 72, 0.2);
+		backdrop-filter: blur(8rem);
+		color: #FFFFFF;
+	}
+}
+
+.text {
+
+
+	p {
+		color: #434248;
+		font-family: "Euclid Circular A";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.8rem;
+		line-height: 150%;
+		margin-bottom: 0.8rem;
+		
+		@media (max-width: $mobile-width) {
+			font-size: 3.2rem;
+			margin-bottom: 3rem;
+		}
+
+	
+	}
+}
+
+.lighter {
+	font-weight: normal;
+}
