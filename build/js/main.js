@@ -205,18 +205,3 @@ if (document.querySelector('.catalog__left')) {
 
 
 // табуляция спрятанных фильтров
-
-
-
-
-
-
-
-
-
-
-$(".catalog__choice-js").on("click", function() {
-
-    $(this).toggleClass("active-tab");
-
-});
