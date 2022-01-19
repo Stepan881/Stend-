@@ -1,0 +1,56 @@
+.social-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    transform: translate(-40%, 40rem) rotate(90deg);
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+
+
+  }
+
+  li {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+
+  }
+
+  a {
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 110%;
+    display: flex;
+    transform: rotate(180deg);
+
+  }
+
+  span {
+    width: 15rem;
+    height: 0.1rem;
+    background: #434248;
+    display: flex;
+
+  }
+
+  img {
+    width: 1.5rem;
+    height: 2.0rem;
+    object-fit: contain;
+    transform: rotate(-90deg);
+    margin-left: 1rem;
+  }
+}

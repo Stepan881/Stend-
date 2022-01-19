@@ -5,11 +5,27 @@
   }
 
   &__wrapper {
-
-    @media (max-width: $mobile-width) {}
+    padding: 9rem 0;
+    @media (max-width: $mobile-width) {
+      padding: 12rem 0;
+    }
   }
 
   &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+
+    span {
+      font-weight: normal;
+      font-size: 1.8rem;
+      line-height: 2.3rem;
+
+      @media (max-width: $mobile-width) {
+        display: none;
+      }
+    }
 
     @media (max-width: $mobile-width) {}
   }
@@ -30,8 +46,11 @@
   &__block-top {
     width: 79rem;
     padding: 5.9rem 9.1rem 6.1rem 7.5rem;
+    margin-top: -0.3rem;
 
-    @media (max-width: $mobile-width) {}
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
   }
 
   .bg-filter {}
@@ -73,34 +92,119 @@
   }
 
   &__bottom {
+    position: relative;
+    width: 68.6rem;
+    display: flex;
+    align-items: center;
 
     @media (max-width: $mobile-width) {}
+  }
+
+  time {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 50%;
+    right: 0;
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+
+    color: rgba(67, 66, 72, 0.7);
+
+    @media (max-width: $mobile-width) {
+      top: auto;
+      right: 3rem;
+      font-size: 3.2rem;
+      line-height: 4.0rem;
+      transform: none;
+    }
   }
 
   &__rating-wrapper {
+    padding: 8.7rem 7rem 9.1rem 7.1rem;
+    display: flex;
+    flex-wrap: wrap;
 
-    @media (max-width: $mobile-width) {}
+    @media (max-width: $mobile-width) {
+      justify-content: space-between;
+      padding: 4rem 3rem 13rem;
+    }
   }
 
   &__rating-title {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.0rem;
+    width: 100%;
+    margin-bottom: 4rem;
 
-    @media (max-width: $mobile-width) {}
+    @media (max-width: $mobile-width) {
+      font-size: calc(2.0rem * 2);
+      line-height: calc(2.5rem * 2);
+      margin-bottom: 6.6rem;
+    }
   }
 
   &__block {
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
 
-    @media (max-width: $mobile-width) {}
+    @media (max-width: $mobile-width) {
+      width: 33.3%;
+    }
+
+
+    span {
+      &:first-child {
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        font-family: "Exo 2";
+        margin-bottom: 5.3rem;
+
+        @media (max-width: $mobile-width) {
+          font-size: 4.0rem;
+          line-height: 4.8rem;
+        }
+
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -2.6rem;
+          height: 0.2rem;
+          width: 4rem;
+          background: #52DD79;
+          left: 0;
+        }
+      }
+
+      &:last-child {
+        font-weight: normal;
+        font-size: 2.4rem;
+        line-height: 3.0rem;
+
+        @media (max-width: $mobile-width) {
+          font-size: 3.2rem;
+          line-height: 4rem;
+        }
+      }
+    }
   }
 
   fieldset {
     border-radius: 2rem;
     display: flex;
     padding: 0;
-    margin: 0;
+    margin: 0 0 7.4rem 0;
     border: 0.1rem solid rgba(67, 66, 72, 0.2);
 
     @media (max-width: $mobile-width) {
       border-radius: 2rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
     }
   }
 
@@ -117,7 +221,21 @@
     display: flex;
     align-items: center;
 
-    @media (max-width: $mobile-width) {}
+    @media (max-width: $mobile-width) {
+      bottom: -2.3rem;
+      background-color: #fafafa;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      font-size: 3.6rem;
+      line-height: 4.6rem;
+    }
+
+
+    &:before {
+      left: -1rem;
+    }
+
 
     span {
       font-family: "Exo 2";
@@ -127,7 +245,22 @@
       line-height: 3.6rem;
       margin-left: 1rem;
 
-      @media (max-width: $mobile-width) {}
+      @media (max-width: $mobile-width) {
+
+        font-size: calc(3.0rem * 2);
+        line-height: calc(3.6rem * 2);
+      }
+    }
+  }
+
+  &__btn {
+    justify-content: center;
+    display: flex;
+
+    margin-bottom: 20rem;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 24rem;
     }
   }
 }

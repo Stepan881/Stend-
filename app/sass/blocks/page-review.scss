@@ -127,21 +127,6 @@
     padding-left: 3rem;
     margin-bottom: 6.3rem;
 
-
-    position: relative;
-    &::before {
-      position: absolute;
-      content: '';
-      width: 5.0rem;
-      background: #52DD79;
-      border-radius: 1rem;
-      height: calc(100% + 2.2rem);
-      display: flex;
-      left: 0;
-      top: -1.1rem;
-      z-index: -1;
-    }
-
     @media (max-width: $mobile-width) {
       display: flex;
       flex-direction: column;

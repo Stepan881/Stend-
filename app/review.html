@@ -12,81 +12,10 @@
 
 <body>
 
-	<header class="header">
-  <div class="container">
-    <div class="header__wrapper">
-
-      <button class="header__burger">
-        <img src="./img/icon/burger.svg" alt="Burger">
-      </button>
-
-      <a href="./index.html" class="logo">
-        <img src="./img/logo.svg" alt="logo">
-      </a>
-    
-      <!-- /.header__logo -->
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li class="analytics-li">
-            <a class="analytics-link" href="#">Услуги</a>
-            <ul class="analytics bg-filter">
-              <li><a href="">Производственный комплекс</a></li>
-              <li><a href="">Научно-исследовательский комплекс</a></li>
-              <li><a href="">История компании</a></li>
-              <li><a href="">Новости</a></li>
-              <li><a href="">Наше предназначение</a></li>
-              <li><a href=""> Команда</a></li>
-              <li><a href=""> Вакансии</a></li>
-              <li><a href=""> Партнеры</a></li>
-              <li><a href=""> Отзывы</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Каталог</a>
-          </li>
-          <li>
-            <a href="#">Портфолио</a>
-          </li>
-          <li>
-            <a href="#">О нас</a>
-          </li>
-          <li>
-            <a href="#">Блог</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <!-- /.header__menu -->
-      </nav>
-      <!-- /.header__nav -->
-      <div class="header__btns">
-        <button class="header__search">
-          
-          <img src="./img/icon/search.svg" alt="поиск">
-        </button>
-        <!-- 1 -->
-        <button class="header__user">
-          <picture>
-						<source media="(max-width: 768px)" srcset="./img/icon/profile-m.svg">
-            <img src="./img/icon/profile.svg" alt="user">
-					</picture>
-          
-        </button>
-        <!-- 2 -->
-        <a class="header__basket">
-          <img src="./img/icon/basket.svg" alt="корзина">
-        </a>
-        <!-- 3 -->
-      </div>
-      <!-- btns -->
-    </div>
-    <!-- wrapper  -->
-  </div>
-  <!-- /.container -->
-</header>
+	@@include('./template/header.html')
 
 	<main>
+		@@include('./template/social-left.html')
 		<section class="page-review">
 			<div class="container">
 				<div class="page-review__wrapper">
@@ -99,25 +28,7 @@
 								<span>Оставить отзыв</span>
 							</a>
 							<div class="page-review__pagination">
-								<div class="pagination">
-  <button class="pagination__btn pagination__prew">
-    <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M9 18.7969L1.65093 11.4714C0.783022 10.6063 0.783022 9.19062 1.65093 8.32549L9 1" stroke="#434248" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-
-  </button>
-  <div class="pagination__fraction">
-    <span>1</span>
-    /
-    <span>3</span>
-  </div>
-  <button class="pagination__btn pagination__next">
-    <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1 18.7969L8.34907 11.4714C9.21698 10.6063 9.21698 9.19062 8.34907 8.32549L1 1" stroke="#434248" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-
-  </button>
-</div>
+								@@include('./template/pagination.html')
 							</div>
 						</div>
 						<div class="page-review__block">
@@ -379,23 +290,7 @@
 
 
 	</main>
-	<footer class="footer">
-  <div class="container">
-    <div class="footer__text">
-      Подвал
-    </div>
-    <!-- /.footer__text -->
-  </div>
-</footer>
-<!-- /.footer -->
-
-<div class="overlay js-modal-overlay "></div>
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script src="./js/jquery-3.5.0.min.js"></script>
-<script src="./js/main.js"></script>
-</body>
-
-</html>
+	@@include('./template/footer.html')
 </body>
 
 </html>
