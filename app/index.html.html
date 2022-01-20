@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>О нас</title>
+</head>
+
+<body>
+
+	@@include('./template/header.html')
+
+	<main>
+		@@include('./template/social-left.html')
+
+		<div class="container">
+			<div class="navivation">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><span>Доставка и оплата</span></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="page-about page-delivery">
+
+			<section class="delivery">
+				<div class="container">
+					<div class="delivery__wrapper">
+						<div class="delivery__content">
+							<div class="sub-title">Услуги по организации Кейтеринга</div>
+							<div class="title"><span class="lighter">О нашей </span>компании</div>
+							<p>Предлагаем бесплатну доставку в пределах МКАД при заказе от 5000 ₽ (за выбранный интервал).</p>
+							<a class="btn" href="#">
+								<span>Узнать подробнее</span>
+							</a>
+							
+						</div>
+						<div class="delivery__img">
+							<img src="./img/delivery.jpg" alt="delivery">
+						</div>
+					</div>
+
+					<div class="page-delivery__bottom">
+						<div class="page-review">
+							<div class="page-review__item">
+								<span class="page-review__count green">10+</span>
+								<span class="page-review__name">Лет на рынке</span>
+							</div>
+							<div class="page-review__item">
+								<span class="page-review__count green">1000+</span>
+								<span class="page-review__name">Довольных клиентов</span>
+							</div>
+							<div class="page-review__item">
+								<span class="page-review__count green">500+</span>
+								<span class="page-review__name">Мероприятий</span>
+							</div>
+							<div class="page-review__item">
+								<span class="page-review__count green">100+</span>
+								<span class="page-review__name">Сотрудников</span>
+							</div>
+						</div>
+						<div class="page-delivery__description text">
+							<p>Наша команда профессионалов старается сделать каждое мероприятие уникальным
+								и незабываемым.</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+		</div>
+
+	</main>
+	@@include('./template/footer.html')
+</body>
+
+</html>

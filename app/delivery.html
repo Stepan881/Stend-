@@ -12,101 +12,10 @@
 
 <body>
 
-	<header class="header">
-  <div class="container">
-    <div class="header__wrapper">
-
-      <button class="header__burger">
-        <img src="./img/icon/burger.svg" alt="Burger">
-      </button>
-
-      <a href="./index.html" class="logo">
-        <img src="./img/logo.svg" alt="logo">
-      </a>
-    
-      <!-- /.header__logo -->
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li class="analytics-li">
-            <a class="analytics-link" href="#">Услуги</a>
-            <ul class="analytics bg-filter">
-              <li><a href="./catalog-services.html">Производственный комплекс</a></li>
-              <li><a href="./contact.html">Научно-исследовательский комплекс</a></li>
-              <li><a href="./review.html">История компании</a></li>
-              <li><a href="">Новости</a></li>
-              <li><a href="">Наше предназначение</a></li>
-              <li><a href=""> Команда</a></li>
-              <li><a href=""> Вакансии</a></li>
-              <li><a href=""> Партнеры</a></li>
-              <li><a href=""> Отзывы</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Каталог</a>
-          </li>
-          <li>
-            <a href="#">Портфолио</a>
-          </li>
-          <li>
-            <a href="#">О нас</a>
-          </li>
-          <li>
-            <a href="#">Блог</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <!-- /.header__menu -->
-      </nav>
-      <!-- /.header__nav -->
-      <div class="header__btns">
-        <button class="header__search">
-          
-          <img src="./img/icon/search.svg" alt="поиск">
-        </button>
-        <!-- 1 -->
-        <button class="header__user">
-          <picture>
-						<source media="(max-width: 768px)" srcset="./img/icon/profile-m.svg">
-            <img src="./img/icon/profile.svg" alt="user">
-					</picture>
-          
-        </button>
-        <!-- 2 -->
-        <a class="header__basket">
-          <img src="./img/icon/basket.svg" alt="корзина">
-        </a>
-        <!-- 3 -->
-      </div>
-      <!-- btns -->
-    </div>
-    <!-- wrapper  -->
-  </div>
-  <!-- /.container -->
-</header>
+	@@include('./template/header.html')
 
 	<main>
-		<div class="social-left">
-
-  <div class="social-left__wrapper">
-
-    <ul>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">Telegram</a></li>
-      <li><a href="#">Youtube</a></li>
-      <li><span></span></li>
-      <li>
-       
-        <a href="#">Scroll</a>
-        <img src="./img/icon/mouse.svg" alt="Scroll">
-      </li>
-    </ul>
-
-  </div>
-
-</div>
+		@@include('./template/social-left.html')
 
 		<div class="container">
 			<div class="navivation">
@@ -454,23 +363,7 @@
 
 		</section>
 	</main>
-	<footer class="footer">
-  <div class="container">
-    <div class="footer__text">
-      Подвал
-    </div>
-    <!-- /.footer__text -->
-  </div>
-</footer>
-<!-- /.footer -->
-
-<div class="overlay js-modal-overlay "></div>
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script src="./js/jquery-3.5.0.min.js"></script>
-<script src="./js/main.js"></script>
-</body>
-
-</html>
+	@@include('./template/footer.html')
 </body>
 
 </html>

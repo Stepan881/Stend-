@@ -1,0 +1,168 @@
+.delivery-payment {
+
+  .container {}
+
+  &__wrapper {
+    margin-bottom: 16.4rem;
+
+    @media (max-width: $mobile-width) {}
+  }
+
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+
+    @media (max-width: $mobile-width) {
+      flex-wrap: wrap;
+      margin-bottom: 12rem;
+    }
+  }
+
+  &__head {
+    width: 53.4rem;
+
+    @media (max-width: $mobile-width) {}
+  }
+
+  .sub-title {
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .title {
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__content {
+    width: 73.4rem;
+
+    @media (max-width: $mobile-width) {}
+
+    p {
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 3rem;
+
+      @media (max-width: $mobile-width) {}
+    }
+  }
+
+  &__cards {
+
+
+    @media (max-width: $mobile-width) {}
+
+    img {
+      width: 14.0rem;
+      height: 7.6rem;
+      margin-right: 2rem;
+    }
+  }
+
+  &__card {
+
+    @media (max-width: $mobile-width) {}
+  }
+
+  .bg-filter {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 7.3rem 4rem 4rem;
+    justify-content: space-between;
+
+    @media (max-width: $mobile-width) {
+      padding: 6rem;
+      margin-bottom: 3rem;
+    }
+
+    &:first-child {
+      margin-right: 10rem;
+
+      @media (max-width: $mobile-width) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__title {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 150%;
+    width: 100%;
+    margin-bottom: 2.5rem;
+
+    @media (max-width: $mobile-width) {
+      font-size: 4rem;
+    }
+  }
+
+  &__container {
+    width: 21.3rem;
+
+    @media (max-width: $mobile-width) {
+      width: 26.3rem;
+    }
+
+    p {
+      font-size: 2rem;
+      line-height: 130%;
+      width: 15.8rem;
+
+      @media (max-width: $mobile-width) {
+        font-size: 3.2rem;
+        width: 100%;
+      }
+    }
+
+    &--big {
+      width: 31.3rem;
+
+      @media (max-width: $mobile-width) {
+        width: 100%;
+        border-top: 1px solid rgba(67, 66, 72, 0.2);
+        display: flex;
+        align-items: center;
+        margin-top: 4rem;
+        padding-top: 4rem;
+      }
+      
+      a {
+        text-decoration: underline;
+      }
+
+      p {
+        width: 100%;
+
+        @media (max-width: $mobile-width) {
+          width: caLC(16.3rem * 2);
+          margin-left: 3.6rem;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 6.0rem;
+    height: 6.3rem;
+    margin-bottom: 1rem;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 3rem;
+      width: 9.8rem;
+      height: 9.8rem;
+    }
+  }
+
+  .green {
+
+    @media (max-width: $mobile-width) {}
+  }
+}

@@ -1,0 +1,85 @@
+.delivery-card {
+  display: flex;
+
+  @media (max-width: $mobile-width) {}
+
+  &__wrapper {
+    width: 34rem;
+    position: relative;
+    padding: 3.2rem 4rem 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      margin-bottom: 6.6rem;
+    }
+
+
+    p {
+      font-weight: normal;
+      font-size: 1.6rem;
+      line-height: 150%;
+
+      @media (max-width: $mobile-width) {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  &__count {
+    margin-left: auto;
+    display: inline-flex;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 150%;
+    margin-bottom: 2.5rem;
+
+    @media (max-width: $mobile-width) {
+      font-size: 4rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 125%;
+
+    @media (max-width: $mobile-width) {
+      font-size: 4rem;
+    }
+
+
+  }
+
+  &__icon {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 2.0rem 10rem rgba(67, 66, 72, 0.1);
+    border-radius: 50%;
+    top: 2rem;
+    transform: translate(0, -50%);
+
+    @media (max-width: $mobile-width) {
+      width: 15.0rem;
+      height: 15.0rem;
+    }
+
+    img {
+      width: 4.5rem;
+      height: 4.5rem;
+      object-fit: contain;
+      margin: auto;
+      @media (max-width: $mobile-width) {
+        width: 9rem;
+        height: 9rem;
+      }
+    }
+  }
+
+
+}

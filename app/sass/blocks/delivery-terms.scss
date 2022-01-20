@@ -1,0 +1,348 @@
+.delivery-terms {
+
+
+
+  @media (max-width: $mobile-width) {}
+
+  &__wrapper {
+    padding-top: 18rem;
+    padding-bottom: 19rem;
+
+    @media (max-width: $mobile-width) {}
+  }
+
+  &__block {
+    @media (max-width: $mobile-width) {}
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 7.0rem;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+    }
+  }
+
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18rem;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+      margin-top: 10.6rem;
+    }
+  }
+
+  &__type {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+
+    @media (max-width: $mobile-width) {
+      font-weight: normal;
+      font-size: 3.2rem;
+      line-height: 150%;
+      flex-direction: column;
+    }
+
+
+    li {
+      display: flex;
+      width: 100%;
+      padding: 2.0rem 0 2.1rem;
+      border-bottom: 0.1rem solid rgba(67, 66, 72, 0.2);
+
+      @media (max-width: $mobile-width) {
+        flex-wrap: wrap;
+
+
+
+        &>:nth-child(1) {
+          width: 100%;
+        }
+
+        &>:nth-child(n+2) {
+          width: 50%;
+        }
+
+      }
+    }
+
+    .bold {
+      font-weight: 500;
+      font-size: 2.0rem;
+      line-height: 110%;
+
+      @media (max-width: $mobile-width) {
+        font-weight: 600;
+        font-size: 3.6rem;
+      }
+    }
+
+    .delivery-terms__left-head {
+      @media (max-width: $mobile-width) {
+        display: none;
+
+      }
+    }
+
+    .dth {
+      width: 59.7rem;
+    }
+
+    .dtp {
+      width: 29rem;
+    }
+
+    .dtp2 {
+      width: auto;
+    }
+
+    .dtpm {
+
+      display: none;
+
+      @media (max-width: $mobile-width) {
+        display: block;
+      }
+    }
+
+    .dtp2m {
+      display: none;
+
+      @media (max-width: $mobile-width) {
+        display: block;
+      }
+    }
+
+
+  }
+
+  &__left-head {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 125%;
+    padding-bottom: 4rem;
+
+
+  }
+
+  &__right {
+    width: 34.0rem;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      margin-top: 8.2rem;
+      margin-bottom: 6.8rem;
+    }
+
+    .bg-filter {
+      padding: 3rem 3rem 9rem 3rem;
+      position: relative;
+
+      @media (max-width: $mobile-width) {}
+
+
+      p {
+        font-family: "Exo 2";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.2rem;
+        line-height: 120%;
+        padding-bottom: 2.6rem;
+        border-bottom: 0.2rem solid #6EEC91;
+        margin-bottom: 2.6rem;
+
+        @media (max-width: $mobile-width) {
+          font-size: 3.6rem;
+        }
+      }
+
+      span {
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 125%;
+        display: flex;
+        margin-bottom: 2rem;
+        width: 19.5rem;
+
+        @media (max-width: $mobile-width) {
+          font-size: 3.2rem;
+          width: 100%;
+        }
+      }
+
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: #6EEC91;
+    box-shadow: .5rem 1.0rem 3.0rem rgba(67, 66, 72, 0.3);
+    border-radius: 2.0rem;
+    display: flex;
+    padding: 2.8rem;
+    transform: translate(-50%, 50%);
+
+    @media (max-width: $mobile-width) {}
+  }
+
+  &__info {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 140%;
+
+    &>span {
+      text-decoration-line: underline;
+    }
+
+
+    @media (max-width: $mobile-width) {
+      font-size: 3.2rem;
+    }
+
+  }
+
+  .container {
+    @media (max-width: $mobile-width) {}
+  }
+
+  .sub-title {
+    width: 56rem;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .title {
+    @media (max-width: $mobile-width) {
+      margin-top: 2rem;
+    }
+  }
+
+  .text {
+    width: 70.9rem;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+
+
+
+  .green {
+    @media (max-width: $mobile-width) {}
+  }
+
+
+
+  &__work {
+    display: flex;
+    margin-top: 19.1rem;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+    }
+
+    .bg-filter {
+      padding: 10rem 12.7rem 7.7rem 41.9rem;
+      width: 121.8rem;
+      margin-left: auto;
+
+
+      @media (max-width: $mobile-width) {
+        padding: 6rem 6rem 28.2rem 6rem;
+        width: 100%;
+      }
+    }
+
+    p {
+      font-family: "Euclid Circular A";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.8rem;
+      line-height: 2.3rem;
+      margin-bottom: 2.5rem;
+      padding-left: 4.6rem;
+
+      @media (max-width: $mobile-width) {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        padding-left: 5.6rem;
+      }
+
+      position: relative;
+
+      span {
+        width: 0;
+
+        font-size: 2.0rem;
+        line-height: 2.5rem;
+        color: #828386;
+        position: absolute;
+        left: 0;
+
+        @media (max-width: $mobile-width) {
+          font-size: 3.6rem;
+          line-height: 4.6rem;
+        }
+      }
+    }
+  }
+
+  &__work-title {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 4rem;
+
+    @media (max-width: $mobile-width) {
+      font-size: 5.6rem;
+      line-height: 150%;
+    }
+  }
+
+  &__image {
+    margin-right: -28rem;
+    background: #DADADA;
+    box-shadow: 2.5rem 2.5rem 10.0rem rgba(197, 201, 213, 0.3);
+    border-radius: 2.0rem;
+    width: 61.9rem;
+    height: 45.0rem;
+    overflow: hidden;
+    z-index: 1;
+
+    @media (max-width: $mobile-width) {
+      margin-right: 0;
+      margin-top: -20rem;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+}

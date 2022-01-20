@@ -1,13 +1,17 @@
 .application {
 
-  
+@media (max-width: $mobile-width) {
+	overflow: hidden;
+}
 
 	.container {
 		width: 150rem;
 		padding-bottom: 11.1rem;
+
 		@media (max-width: $mobile-width) {
 			width: 100%;
-	}
+			padding-bottom: 0;
+		}
 	}
 
 	&__image {
@@ -19,11 +23,20 @@
 		position: relative;
 		z-index: 1;
 
+		@media (max-width: $mobile-width) {
+			width: calc(100% + 7rem);
+			margin: -15rem -3.5rem 0;
+			border-radius: 0px;
+		}
+
 		img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
 			border-radius: 2rem;
+			@media (max-width: $mobile-width) {
+				border-radius: 0px;
+			}
 		}
 	}
 
@@ -32,8 +45,8 @@
 		align-items: center;
 
 		@media (max-width: $mobile-width) {
-			flex-direction: column;
-	}
+			flex-direction: column-reverse;
+		}
 	}
 
 	&__form {
@@ -46,6 +59,13 @@
 		right: 0;
 		margin-left: -18rem;
 		padding: 5.3rem 7.8rem 7.3rem 7.3rem;
+
+		@media (max-width: $mobile-width) {
+			height: auto;
+			margin-left: 0;
+			width: 100%;
+
+		}
 
 		.all-btn {
 			width: 24.7rem;
