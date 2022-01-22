@@ -1,0 +1,140 @@
+.page-about {
+
+  &__content {
+
+    @media (max-width: $mobile-width) {}
+  }
+
+  &__left {
+
+    @media (max-width: $mobile-width) {}
+  }
+
+  &__img {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 1.0rem 10.0rem rgba(67, 66, 72, 0.1);
+    border-radius: 2.0rem;
+    overflow: hidden;
+    width: 35.4rem;
+    height: 20.0rem;
+    top: -4rem;
+    left: 4rem;
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+
+
+  .delivery {}
+
+  .container {}
+
+  .delivery__wrapper {
+    align-items: flex-end;
+  }
+
+  .sub-title {
+    margin-bottom: 1rem;
+
+  }
+
+  .title {
+    margin-bottom: 4rem;
+
+    @media (max-width: $mobile-width) {}
+  }
+
+  .lighter {}
+
+  .btn {
+    @media (max-width: $mobile-width) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  .btn__light {
+    margin-left: 3rem;
+  }
+
+  .bg-filter {
+    position: relative;
+    margin-top: 15.3rem;
+    width: 119.8rem;
+    padding: 3.6rem 44.6rem;
+    margin-right: -44rem;
+    z-index: 0;
+    bottom: 0; 
+
+    @media (max-width: $mobile-width) {
+      background: none;
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      backdrop-filter: none;
+      box-shadow: none;
+    }
+
+    p {
+      margin: 0;
+
+
+      @media (max-width: $mobile-width) {
+        font-size: 3.2rem;
+        margin-bottom: 5.4rem;
+      }
+    }
+  }
+
+  .delivery__img {
+    background: #FFFFFF;
+    box-shadow: -2.0rem 4.0rem 10.0rem rgba(67, 66, 72, 0.1);
+    border-radius: 10.0rem 0px 0px 10.0rem;
+    z-index: 1;
+
+    @media (max-width: $mobile-width) {
+      z-index: 0;
+   
+    }
+  }
+
+  .page-review {
+
+    @media (max-width: $mobile-width) {
+      margin-top: 8.8rem;
+      align-items: flex-start;
+    }
+  }
+  
+  .page-review__item {
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  .page-review__count {}
+
+  .green {}
+
+  .page-review__name {}
+
+  .text {}
+
+
+
+  .page-delivery {}
+
+  .page-delivery__bottom {}
+
+  .page-delivery__description {
+    @media (max-width: $mobile-width) {
+      margin-top: -5rem;
+      position: relative;
+      right: -3.2rem;
+      
+    }
+  }
+
+}

@@ -1,0 +1,90 @@
+.about-company {
+
+  img {
+    display: flex;
+    height: 100%;
+  }
+  
+  .container {}
+
+  &__wrapper {
+
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+
+    display: grid;
+    grid-template-columns: 31rem 53.5rem 53.5rem;
+    column-gap: 6rem;
+    row-gap: 0;
+    grid-template-areas:
+      "it h t"
+      "it ib t"
+      "b ib t";
+
+    @media (max-width: $mobile-width) {
+      display: block;
+    }
+  }
+
+  &__header {
+    grid-area: h;
+    margin-top: 5rem;
+  }
+
+  .sub-title {}
+
+  .title {}
+
+  &__img-top {
+    grid-area: it;
+
+  }
+
+  &__img-wrapper {
+    box-shadow: 0px 2.0rem 10.0rem rgba(67, 66, 72, 0.2);
+    border-radius: 2.0rem;
+    overflow: hidden;
+  }
+
+  &__text {
+    grid-area: t;
+    margin-top: 14.4rem;
+
+    @media (max-width: $mobile-width) {
+      margin-top: 0;
+    }
+  }
+
+  .text {}
+
+  &__img-bottom {
+    grid-area: ib;
+
+
+    // position: relative;
+  }
+
+  &__btn {
+    grid-area: b;
+    min-width: 51.5rem;
+    // position: absolute;
+  }
+
+  .bg-filter {
+    position: relative;
+    padding: 2rem 2rem 2.4rem 11.4rem;
+
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 125%;
+  }
+
+  .btn {
+    position: absolute;
+    bottom: -1.9rem;
+    left: 3rem;
+  }
+
+  .btn__eye {}
+}

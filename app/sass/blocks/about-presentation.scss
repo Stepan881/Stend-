@@ -1,0 +1,97 @@
+.about-presentation {
+
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 125%;
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+
+    span {
+      margin-left: 2.3rem;
+    }
+  }
+
+  &__img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .delivery {
+    &__wrapper {
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    &__img {
+      width: 72rem;
+      height: 70rem;
+
+      @media (max-width: $mobile-width) {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .title {
+      margin-bottom: 8rem;
+    }
+  }
+
+
+
+  .page-about__content {}
+
+  .sub-title {
+
+  }
+
+  .btn {
+    position: relative;
+    
+  }
+
+  .page-about__left {}
+
+  .bg-filter {
+    padding: 7rem 7rem 5.1rem 7rem;
+    width: 90.4rem;
+    margin-bottom: 5.9rem;
+    // 
+    // 
+    // 
+    // 
+    margin-right: -50rem;
+
+    @media (max-width: $mobile-width) {
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+
+  .text {}
+
+  .page-about__title {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 125%;
+    margin-bottom: 3rem;
+
+    @media (max-width: $mobile-width) {
+      font-size: 5rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+
+
+  .green {}
+
+
+
+}
