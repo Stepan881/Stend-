@@ -22,6 +22,7 @@
 
 		@media (max-width: $mobile-width) {
 			width: 100%;
+			margin-bottom: 3rem;
 		}
 	}
 
@@ -42,7 +43,7 @@
 		@media (max-width: $mobile-width) {
 			font-size: 4rem;
 			// font-weight: 800;
-			padding: 1rem 3.7rem 3.3rem;
+			padding: 1rem 3.7rem 1rem;
 		}
 
 	}
@@ -58,7 +59,7 @@
 
 		display: flex;
 		align-items: center;
-		
+
 		img {
 			width: 1.3rem;
 			height: 1rem;
@@ -69,13 +70,17 @@
 		@media (max-width: $mobile-width) {}
 	}
 
+	.disable {
+		display: none;
+	}
+
 	&__sub-menu {
 		padding: 2.8rem 1rem 1rem 0;
 
 		border-top: 0.1rem solid rgba(255, 255, 255, 0.3);
-		
+
 		margin-top: 1rem;
-		// display: none;
+
 
 
 
@@ -89,7 +94,12 @@
 			padding-right: 0.2rem;
 			margin-bottom: 2rem;
 
-			@media (max-width: $mobile-width) {}
+			@media (max-width: $mobile-width) {
+				font-weight: normal;
+				font-size: 4rem;
+				line-height: 110%;
+				margin-bottom: 3.8rem;
+			}
 		}
 	}
 

@@ -21,7 +21,7 @@
 
 
 	@media (max-width: $mobile-width) {
-		font-size: 3.2rem;      
+		font-size: 3.2rem;
 		width: calc(28.5rem * 2);
 		height: 11.2rem;
 		justify-content: center;
@@ -37,6 +37,10 @@
 		padding: 0 1.7rem;
 		border-radius: 2rem 0.5rem;
 
+		@media (max-width: $mobile-width) {
+			height: 9rem;
+		}
+
 		span {
 			background-image: url(../img/icon/arrow-btn.svg);
 			background-position: center;
@@ -50,15 +54,19 @@
 	&__eye {
 		padding: 0 1.7rem;
 		border-radius: 2rem 0.5rem;
+
 		@media (max-width: $mobile-width) {
 			width: 10rem;
 			height: 10rem;
+			border-radius: 4rem 1rem;
 		}
+
 		span {
 			background-image: url(../img/icon/eye.svg);
 			width: 2.4rem;
 			height: 2.0rem;
 			background-size: 2.4rem 2rem;
+
 			@media (max-width: $mobile-width) {
 				width: 5rem;
 				height: 5rem;
@@ -98,6 +106,8 @@
 
 	@media (max-width: $mobile-width) {
 		font-size: 3.6rem;
+
+		margin-bottom: 2rem;
 	}
 }
 
@@ -126,13 +136,13 @@
 		font-size: 1.8rem;
 		line-height: 150%;
 		margin-bottom: 0.8rem;
-		
+
 		@media (max-width: $mobile-width) {
 			font-size: 3.2rem;
 			margin-bottom: 3rem;
 		}
 
-	
+
 	}
 }
 
@@ -143,6 +153,7 @@
 
 .green {
 	position: relative;
+
 	&::before {
 		position: absolute;
 		content: '';
@@ -154,5 +165,31 @@
 		left: -3rem;
 		top: -1.1rem;
 		z-index: -1;
+
+		@media (max-width: $mobile-width) {
+			width: 7.9rem;
+			left: -3.8rem;
+			top: -0.1rem;
+			height: calc(100% + 5.4rem);
+			border-radius: 2rem;
+		}
+	}
+}
+
+.pagination-none {
+
+	@media (max-width: $mobile-width) {
+
+		&.catalog__wrapper {
+			padding-bottom: 0;
+		}
+
+		.catalog__right {
+			padding-bottom: 15.2rem;
+		}
+
+		.catalog__pagination-m {
+			display: none;
+		}
 	}
 }

@@ -5,7 +5,11 @@
   }
 
   &__wrapper {
-    padding: 9rem 0;
+    min-height: 35.1rem;
+    max-width: 148rem;
+    margin: 0 auto;
+    padding: 7.6rem 0;
+
     @media (max-width: $mobile-width) {
       padding: 12rem 0;
     }
@@ -15,7 +19,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 6rem;
+    margin-bottom: 6.7rem;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 4.3rem;
+    }
 
     span {
       font-weight: normal;
@@ -27,7 +35,6 @@
       }
     }
 
-    @media (max-width: $mobile-width) {}
   }
 
   &__title-wrapper {
@@ -36,6 +43,8 @@
   }
 
   .sub-title {
+    margin-bottom: 1rem;
+
     @media (max-width: $mobile-width) {}
   }
 
@@ -50,28 +59,40 @@
 
     @media (max-width: $mobile-width) {
       width: 100%;
+      padding: 5.9rem 2.9rem 0.1rem 2.5rem;
+    }
+
+    p {
+
+      line-height: 2.3rem;
+
+      @media (max-width: $mobile-width) {
+        font-size: 3.2rem;
+        line-height: 4rem;
+      }
     }
   }
 
   .bg-filter {}
 
   &__head {
-    font-family: Exo 2;
+    font-family: "Exo 2";
     font-style: normal;
     font-weight: 700;
     font-size: 2.7rem;
     line-height: 4.0rem;
     margin-bottom: 3.4rem;
+    text-transform: uppercase;
 
     @media (max-width: $mobile-width) {
-      margin-bottom: 4rem;
+      margin-bottom: 5.2rem;
       font-size: 4rem;
       line-height: 120%;
     }
   }
 
   .text {
-    margin-bottom: 4.2rem;
+
 
     @media (max-width: $mobile-width) {
       margin-bottom: 6rem;
@@ -79,15 +100,43 @@
   }
 
   &__links {
-    font-family: Euclid Circular A;
     font-style: normal;
     font-weight: normal;
     font-size: 1.8rem;
     line-height: 2.3rem;
+    margin-top: 4.1rem;
 
     @media (max-width: $mobile-width) {
       font-size: 2.8rem;
       line-height: 3.6rem;
+      margin-top: 6.1rem;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 3rem;
+    }
+
+    a {
+
+      margin-right: 7rem;
+      position: relative;
+
+        @media (max-width: $mobile-width) {
+          margin-right: 0;
+          
+        }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0.9rem;
+        right: -3.8rem;
+        background-image: url("data:image/svg+xml,%3Csvg width='27' height='12' viewBox='0 0 27 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75V5.25ZM26.5303 6.53033C26.8232 6.23744 26.8232 5.76256 26.5303 5.46967L21.7574 0.696699C21.4645 0.403806 20.9896 0.403806 20.6967 0.696699C20.4038 0.989593 20.4038 1.46447 20.6967 1.75736L24.9393 6L20.6967 10.2426C20.4038 10.5355 20.4038 11.0104 20.6967 11.3033C20.9896 11.5962 21.4645 11.5962 21.7574 11.3033L26.5303 6.53033ZM1 6.75H26V5.25H1V6.75Z' fill='%23434243'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 2.7rem;
+        height: 1.2rem;
+      }
+
     }
   }
 
@@ -104,14 +153,14 @@
     position: absolute;
     transform: rotate(90deg);
     top: 50%;
-    right: 0;
+    right: 4rem;
     font-size: 1.6rem;
     line-height: 2.0rem;
 
     color: rgba(67, 66, 72, 0.7);
 
     @media (max-width: $mobile-width) {
-      top: auto;
+      top: 5.3rem;
       right: 3rem;
       font-size: 3.2rem;
       line-height: 4.0rem;
@@ -120,13 +169,13 @@
   }
 
   &__rating-wrapper {
-    padding: 8.7rem 7rem 9.1rem 7.1rem;
+    padding: 8.7rem 7rem 7.8rem 7.1rem;
     display: flex;
     flex-wrap: wrap;
 
     @media (max-width: $mobile-width) {
       justify-content: space-between;
-      padding: 4rem 3rem 13rem;
+      padding: 4rem 3rem 14rem;
     }
   }
 
@@ -147,10 +196,12 @@
   &__block {
     display: flex;
     flex-direction: column;
-    width: 16rem;
+    width: auto;
+    padding-right: 2.4rem;
 
     @media (max-width: $mobile-width) {
       width: 33.3%;
+      padding: 0;
     }
 
 
@@ -177,6 +228,11 @@
           width: 4rem;
           background: #52DD79;
           left: 0;
+
+          @media (max-width: $mobile-width) {
+            width: 7.7rem;
+            height: 0.4rem;
+          }
         }
       }
 
@@ -191,13 +247,15 @@
         }
       }
     }
+
+
   }
 
   fieldset {
     border-radius: 2rem;
     display: flex;
     padding: 0;
-    margin: 0 0 7.4rem 0;
+    margin: 0 0 5.6rem;
     border: 0.1rem solid rgba(67, 66, 72, 0.2);
 
     @media (max-width: $mobile-width) {
@@ -205,11 +263,12 @@
       display: flex;
       flex-direction: column;
       position: relative;
+      margin: 0 0 11.6rem;
     }
   }
 
   legend {
-    margin-right: 8rem;
+    margin-right: 7.1rem;
     padding: 0 2rem;
     text-align: right;
     font-family: "Euclid Circular A";
@@ -225,7 +284,7 @@
       bottom: -2.3rem;
       background-color: #fafafa;
       position: absolute;
-      left: 50%;
+      left: 55.6%;
       transform: translate(-50%, 0);
       font-size: 3.6rem;
       line-height: 4.6rem;
@@ -234,6 +293,15 @@
 
     &:before {
       left: -1rem;
+      height: calc(100% + 3.4rem);
+      top: -1.6rem;
+
+      @media (max-width: $mobile-width) {
+        width: 10.3rem;
+        left: -5.7rem;
+        height: calc(100% + 7.2rem);
+        top: -3.7rem; 
+      }
     }
 
 
@@ -257,10 +325,12 @@
     justify-content: center;
     display: flex;
 
-    margin-bottom: 20rem;
+    margin-bottom: 12.3rem;
+    margin-top: 10.6rem;
 
     @media (max-width: $mobile-width) {
-      margin-bottom: 24rem;
+      margin-top: 14.8rem;
+      margin-bottom: 12rem;
     }
   }
 }

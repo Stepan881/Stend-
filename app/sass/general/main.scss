@@ -34,6 +34,15 @@ textarea {
     background-size: 100% 100%;
 }
 
+body {
+    background-color: #D7E3DB;
+    background-image: url(../img/font.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    z-index: -999;
+}
+
 button {
     font: inherit;
     cursor: pointer;
@@ -132,6 +141,11 @@ ul li {
 .container {
     width: 156rem;
     margin: 0 auto;
+
+    &--min {
+        max-width: 148rem;
+        margin: 0 auto;
+    }
 }
 
 .hidden {
@@ -156,11 +170,11 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  // border: 0;
-  -webkit-text-fill-color: #ccc;
-  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-  transition: background-color 500000s ease-in-out 0s;
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
+    // border: 0;
+    -webkit-text-fill-color: #ccc;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 500000s ease-in-out 0s;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
 }
 
 @media (max-width: 48em) {
@@ -169,9 +183,11 @@ select:-webkit-autofill:focus {
         //font-size: 10px;
         -webkit-text-size-adjust: none;
     }
+
     body {
         -webkit-text-size-adjust: none;
     }
+
     .container {
         padding: 0 3.2rem;
         width: 100%;

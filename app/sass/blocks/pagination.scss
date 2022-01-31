@@ -1,8 +1,13 @@
 .pagination {
-
-  display: flex;
+  min-width: 21.2rem;
+  // display: flex;
   align-items: center;
-    @media (max-width: $mobile-width) {}
+    @media (max-width: $mobile-width) {
+      min-width: 36rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
 
   &__btn {
     width: 5.9rem;
