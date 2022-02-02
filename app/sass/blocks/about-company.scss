@@ -4,13 +4,13 @@
     display: flex;
     height: 100%;
   }
-  
+
   .container {}
 
   &__wrapper {
 
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 21.5rem;
+    padding-bottom: 19.1rem;
 
 
     display: grid;
@@ -24,12 +24,18 @@
 
     @media (max-width: $mobile-width) {
       display: block;
+      padding-top: 9.5rem;
     }
   }
 
   &__header {
     grid-area: h;
     margin-top: 5rem;
+    margin-bottom: 6.6rem;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 9.6rem;
+    }
   }
 
   .sub-title {}
@@ -39,12 +45,27 @@
   &__img-top {
     grid-area: it;
 
+    @media (max-width: $mobile-width) {
+      height: 44rem;
+      margin-bottom: 6.1rem;
+    }
+
   }
 
   &__img-wrapper {
     box-shadow: 0px 2.0rem 10.0rem rgba(67, 66, 72, 0.2);
     border-radius: 2.0rem;
     overflow: hidden;
+
+    @media (max-width: $mobile-width) {
+      height: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center -9rem;
+      }
+    }
   }
 
   &__text {
@@ -56,19 +77,41 @@
     }
   }
 
-  .text {}
+  .text {
+    p {
+      margin-bottom: 2.8rem;
+
+      @media (max-width: $mobile-width) {
+        margin-bottom: 5.8rem;
+      }
+    }
+  }
 
   &__img-bottom {
     grid-area: ib;
 
+    @media (max-width: $mobile-width) {
 
-    // position: relative;
+      height: 50rem;
+
+      img {
+        object-position: center;
+      }
+    }
   }
 
   &__btn {
     grid-area: b;
     min-width: 51.5rem;
-    // position: absolute;
+
+    @media (max-width: $mobile-width) {
+      width: 57.4rem;
+      height: 15rem;
+      margin-right: -3.2rem;
+      margin-left: auto;
+      margin-top: -8.4rem;
+      
+    }
   }
 
   .bg-filter {
@@ -78,13 +121,32 @@
     font-weight: 600;
     font-size: 2rem;
     line-height: 125%;
+    margin-bottom: 10rem;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      height: 100%;
+      font-size: 3.2rem;
+      padding: 3.5rem 18.3rem 2.4rem 5.4rem;
+    }
   }
 
   .btn {
     position: absolute;
     bottom: -1.9rem;
     left: 3rem;
+
+    @media (max-width: $mobile-width) {
+      left: auto;
+      right: 3.2rem;
+    }
   }
 
-  .btn__eye {}
+  .btn__eye {
+
+    @media (max-width: $mobile-width) {
+      width: 9rem;
+  height: 9rem;
+    }
+  }
 }

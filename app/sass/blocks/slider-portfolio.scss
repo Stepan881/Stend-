@@ -1,0 +1,203 @@
+.slider-portfolio {
+  padding-top: 20.2rem;
+  overflow: hidden;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 24.2rem;
+    padding-bottom: 15rem;
+  }
+
+  .container {}
+
+  &__wrapper {
+
+    @media (max-width: $mobile-width) {
+      position: relative;
+    }
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 148rem;
+    margin: 0 auto 9rem;
+  }
+
+  &__left {}
+
+  .sub-title {}
+
+  .title {}
+
+
+  &__inner {
+    width: 104.0rem;
+    display: flex;
+
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__btn-all {
+
+    @media (max-width: $mobile-width) {
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+    }
+  }
+
+  &__slider {
+
+    width: 104.0rem;
+    position: relative;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      padding-bottom: 19rem;
+    }
+  }
+
+  &__slide {
+    width: 95.0rem;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+
+  .bg-filter {
+    display: flex;
+    margin-left: 9rem;
+    margin-left: 19rem;
+    width: 95rem;
+    justify-content: space-between;
+
+    @media (max-width: $mobile-width) {
+      margin: 39rem 0 0 0;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 60.4rem;
+    height: 45.0rem;
+    box-shadow: 0px 2.0rem 10.0rem rgba(67, 66, 72, 0.2);
+    border-radius: 2.0rem;
+    overflow: hidden;
+    position: relative;
+    top: -5rem;
+    left: -9rem;
+
+    @media (max-width: $mobile-width) {
+      position: static;
+      width: calc(100% - 6.4rem);
+
+
+      margin: -39rem 3.2rem 0;
+      height: 55rem;
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      display: flex;
+    }
+  }
+
+  &__content {
+    width: 47.8rem;
+    padding: 7rem 13rem 3rem 1rem;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      padding: 7rem 4rem 3rem 4rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    span {
+      font-weight: normal;
+      font-size: 1.6rem;
+      line-height: 150%;
+
+      @media (max-width: $mobile-width) {
+        font-size: 3.2rem;
+      }
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 150%;
+      margin-bottom: 2rem;
+
+      @media (max-width: $mobile-width) {
+        font-size: 3.6rem;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 120%;
+    margin-bottom: 5.2rem;
+
+    @media (max-width: $mobile-width) {
+      font-size: 5rem;
+      margin-bottom: 3.9rem;
+      width: 50rem;
+    }
+  }
+
+  &__btn {
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+
+  &__prev {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    padding: 2rem;
+  }
+
+  &__next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 117rem;
+    padding: 2rem;
+  }
+
+  .swiper-slide-prev {
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  &__pagination {
+    display: none;
+
+    @media (max-width: $mobile-width) {
+      display: flex;
+
+      margin-top: 9.7rem;
+    }
+  }
+  .pagination__fraction {
+    width: auto;
+  }
+}

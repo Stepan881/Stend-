@@ -3,12 +3,19 @@
   &__content {
 
     // padding-top: 4.5rem;
-    @media (max-width: $mobile-width) {}
+    @media (max-width: $mobile-width) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 4.7rem;
+    }
   }
 
   &__left {
 
-    @media (max-width: $mobile-width) {}
+    @media (max-width: $mobile-width) {
+      order: 2;
+    }
   }
 
   &__img {
@@ -43,6 +50,11 @@
     font-weight: 300;
     font-size: 2.0rem;
     line-height: 120%;
+
+    @media (max-width: $mobile-width) {
+      font-size: 3.2rem;
+      margin-top: 4rem;
+    }
   }
 
   .title {
@@ -50,19 +62,33 @@
     font-size: 6.5rem;
     line-height: 120%;
 
-    @media (max-width: $mobile-width) {}
+    @media (max-width: $mobile-width) {
+      font-weight: 800;
+      font-size: 6rem;
+      order: 1;
+      margin-bottom: 5.4rem;
+
+      span {
+        font-weight: 300;
+      }
+    }
   }
 
   .lighter {}
 
   .btn {
     @media (max-width: $mobile-width) {
-      margin-bottom: 4rem;
+      margin: 0 0 4rem 0;
+      order: 3;
     }
   }
 
   .btn__light {
     margin-left: 3rem;
+
+    @media (max-width: $mobile-width) {
+      margin-left: 0;
+    }
   }
 
   .bg-filter {
@@ -91,6 +117,7 @@
       @media (max-width: $mobile-width) {
         font-size: 3.2rem;
         margin-bottom: 5.4rem;
+        width: 54rem;
       }
     }
   }
@@ -105,7 +132,11 @@
 
     @media (max-width: $mobile-width) {
       z-index: 0;
-
+      position: static;
+      margin: 0 -3.2rem 0 0;
+      right: 0;
+      width: calc(100% + 3.2rem);
+      max-width: calc(100% + 3.2rem);
     }
 
     img {
@@ -120,6 +151,7 @@
     @media (max-width: $mobile-width) {
       margin-top: 8.8rem;
       align-items: flex-start;
+      width: 100%;
     }
   }
 
@@ -127,18 +159,28 @@
     margin-bottom: 0;
 
     @media (max-width: $mobile-width) {
-      margin-bottom: 3.2rem;
+      margin-bottom: 4rem;
+      width: 32.4rem;
     }
   }
 
   .page-review__count {
     font-size: 3.0rem;
     line-height: 120%;
+
+    @media (max-width: $mobile-width) {
+      font-size: 5rem;
+    }
   }
 
   .green {}
 
-  .page-review__name {}
+  .page-review__name {
+    @media (max-width: $mobile-width) {
+      font-size: 3.2rem;
+
+    }
+  }
 
   .text {}
 
@@ -153,10 +195,22 @@
     padding: 5.2rem 17rem 1.4rem 9rem;
 
     @media (max-width: $mobile-width) {
-      margin-top: -5rem;
       position: relative;
       right: -3.2rem;
+      margin-top: -9.6rem;
+      padding: 5.7rem 10rem 1.4rem 6rem;
 
+      background: linear-gradient(149.74deg, rgba(67, 66, 72, 0.9) 1.03%, rgba(39, 38, 44, 0.9) 99.31%);
+      box-shadow: inset .1rem .2rem .4rem rgba(255, 255, 255, 0.2), inset -.2rem -.4rem .4rem rgba(67, 66, 72, 0.2);
+      backdrop-filter: blur(2.0rem);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 1.0rem 0px 0px 1.0rem;
+
+      p {
+        font-size: 3rem;
+        line-height: 150%;
+      }
     }
   }
 

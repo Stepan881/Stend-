@@ -1,7 +1,15 @@
 .page-review {
 
+  .container {
+    display: flex;
+    align-items: center;
+    @media (max-width: $mobile-width) {
+      flex-wrap: wrap;
+    }
+  }
 
   &__wrapper {
+    overflow: hidden;
     max-width: 148rem;
     margin: 0 auto;
     display: flex;
@@ -16,6 +24,7 @@
   }
 
   &__wrapper-pos {
+    z-index: 1;
     display: flex;
     align-items: center;
 
@@ -27,7 +36,7 @@
   }
 
   &__block {
-
+    z-index: 2;
 
     @media (max-width: $mobile-width) {
       width: 100%;
@@ -64,6 +73,10 @@
       width: 100%;
       justify-content: center;
       display: flex;
+    }
+
+    .pagination__fraction {
+      width: auto;
     }
   }
 
@@ -114,9 +127,9 @@
     display: flex;
     flex-direction: column;
 
-   @media (max-width: $mobile-width) {
-    margin-left: 4.1rem;
-   }
+    @media (max-width: $mobile-width) {
+      margin-left: 4.1rem;
+    }
 
     span {
       &:first-child {
@@ -125,7 +138,7 @@
         line-height: 2.9rem;
 
         @media (max-width: $mobile-width) {
-          
+
           font-size: 4rem;
           line-height: 5rem;
         }
@@ -135,6 +148,7 @@
         font-weight: normal;
         font-size: 1.8rem;
         line-height: 2.3rem;
+
         @media (max-width: $mobile-width) {
           font-size: 3.2rem;
           line-height: 4rem;
@@ -144,7 +158,7 @@
 
     }
 
- 
+
   }
 
   &__item {
@@ -191,12 +205,13 @@
     }
   }
 
-  .container {
-    @media (max-width: $mobile-width) {}
-  }
-
   .pagination {
     display: flex;
+
+    @media (max-width: $mobile-width) {
+      position: relative;
+      top: 4rem;
+    }
   }
 
   .title {
@@ -226,6 +241,7 @@
 
   .btn {
     margin-bottom: 10rem;
+    z-index: 11;
 
     @media (max-width: $mobile-width) {
       margin-bottom: 9rem;
@@ -240,14 +256,20 @@
   }
 
   .slide-review {
-    opacity: 1;
+    opacity: 0;
+    transform: 0.3s;
+
+    display: flex;
+    width: auto;
 
     @media (max-width: $mobile-width) {}
   }
 
   .slide-review__img {
+
     filter: drop-shadow(10px 20px 40px rgba(67, 66, 72, 0.3));
     width: 54.5rem;
+    width: 100%;
     height: 71.7rem;
     display: flex;
 
@@ -296,5 +318,22 @@
       width: 46.4rem;
       height: 46.4rem;
     }
+  }
+
+  .js-slider-reviews-big {
+    z-index: 1;
+    width: 54.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .page-review__block {
+      z-index: 1;
+      display: flex;
+    }
+  }
+
+  .active {
+    opacity: 1;
+    transform: 0.3s;
   }
 }
