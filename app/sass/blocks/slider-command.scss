@@ -43,6 +43,8 @@
     margin-top: 12rem;
     position: relative;
     margin-right: 4rem;
+    opacity: 0;
+    // transition: 0.3s;
 
     @media (max-width: $mobile-width) {
       margin-right: 0;
@@ -54,6 +56,13 @@
       min-width: 69.8rem;
     }
 
+    &.swiper-slide-prev,
+    &.active,
+    &.swiper-slide-next,
+    &.swiper-slide-next+.slider-command__slide {
+      opacity: 1;
+    }
+    
     &.active {
       margin-top: 0;
 

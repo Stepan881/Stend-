@@ -104,4 +104,11 @@
 	}
 
 	&__item {}
+
+	.active {
+		a {
+			color: #52DD79;
+			cursor: default;
+		}
+	}
 }

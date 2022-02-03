@@ -1150,6 +1150,10 @@ select:-webkit-autofill:focus {
         line-height: 110%;
         margin-bottom: 3.8rem; } }
 
+.filters .active a {
+  color: #52DD79;
+  cursor: default; }
+
 .dishs {
   -webkit-transition: 0.3s;
   transition: 0.3s; }
@@ -4361,7 +4365,8 @@ select:-webkit-autofill:focus {
     width: 95.0rem; }
     @media (max-width: 48em) {
       .slider-portfolio__slide {
-        width: 100%; } }
+        width: 100%;
+        margin-top: 4rem; } }
   .slider-portfolio .bg-filter {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4405,7 +4410,8 @@ select:-webkit-autofill:focus {
       display: flex; }
   .slider-portfolio__content {
     width: 47.8rem;
-    padding: 7rem 13rem 3rem 1rem; }
+    padding: 7rem 13rem 3rem 1rem;
+    position: relative; }
     @media (max-width: 48em) {
       .slider-portfolio__content {
         width: 100%;
@@ -4433,6 +4439,21 @@ select:-webkit-autofill:focus {
       @media (max-width: 48em) {
         .slider-portfolio__content p {
           font-size: 3.6rem; } }
+  .slider-portfolio__count {
+    position: absolute;
+    left: -11.2rem;
+    z-index: -1;
+    top: 5.1rem;
+    font-weight: 600;
+    font-size: 10rem;
+    line-height: 115%;
+    color: #C7CACF; }
+    @media (max-width: 48em) {
+      .slider-portfolio__count {
+        font-size: 11rem;
+        top: -3rem;
+        left: auto;
+        right: 5rem; } }
   .slider-portfolio__title {
     font-weight: 600;
     font-size: 3rem;
@@ -4501,7 +4522,8 @@ select:-webkit-autofill:focus {
 .slider-command__slide {
   margin-top: 12rem;
   position: relative;
-  margin-right: 4rem; }
+  margin-right: 4rem;
+  opacity: 0; }
   @media (max-width: 48em) {
     .slider-command__slide {
       margin-right: 0;
@@ -4517,6 +4539,9 @@ select:-webkit-autofill:focus {
           align-self: flex-end;
       width: 46rem;
       min-width: 69.8rem; } }
+  .slider-command__slide.swiper-slide-prev, .slider-command__slide.active, .slider-command__slide.swiper-slide-next,
+  .slider-command__slide.swiper-slide-next + .slider-command__slide {
+    opacity: 1; }
   .slider-command__slide.active {
     margin-top: 0; }
     @media (max-width: 48em) {
