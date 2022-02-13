@@ -16,7 +16,7 @@
   &__slide {
     display: flex;
     // width: calc(100% - 20rem);
-   
+
   }
 
 
@@ -108,6 +108,8 @@
     position: absolute;
     right: 0;
     top: 8rem;
+    width: 2.3rem;
+    height: 4.4rem;
 
     @media (max-width: $mobile-width) {
       display: none;
@@ -118,6 +120,8 @@
     position: absolute;
     left: 0;
     top: 8rem;
+    width: 2.3rem;
+    height: 4.4rem;
 
     @media (max-width: $mobile-width) {
       display: none;
@@ -126,6 +130,7 @@
 
   &__pagination {
     display: none;
+
     @media (max-width: $mobile-width) {
       display: flex;
       margin-top: 5.9rem;

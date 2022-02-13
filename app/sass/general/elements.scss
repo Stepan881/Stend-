@@ -193,3 +193,18 @@
 		}
 	}
 }
+
+.bg-circle {
+	position: absolute;
+	top: 0;
+	left: 0; 
+	background-image: url(../img/bg-circle.png);
+	background-position: bottom right;
+	background-size: 217.3rem	222.4rem;
+	width: 136.5rem; 
+	height: 50.4rem;
+	z-index: -1;
+	@media (max-width: $mobile-width) {
+		display: none;
+	}
+}

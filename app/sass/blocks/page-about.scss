@@ -21,7 +21,7 @@
   &__img {
     position: absolute;
     background: #FFFFFF;
-    box-shadow: 0px 1.0rem 10.0rem rgba(67, 66, 72, 0.1);
+    box-shadow: 0 1.0rem 10.0rem rgba(67, 66, 72, 0.1);
     border-radius: 2.0rem;
     overflow: hidden;
     width: 35.4rem;
@@ -125,7 +125,7 @@
   .delivery__img {
     background: #FFFFFF;
     box-shadow: -2.0rem 4.0rem 10.0rem rgba(67, 66, 72, 0.1);
-    border-radius: 10.0rem 0px 0px 10.0rem;
+    border-radius: 10.0rem 0 0 10.0rem;
     z-index: 1;
     position: relative;
     right: -7.2rem;
@@ -205,7 +205,7 @@
       backdrop-filter: blur(2.0rem);
       /* Note: backdrop-filter has minimal browser support */
 
-      border-radius: 1.0rem 0px 0px 1.0rem;
+      border-radius: 1.0rem 0 0 1.0rem;
 
       p {
         font-size: 3rem;
