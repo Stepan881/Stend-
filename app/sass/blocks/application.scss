@@ -1,7 +1,9 @@
 .application {
+	padding-top: 10.5rem;
 
 @media (max-width: $mobile-width) {
 	overflow: hidden;
+	padding-top: 13.5rem;
 }
 
 	.container {

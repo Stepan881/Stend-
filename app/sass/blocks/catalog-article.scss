@@ -1,0 +1,127 @@
+.article-other {
+
+  .bg-filter {}
+
+
+  .catalog-article.banquet {
+    &:hover {
+      .bg-filter {
+        background: linear-gradient(149.74deg, rgba(221, 220, 221, 0.8) 1.03%, rgba(251, 251, 251, 0.8) 99.31%);
+      }
+
+      .banquet__title,
+      .banquet__description,
+      .banquet__pirce {
+        color: #434248;
+      }
+
+      .banquet__like {
+        background: #FFFFFF;
+      }
+
+      .banquet__cart {
+        background: #434248;
+      }
+
+
+    }
+
+    @media (max-width: $mobile-width) {
+      .banquet__img {
+        width: 36rem;
+        height: 36rem;
+      }
+
+      &.banquet__wrapper {
+        margin: 18.8rem 0 9rem;
+  
+
+
+
+      }
+    }
+  }
+
+
+  .catalog-article__btn-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+  }
+
+  .btn {
+    @media (max-width: $mobile-width) {}
+  }
+
+  .banquet__like {
+    position: static;
+    transform: none;
+    padding: 0;
+
+    background: #FFFFFF;
+    width: 5.9rem;
+    height: 5.9rem;
+
+    box-shadow: .5rem 1.0rem .3rem rgba(67, 66, 72, 0.1);
+    border-radius: 2.0rem .5rem;
+    margin: 0 2rem;
+
+    svg {
+      width: 2.8rem;
+      height: 2.8rem;
+      display: flex;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 10rem;
+      height: 10rem;
+
+      svg {
+        width: 4.8rem;
+        height: 5.8rem;
+      }
+    }
+
+  }
+
+  .banquet .bg-filter {
+    @media (max-width: $mobile-width) {
+      padding: 2rem 2rem 10rem;
+    }
+
+  }
+
+  .banquet__cart {
+    position: static;
+    transform: none;
+    padding: 0;
+
+    background: #FFFFFF;
+    width: 5.9rem;
+    height: 5.9rem;
+
+    box-shadow: .5rem 1.0rem .3rem rgba(67, 66, 72, 0.1);
+    border-radius: 2.0rem .5rem;
+    margin: 0 2rem;
+    background: #434248;
+
+    svg {
+      width: 3.3rem;
+      height: 2.4rem;
+      display: flex;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 4rem 1rem;
+
+      svg {
+        width: 5.3rem;
+        height: 4.4rem;
+      }
+    }
+  }
+}

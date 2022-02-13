@@ -58,8 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   });
 
-
-
   const sliderBoolets = new Swiper('.js-slider-boolets', {
     freeMode: true,
     watchSlidesProgress: true,
@@ -71,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
     slideClass: 'js-slide',
 
   });
-
 
   const sliderHistory = new Swiper('.js-slider-history', {
     loop: true,
@@ -87,9 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   });
 
-
   const sliderPortfolio = new Swiper('.js-slider-portfolio', {
-
     grid: {
       rows: 2,
     },
@@ -101,7 +96,6 @@ document.addEventListener('DOMContentLoaded', function () {
       prevEl: '.pagination__prew',
       nextEl: '.pagination__next',
     },
-
     pagination: {
       el: ".pagination__fraction",
       type: "fraction",
@@ -111,12 +105,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       }
     },
-
     breakpoints: {
       0: {
         spaceBetween: 20,
       },
-
       768: {
         slidesPerView: 1,
         spaceBetween: 131,
@@ -128,22 +120,15 @@ document.addEventListener('DOMContentLoaded', function () {
           nextEl: '.js-next',
         },
       }
-
     },
-
   });
-
 
   const sliderCommand = new Swiper('.js-slider-command', {
     loop: true,
-
-
     wrapperClass: 'js-wrapper',
     slideClass: 'js-slide',
     centeredSlides: true,
     slideActiveClass: 'active',
-
-
     pagination: {
       el: ".pagination__fraction",
       type: "fraction",
@@ -171,13 +156,8 @@ document.addEventListener('DOMContentLoaded', function () {
           nextEl: '.js-next',
         },
       }
-
     },
-
   });
-
-
-
 
   const openFilter = () => {
     const openFilters = document.querySelectorAll(`.js-filter-open`);
@@ -194,5 +174,77 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   openFilter();
+
+  const articleSlider = new Swiper('.js-article-slider', {
+    slidesPerView: "auto",
+
+    wrapperClass: 'js-wrapper',
+    slideClass: 'js-slide',
+    slideActiveClass: 'active',
+
+    pagination: {
+      el: ".pagination__fraction",
+      type: "fraction",
+      renderCustom: function (swiper, current, total) {
+        return `<span>${current}</span><span>/</span><span>${total}</span>`;
+      }
+    },
+    breakpoints: {
+      0: {
+        centeredSlides: true,
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+          prevEl: '.pagination__prew',
+          nextEl: '.pagination__next',
+        },
+      },
+      768: {
+        spaceBetween: 45,
+        slidesPerView: 4,
+        centeredSlides: false,
+        navigation: {
+          prevEl: '.article-slider__prev',
+          nextEl: '.article-slider__next',
+        },
+      }
+    },
+  });
+  const articleOtherSlider = new Swiper('.js-article-other-slider', {
+    slidesPerView: "auto",
+    loop: true,
+    wrapperClass: 'js-wrapper',
+    slideClass: 'banquet',
+    slideActiveClass: 'active',
+
+    pagination: {
+      el: ".pagination__fraction",
+      type: "fraction",
+      renderCustom: function (swiper, current, total) {
+        return `<span>${current}</span><span>/</span><span>${total}</span>`;
+      }
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+          prevEl: '.pagination__prew',
+          nextEl: '.pagination__next',
+        },
+      },
+      768: {
+        spaceBetween: 5,
+        slidesPerView: 4,
+        centeredSlides: false,
+        navigation: {
+          prevEl: '.article-other__prev',
+          nextEl: '.article-other__next',
+        },
+      }
+    },
+  });
+
 
 });

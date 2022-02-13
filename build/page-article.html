@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Карточка товара</title>
+</head>
+
+<body>
+
+	<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+
+      <button class="header__burger">
+        <img src="./img/icon/burger.svg" alt="Burger">
+      </button>
+
+      <a href="./index.html" class="logo">
+        <img src="./img/logo.svg" alt="logo">
+      </a>
+    
+      <!-- /.header__logo -->
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="analytics-li">
+            <a class="analytics-link" href="#">Услуги</a>
+            <ul class="analytics bg-filter">
+              <li><a href="./catalog-services.html">Производственный комплекс</a></li>
+              <li><a href="./contact.html">Научно-исследовательский комплекс</a></li>
+              <li><a href="./review.html">История компании</a></li>
+              <li><a href="">Новости</a></li>
+              <li><a href="">Наше предназначение</a></li>
+              <li><a href=""> Команда</a></li>
+              <li><a href=""> Вакансии</a></li>
+              <li><a href=""> Партнеры</a></li>
+              <li><a href=""> Отзывы</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Портфолио</a>
+          </li>
+          <li>
+            <a href="#">О нас</a>
+          </li>
+          <li>
+            <a href="#">Блог</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <!-- /.header__menu -->
+      </nav>
+      <!-- /.header__nav -->
+      <div class="header__btns">
+        <button class="header__search">
+          
+          <img src="./img/icon/search.svg" alt="поиск">
+        </button>
+        <!-- 1 -->
+        <button class="header__user">
+          <picture>
+						<source media="(max-width: 768px)" srcset="./img/icon/profile-m.svg">
+            <img src="./img/icon/profile.svg" alt="user">
+					</picture>
+          
+        </button>
+        <!-- 2 -->
+        <a class="header__basket">
+          <img src="./img/icon/basket.svg" alt="корзина">
+        </a>
+        <!-- 3 -->
+      </div>
+      <!-- btns -->
+    </div>
+    <!-- wrapper  -->
+  </div>
+  <!-- /.container -->
+</header>
+
+	<main>
+		<div class="social-left">
+
+  <div class="social-left__wrapper">
+
+    <ul>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Telegram</a></li>
+      <li><a href="#">Youtube</a></li>
+      <li><span></span></li>
+      <li>
+       
+        <a href="#">Scroll</a>
+        <img src="./img/icon/mouse.svg" alt="Scroll">
+      </li>
+    </ul>
+
+  </div>
+
+</div>
+
+		<section class="page-article">
+			<div class="container">
+				<div class="page-article__wrappwe">
+
+					<div class="page-article__navigation">
+
+						<div class="navivation">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Каталог</a></li>
+								<li><span>Салат Цезарь с лососем</span></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="page-article__title">
+						<div class="title">Салат Цезарь</div>
+						<div class="sub-title">С лососем</div>
+					</div>
+
+					<div class="page-article__img">
+						<img src="./img/article-hero.png" alt="Салат Цезарь">
+					</div>
+
+					<div class="page-article__weight">
+						<span>Вес</span>
+						<span>40 г.</span>
+					</div>
+
+					<div class="page-article__count">
+						<div class="page-article__count-border">
+							<button class="page-article__minus">
+								<svg viewBox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1.5H7.5H14" stroke="#434248" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+
+							</button>
+							<span class="page-article__number">1</span>
+							<button class="page-article__plus">
+								<svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 7.5H7.5M14 7.5H7.5M7.5 7.5V1M7.5 7.5V14" stroke="#434248" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+
+							</button>
+						</div>
+					</div>
+
+					<div class="page-article__pirce">
+						320
+						<span>&#8381/шт</span>
+					</div>
+
+					<div class="page-article__cart">
+						<a class="btn btn__first" href="#">
+							<span>В корзину</span>
+						</a>
+						<a class="btn btn__light" href="#">
+							<span>Показать ещё</span>
+						</a>
+					</div>
+
+					<div class="page-article__info bg-filter">
+						<div class="page-article__item">Артикул: <span>20173</span></div>
+						<div class="page-article__item">Основной ингредиент: <span>Птица</span></div>
+						<div class="page-article__item">Кухня: <span>Итальянская</span></div>
+						<span>Описание</span>
+						<p>Куриная грудка, томат, салат, соус цезарь, пармезан, пшеничная брускетта.</p>
+					</div>
+
+					<div class="page-article__slider article-slider">
+						<div class="article-slider__wrapper  js-article-slider">
+							<div class="article-slider__slide js-wrapper">
+
+								<div class="article-slider__container js-slide">
+									<div class="article-slider__img">
+										<img src="./img/article-slider.png" alt="Салат Цезарь">
+									</div>
+									<div class="bg-filter">
+										<div class="article-slider__title">Салат Цезарь</div>
+										<p>с лососем</p>
+									</div>
+								</div>
+
+								<div class="article-slider__container js-slide">
+									<div class="article-slider__img">
+										<img src="./img/article-slider.png" alt="Салат Цезарь">
+									</div>
+									<div class="bg-filter">
+										<div class="article-slider__title">Брускетты с сыром моцарелла</div>
+										<p>томатами черри
+											и соусом песто</p>
+									</div>
+								</div>
+
+								<div class="article-slider__container js-slide">
+									<div class="article-slider__img">
+										<img src="./img/article-slider.png" alt="Салат Цезарь">
+									</div>
+									<div class="bg-filter">
+										<div class="article-slider__title">Блинный торт</div>
+										<p>с ягодами</p>
+									</div>
+								</div>
+
+								<div class="article-slider__container js-slide">
+									<div class="article-slider__img">
+										<img src="./img/article-slider.png" alt="Салат Цезарь">
+									</div>
+									<div class="bg-filter">
+										<div class="article-slider__title">Паста Фарфалле</div>
+										<p>с соусом из базилика</p>
+									</div>
+								</div>
+								<div class="article-slider__container js-slide">
+									<div class="article-slider__img">
+										<img src="./img/article-slider.png" alt="Салат Цезарь">
+									</div>
+									<div class="bg-filter">
+										<div class="article-slider__title">Паста Фарфалле</div>
+										<p>с соусом из базилика</p>
+									</div>
+								</div>
+								<div class="article-slider__container js-slide">
+									<div class="article-slider__img">
+										<img src="./img/article-slider.png" alt="Салат Цезарь">
+									</div>
+									<div class="bg-filter">
+										<div class="article-slider__title">Паста Фарфалле</div>
+										<p>с соусом из базилика</p>
+									</div>
+								</div>
+
+								<div class="article-slider__container js-slide">
+									<div class="article-slider__img">
+										<img src="./img/article-slider.png" alt="Салат Цезарь">
+									</div>
+									<div class="bg-filter">
+										<div class="article-slider__title">Паста Фарфалле</div>
+										<p>с соусом из базилика</p>
+									</div>
+								</div>
+								<div class="article-slider__container js-slide">
+									<div class="article-slider__img">
+										<img src="./img/article-slider.png" alt="Салат Цезарь">
+									</div>
+									<div class="bg-filter">
+										<div class="article-slider__title">Паста Фарфалле</div>
+										<p>с соусом из базилика</p>
+									</div>
+								</div>
+								<div class="article-slider__container js-slide">
+									<div class="article-slider__img">
+										<img src="./img/article-slider.png" alt="Салат Цезарь">
+									</div>
+									<div class="bg-filter">
+										<div class="article-slider__title">Паста Фарфалле</div>
+										<p>с соусом из базилика</p>
+									</div>
+								</div>
+
+							</div>
+
+							<button class="article-slider__prev">
+								<svg width="23" height="44" viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20 41L4.38323 25.3586C2.53892 23.5114 2.53892 20.4886 4.38323 18.6414L20 3" stroke="#434248" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+
+							</button>
+
+							<button class="article-slider__next js-next">
+								<svg width="23" height="44" viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3 41L18.6168 25.3586C20.4611 23.5114 20.4611 20.4886 18.6168 18.6414L3 3" stroke="#434248" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+
+							</button>
+							<div class="article-slider__pagination">
+								<div class="pagination">
+  <button class="pagination__btn pagination__prew">
+    <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 18.7969L1.65093 11.4714C0.783022 10.6063 0.783022 9.19062 1.65093 8.32549L9 1" stroke="#434248" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+  </button>
+  <div class="pagination__fraction">
+    <span>1</span>
+    /
+    <span>3</span>
+  </div>
+  <button class="pagination__btn pagination__next">
+    <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 18.7969L8.34907 11.4714C9.21698 10.6063 9.21698 9.19062 8.34907 8.32549L1 1" stroke="#434248" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+  </button>
+</div>
+							</div>
+
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="article-other">
+
+			<div class="article-other__wrapper">
+				<div class="container container--min">
+					<div class="article-other__title">
+						<div class="title">Другие товары в каталоге</div>
+						<a class="btn" href="#">
+							<span>В каталог</span>
+						</a>
+					</div>
+				</div>
+				<div class="container">
+					<div class="article-other__cards">
+						<div class="article-other__slider">
+							<div class="article-other__slider-wrapper js-article-other-slider">
+								<div class="article-other__items js-wrapper">
+									<div class="catalog-article banquet">
+  <div class="banquet__wrapper">
+    <div class="bg-filter">
+      <div class="banquet__img">
+        <img src="./img/banquet.png" alt="">
+      </div>
+      <span class="banquet__gram">40 г.</span>
+      <div class="banquet__title">Салат Цезарь</div>
+      <span class="banquet__description">С лососем</span>
+      <div class="banquet__pirce">
+        320
+        <span>₽/шт</span>
+      </div>
+
+      <div class="catalog-article__btn-wrapper">
+        <a class="btn banquet__like" href="#">
+          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.7218 24.2789C14.3252 24.4189 13.6718 24.4189 13.2752 24.2789C9.89185 23.1239 2.33185 18.3055 2.33185 10.1389C2.33185 6.53385 5.23685 3.61719 8.81852 3.61719C10.9418 3.61719 12.8202 4.64385 13.9985 6.23052C15.1768 4.64385 17.0668 3.61719 19.1785 3.61719C22.7602 3.61719 25.6652 6.53385 25.6652 10.1389C25.6652 18.3055 18.1052 23.1239 14.7218 24.2789Z" stroke="#434248" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+        </a>
+        <a class="btn banquet__cart" href="#">
+
+          <svg viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4923 20.7949C16.3771 20.7949 17.0961 21.514 17.0961 22.3987C17.0961 23.2834 16.3771 24.0004 15.4923 24.0004C14.6076 24.0004 13.8906 23.2834 13.8906 22.3987C13.8906 21.514 14.6076 20.7949 15.4923 20.7949Z" fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0804 20.7949C24.9651 20.7949 25.6842 21.514 25.6842 22.3987C25.6842 23.2834 24.9651 24.0004 24.0804 24.0004C23.1957 24.0004 22.4766 23.2834 22.4766 22.3987C22.4766 21.514 23.1957 20.7949 24.0804 20.7949Z" fill="white" />
+            <path d="M1 1H7.09079C7.73373 1 8.30246 1.41682 8.49607 2.02991L12.6876 15.3032C12.8813 15.9163 13.45 16.3331 14.0929 16.3331H27.059C27.7236 16.3331 28.3059 15.8883 28.4808 15.2472L31.5506 3.99124C31.8063 3.05378 31.1005 2.12981 30.1288 2.12981H16.1751C15.1628 2.12981 14.4519 3.12692 14.7819 4.0839L17.3361 11.4911" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+									<div class="catalog-article banquet">
+  <div class="banquet__wrapper">
+    <div class="bg-filter">
+      <div class="banquet__img">
+        <img src="./img/banquet.png" alt="">
+      </div>
+      <span class="banquet__gram">40 г.</span>
+      <div class="banquet__title">Салат Цезарь</div>
+      <span class="banquet__description">С лососем</span>
+      <div class="banquet__pirce">
+        320
+        <span>₽/шт</span>
+      </div>
+
+      <div class="catalog-article__btn-wrapper">
+        <a class="btn banquet__like" href="#">
+          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.7218 24.2789C14.3252 24.4189 13.6718 24.4189 13.2752 24.2789C9.89185 23.1239 2.33185 18.3055 2.33185 10.1389C2.33185 6.53385 5.23685 3.61719 8.81852 3.61719C10.9418 3.61719 12.8202 4.64385 13.9985 6.23052C15.1768 4.64385 17.0668 3.61719 19.1785 3.61719C22.7602 3.61719 25.6652 6.53385 25.6652 10.1389C25.6652 18.3055 18.1052 23.1239 14.7218 24.2789Z" stroke="#434248" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+        </a>
+        <a class="btn banquet__cart" href="#">
+
+          <svg viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4923 20.7949C16.3771 20.7949 17.0961 21.514 17.0961 22.3987C17.0961 23.2834 16.3771 24.0004 15.4923 24.0004C14.6076 24.0004 13.8906 23.2834 13.8906 22.3987C13.8906 21.514 14.6076 20.7949 15.4923 20.7949Z" fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0804 20.7949C24.9651 20.7949 25.6842 21.514 25.6842 22.3987C25.6842 23.2834 24.9651 24.0004 24.0804 24.0004C23.1957 24.0004 22.4766 23.2834 22.4766 22.3987C22.4766 21.514 23.1957 20.7949 24.0804 20.7949Z" fill="white" />
+            <path d="M1 1H7.09079C7.73373 1 8.30246 1.41682 8.49607 2.02991L12.6876 15.3032C12.8813 15.9163 13.45 16.3331 14.0929 16.3331H27.059C27.7236 16.3331 28.3059 15.8883 28.4808 15.2472L31.5506 3.99124C31.8063 3.05378 31.1005 2.12981 30.1288 2.12981H16.1751C15.1628 2.12981 14.4519 3.12692 14.7819 4.0839L17.3361 11.4911" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+									<div class="catalog-article banquet">
+  <div class="banquet__wrapper">
+    <div class="bg-filter">
+      <div class="banquet__img">
+        <img src="./img/banquet.png" alt="">
+      </div>
+      <span class="banquet__gram">40 г.</span>
+      <div class="banquet__title">Салат Цезарь</div>
+      <span class="banquet__description">С лососем</span>
+      <div class="banquet__pirce">
+        320
+        <span>₽/шт</span>
+      </div>
+
+      <div class="catalog-article__btn-wrapper">
+        <a class="btn banquet__like" href="#">
+          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.7218 24.2789C14.3252 24.4189 13.6718 24.4189 13.2752 24.2789C9.89185 23.1239 2.33185 18.3055 2.33185 10.1389C2.33185 6.53385 5.23685 3.61719 8.81852 3.61719C10.9418 3.61719 12.8202 4.64385 13.9985 6.23052C15.1768 4.64385 17.0668 3.61719 19.1785 3.61719C22.7602 3.61719 25.6652 6.53385 25.6652 10.1389C25.6652 18.3055 18.1052 23.1239 14.7218 24.2789Z" stroke="#434248" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+        </a>
+        <a class="btn banquet__cart" href="#">
+
+          <svg viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4923 20.7949C16.3771 20.7949 17.0961 21.514 17.0961 22.3987C17.0961 23.2834 16.3771 24.0004 15.4923 24.0004C14.6076 24.0004 13.8906 23.2834 13.8906 22.3987C13.8906 21.514 14.6076 20.7949 15.4923 20.7949Z" fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0804 20.7949C24.9651 20.7949 25.6842 21.514 25.6842 22.3987C25.6842 23.2834 24.9651 24.0004 24.0804 24.0004C23.1957 24.0004 22.4766 23.2834 22.4766 22.3987C22.4766 21.514 23.1957 20.7949 24.0804 20.7949Z" fill="white" />
+            <path d="M1 1H7.09079C7.73373 1 8.30246 1.41682 8.49607 2.02991L12.6876 15.3032C12.8813 15.9163 13.45 16.3331 14.0929 16.3331H27.059C27.7236 16.3331 28.3059 15.8883 28.4808 15.2472L31.5506 3.99124C31.8063 3.05378 31.1005 2.12981 30.1288 2.12981H16.1751C15.1628 2.12981 14.4519 3.12692 14.7819 4.0839L17.3361 11.4911" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+									<div class="catalog-article banquet">
+  <div class="banquet__wrapper">
+    <div class="bg-filter">
+      <div class="banquet__img">
+        <img src="./img/banquet.png" alt="">
+      </div>
+      <span class="banquet__gram">40 г.</span>
+      <div class="banquet__title">Салат Цезарь</div>
+      <span class="banquet__description">С лососем</span>
+      <div class="banquet__pirce">
+        320
+        <span>₽/шт</span>
+      </div>
+
+      <div class="catalog-article__btn-wrapper">
+        <a class="btn banquet__like" href="#">
+          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.7218 24.2789C14.3252 24.4189 13.6718 24.4189 13.2752 24.2789C9.89185 23.1239 2.33185 18.3055 2.33185 10.1389C2.33185 6.53385 5.23685 3.61719 8.81852 3.61719C10.9418 3.61719 12.8202 4.64385 13.9985 6.23052C15.1768 4.64385 17.0668 3.61719 19.1785 3.61719C22.7602 3.61719 25.6652 6.53385 25.6652 10.1389C25.6652 18.3055 18.1052 23.1239 14.7218 24.2789Z" stroke="#434248" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+        </a>
+        <a class="btn banquet__cart" href="#">
+
+          <svg viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4923 20.7949C16.3771 20.7949 17.0961 21.514 17.0961 22.3987C17.0961 23.2834 16.3771 24.0004 15.4923 24.0004C14.6076 24.0004 13.8906 23.2834 13.8906 22.3987C13.8906 21.514 14.6076 20.7949 15.4923 20.7949Z" fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0804 20.7949C24.9651 20.7949 25.6842 21.514 25.6842 22.3987C25.6842 23.2834 24.9651 24.0004 24.0804 24.0004C23.1957 24.0004 22.4766 23.2834 22.4766 22.3987C22.4766 21.514 23.1957 20.7949 24.0804 20.7949Z" fill="white" />
+            <path d="M1 1H7.09079C7.73373 1 8.30246 1.41682 8.49607 2.02991L12.6876 15.3032C12.8813 15.9163 13.45 16.3331 14.0929 16.3331H27.059C27.7236 16.3331 28.3059 15.8883 28.4808 15.2472L31.5506 3.99124C31.8063 3.05378 31.1005 2.12981 30.1288 2.12981H16.1751C15.1628 2.12981 14.4519 3.12692 14.7819 4.0839L17.3361 11.4911" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+								</div>
+
+								<button class="article-other__prev">
+									<svg viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M20 41L4.38323 25.3586C2.53892 23.5114 2.53892 20.4886 4.38323 18.6414L20 3" stroke="#434248" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+
+								</button>
+								<button class="article-other__next">
+									<svg viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3 41L18.6168 25.3586C20.4611 23.5114 20.4611 20.4886 18.6168 18.6414L3 3" stroke="#434248" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+
+								<div class="article-other__pagination">
+									<div class="pagination">
+  <button class="pagination__btn pagination__prew">
+    <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 18.7969L1.65093 11.4714C0.783022 10.6063 0.783022 9.19062 1.65093 8.32549L9 1" stroke="#434248" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+  </button>
+  <div class="pagination__fraction">
+    <span>1</span>
+    /
+    <span>3</span>
+  </div>
+  <button class="pagination__btn pagination__next">
+    <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 18.7969L8.34907 11.4714C9.21698 10.6063 9.21698 9.19062 8.34907 8.32549L1 1" stroke="#434248" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+  </button>
+</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="delivery">
+  <div class="container">
+    <div class="delivery__wrapper">
+      <div class="delivery__content bg-filter">
+        <div class="sub-title">ДОСТАВКА И ОПЛАТА</div>
+        <div class="title">Предлагаем бесплатную доставку</div>
+        <p>В пределах МКАД при заказе от 5000 ₽ (за выбранный интервал)</p>
+        <a class="btn" href="#">
+          <span>Узнать подробнее</span>
+        </a>
+        <div class="delivery__icon">
+          <img src="./img/icon/delivery.svg" alt="car">
+        </div>
+      </div>
+      <div class="delivery__img">
+        <img src="./img/delivery.jpg" alt="delivery">
+      </div>
+    </div>
+  </div>
+</section>
+
+		<section class="application">
+  <div class="container">
+    <div class="application__wrapper">
+      <div class="application__image">
+        <img src="./img/luigi-pozzoli.jpg" alt="картинка">
+      </div>
+
+
+      <form class="application__form bg-filter form">
+        <div class="form__title">
+          <div class="title">Оставьте вашу заявку</div>
+          <span class="form__sub-title">Отправляя форму, вы даете согласие на обработку <a href="#">персональных данных</a></span>
+        </div>
+        <fieldset>
+          <legend>Имя</legend>
+          <label>
+            <input name="name" type="text">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Телефон</legend>
+          <label>
+            <input name="phone" type="text">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>E-mail</legend>
+          <label>
+            <input name="email" type="text">
+          </label>
+        </fieldset>
+        <fieldset class="form__big">
+          <legend>Комментарий</legend>
+          <label>
+            <input name="comments" type="text">
+          </label>
+        </fieldset>
+
+        <button type="submit" class="btn">
+          <span>Отправить</span>
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+</section>
+	</main>
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__text">
+      Подвал
+    </div>
+    <!-- /.footer__text -->
+  </div>
+</footer>
+<!-- /.footer -->
+
+<div class="overlay js-modal-overlay "></div>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="./js/main.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>

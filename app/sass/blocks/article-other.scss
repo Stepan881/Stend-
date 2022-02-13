@@ -1,0 +1,101 @@
+.article-other {
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 24rem;
+  }
+  .container {}
+
+  &__wrapper {
+    padding-top: 18.3rem;
+
+    @media (max-width: $mobile-width) {
+      position: relative;
+      padding-top: 19.5rem;
+
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      @media (max-width: $mobile-width) {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        width: auto;
+        left: 50%;
+        transform: translate(-50%, 0);
+        min-width: 33rem;
+      }
+    }
+  }
+
+  .title {}
+
+ 
+
+  &__slider {
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: $mobile-width) {
+    padding-bottom: 20rem;
+    }
+  }
+
+  &__items {
+    padding-top: 8rem;
+    display: flex;
+    // flex-wrap: wrap;
+    @media (max-width: $mobile-width) {
+      justify-content: space-between;
+    }
+
+  }
+
+  &__prev {
+    display: flex;
+    position: absolute;
+    padding: 5rem 2rem;
+    top: 20rem;
+    left: -2rem;
+    @media (max-width: $mobile-width) {
+      display: none;
+
+    }
+
+    svg {
+      width: 2.3rem;
+      height: 4.4rem;
+    }
+  }
+
+  &__next {
+    display: flex;
+    position: absolute;
+    padding: 5rem 2rem;
+    top: 20rem;
+    right: -2rem;
+    @media (max-width: $mobile-width) {
+      display: none;
+
+    }
+    svg {
+
+      width: 2.3rem;
+      height: 4.4rem;
+    }
+  }
+
+  &__pagination {
+    display: none;
+
+    @media (max-width: $mobile-width) {
+      display: flex;
+      margin-top: 4rem;
+    }
+  }
+
+}

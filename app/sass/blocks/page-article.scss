@@ -1,0 +1,288 @@
+.page-article {
+
+  .container {}
+
+  &__wrappwe {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-areas:
+      "i n n n n"
+      "i t t t info"
+      "i w c p info"
+      "i ca ca ca info"
+      "s s s s info";
+    grid-template-columns: 54rem 9.4rem 19.5rem 35.1rem 35rem;
+    grid-template-rows: 8.1rem 18.3rem 13.7rem 5.9rem 31rem;
+
+
+    @media (max-width: $mobile-width) {
+      grid-template-areas:
+        "n"
+        "t"
+        "p"
+        "i"
+        "c"
+        "ca"
+        "info"
+        "s";
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+    }
+  }
+
+  &__navigation {
+    grid-area: n;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 4rem;
+      margin-top: -1rem;
+    }
+  }
+
+  .navivation {}
+
+  &__title {
+    grid-area: t;
+    margin-bottom: 6rem;
+  }
+
+  .title {
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 120%;
+    margin-bottom: 0.5rem;
+
+    @media (max-width: $mobile-width) {
+      font-size: 6rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .sub-title {
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: none;
+  }
+
+  &__img {
+    grid-area: i;
+    width: 45rem;
+    height: 45rem;
+    margin-left: 3rem;
+
+    @media (max-width: $mobile-width) {
+      width: 69rem;
+      height: auto;
+      margin-left: 0;
+      margin-bottom: 8.4rem;
+    }
+  }
+
+  &__weight {
+    grid-area: w;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 140%;
+
+    span:first-child {
+      font-size: 1.8rem;
+      font-weight: normal;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+
+  }
+
+  &__count {
+    grid-area: c;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 8rem;
+    }
+  }
+
+  &__count-border {
+    border: .15rem solid #434248;
+    border-radius: 4.0rem 1.0rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 150%;
+    width: 15.5rem;
+    height: 5.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+
+    @media (max-width: $mobile-width) {
+      border: .3rem solid #434248;
+      border-radius: 8rem 2rem;
+      width: 100%;
+      height: 12.9rem;
+      padding: 0 3.8rem;
+      font-size: 4.4rem;
+    }
+
+    button {
+      padding: 1.5rem;
+      display: flex;
+    }
+  }
+
+  &__minus {
+
+    svg {
+      width: 1.5rem;
+      height: 0.3rem;
+
+      @media (max-width: $mobile-width) {
+        width: 3.2rem;
+        height: 0.6rem;
+
+      }
+    }
+  }
+
+  &__number {}
+
+  &__plus {
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+
+      @media (max-width: $mobile-width) {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+    }
+  }
+
+  &__pirce {
+    grid-area: p;
+
+    font-weight: 600;
+    font-size: 6.0rem;
+    line-height: 110%;
+    display: flex;
+
+    span {
+      font-weight: 600;
+      font-size: 2.5rem;
+      margin-top: -2.2rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__cart {
+    grid-area: ca;
+
+    @media (max-width: $mobile-width) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8rem;
+    }
+  }
+
+  .btn {
+    @media (max-width: $mobile-width) {
+
+      height: 10rem;
+      margin: 0;
+      border-radius: 6rem 1rem;
+      width: 55rem;
+    }
+  }
+
+  .btn__light {
+    margin-left: 1.8rem;
+
+    order: -1;
+
+    @media (max-width: $mobile-width) {
+      width: 10rem;
+      border-radius: 3rem 1rem;
+      margin: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='23' height='21' viewBox='0 0 23 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.0349 19.1349C11.6988 19.2535 11.1451 19.2535 10.8089 19.1349C7.94169 18.1561 1.53491 14.0727 1.53491 7.15184C1.53491 4.09675 3.99678 1.625 7.03209 1.625C8.83152 1.625 10.4233 2.49506 11.4219 3.83969C12.4205 2.49506 14.0222 1.625 15.8117 1.625C18.8471 1.625 21.3089 4.09675 21.3089 7.15184C21.3089 14.0727 14.9021 18.1561 12.0349 19.1349Z' stroke='%23434248' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      span {
+        display: none;
+
+      }
+    }
+
+  }
+
+  &__info {
+    grid-area: info;
+    padding: 4.8rem 4rem;
+
+@media (max-width: $mobile-width) {
+  padding: 6.8rem 6rem;
+}
+
+    &>span {
+      font-weight: 600;
+      font-size: 2.5rem;
+      line-height: 140%;
+      margin-top: 3rem;
+      display: flex;
+
+      margin-bottom: 1rem;
+
+      @media (max-width: $mobile-width) {
+        margin-bottom: 2rem;
+        font-size: 5rem;
+        margin-top: 6.9rem;
+        margin-left: 1.3rem;
+      }
+    }
+
+    &>p {
+      font-weight: normal;
+      font-size: 1.6rem;
+      line-height: 140%;
+
+      @media (max-width: $mobile-width) {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  .bg-filter {}
+
+  &__item {
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 140%;
+    margin-bottom: 1.8rem;
+
+    @media (max-width: $mobile-width) {
+      font-size: 3.2rem;
+    }
+    span {
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 140%;
+      @media (max-width: $mobile-width) {
+        font-size: 3.6rem;
+      }
+    }
+  }
+
+  &__slider {
+    grid-area: s;
+    display: flex;
+    margin-top: 11rem;
+    margin-bottom: 5rem;
+    position: relative;
+  }
+
+
+}
