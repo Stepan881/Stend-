@@ -4,6 +4,9 @@
 
 
   .catalog-article.banquet {
+
+    // height: calc((100% - 30px) / 2) !important;
+
     &:hover {
       .bg-filter {
         background: linear-gradient(149.74deg, rgba(221, 220, 221, 0.8) 1.03%, rgba(251, 251, 251, 0.8) 99.31%);

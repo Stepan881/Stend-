@@ -3986,7 +3986,7 @@ select:-webkit-autofill:focus {
       .banquet__title {
         font-size: 4rem; } }
   .banquet__description {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.8rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4957,7 +4957,8 @@ select:-webkit-autofill:focus {
   overflow: hidden;
   position: relative;
   height: 30rem;
-  margin: 0 10rem 0 3rem; }
+  margin: 0 10rem 0 3rem;
+  padding: 0 3rem; }
   @media (max-width: 48em) {
     .article-slider__wrapper {
       margin: 0;
@@ -4977,6 +4978,7 @@ select:-webkit-autofill:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   min-width: 20rem;
+  width: 100%;
   cursor: pointer; }
   .article-slider__container:hover .bg-filter {
     background: linear-gradient(149.74deg, rgba(221, 220, 221, 0.8) 1.03%, rgba(251, 251, 251, 0.8) 99.31%);
@@ -5081,6 +5083,9 @@ select:-webkit-autofill:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 48em) {
+    .article-other__title {
+      margin-bottom: 5rem; } }
   @media (max-width: 48em) {
     .article-other__title .btn {
       position: absolute;

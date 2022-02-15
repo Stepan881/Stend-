@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       },
       768: {
-        spaceBetween: 45,
+        spaceBetween: 63,
         slidesPerView: 4,
         centeredSlides: false,
         navigation: {
@@ -229,6 +229,9 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 2,
         loop: true,
         spaceBetween: 30,
+        // grid: {
+        //   rows: 2,
+        // },
         navigation: {
           prevEl: '.pagination__prew',
           nextEl: '.pagination__next',

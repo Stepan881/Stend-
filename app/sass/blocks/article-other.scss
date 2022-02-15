@@ -3,6 +3,7 @@
   @media (max-width: $mobile-width) {
     padding-bottom: 24rem;
   }
+
   .container {}
 
   &__wrapper {
@@ -19,6 +20,10 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: $mobile-width) {
+      margin-bottom: 5rem;
+    }
+
     .btn {
       @media (max-width: $mobile-width) {
         position: absolute;
@@ -34,20 +39,21 @@
 
   .title {}
 
- 
+
 
   &__slider {
     position: relative;
     overflow: hidden;
 
     @media (max-width: $mobile-width) {
-    padding-bottom: 20rem;
+      padding-bottom: 20rem;
     }
   }
 
   &__items {
     padding-top: 8rem;
     display: flex;
+
     // flex-wrap: wrap;
     @media (max-width: $mobile-width) {
       justify-content: space-between;
@@ -61,6 +67,7 @@
     padding: 5rem 2rem;
     top: 20rem;
     left: -2rem;
+
     @media (max-width: $mobile-width) {
       display: none;
 
@@ -78,10 +85,12 @@
     padding: 5rem 2rem;
     top: 20rem;
     right: -2rem;
+
     @media (max-width: $mobile-width) {
       display: none;
 
     }
+
     svg {
 
       width: 2.3rem;
