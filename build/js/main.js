@@ -249,5 +249,54 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
+  
+  const jsOurPhotos = new Swiper('.js-our-photos', {
+
+    loop: true,
+
+    wrapperClass: 'js-wrapper',
+    slideClass: 'js-slide',
+    slideActiveClass: 'active',
+
+    pagination: {
+      el: ".pagination__fraction",
+      type: "fraction",
+      renderCustom: function (swiper, current, total) {
+        return `<span>${current}</span><span>/</span><span>${total}</span>`;
+      }
+    },
+
+    breakpoints: {
+      0: {
+        centeredSlides: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          prevEl: '.pagination__prew',
+          nextEl: '.pagination__next',
+        },
+      },
+      768: {
+        spaceBetween: 0,
+        slidesPerView: 2,
+        
+        navigation: {
+          prevEl: '.our-photos__prev',
+          nextEl: '.our-photos__next',
+        },
+      }
+    },
+  });
+
+
+
+
+
+
+
+
+
+
+
 
 });

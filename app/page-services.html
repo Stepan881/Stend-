@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Услуги page-services.html</title>
+</head>
+
+<body>
+
+	@@include('./template/header.html')
+
+	<main>
+		@@include('./template/social-left.html')
+
+		<section class="page-services">
+			<div class="container">
+				<div class="page-services__wrapper">
+
+					<div class="page-services__left">
+						<div class="page-services__title">
+							<div class="title">Частные <span class="lighter">мероприятия</span> </div>
+							<div class="text">
+								<p>Предлагаем большой выбор тематик мероприятий.
+									Вы можете выбрать готовое решение или создать свой уникальный праздник
+								</p>
+							</div>
+							<div class="page-services__btns">
+								<a class="btn" href="#">
+									<span>Оставить заявку</span>
+								</a>
+								<a class="btn btn__light" href="#">
+									<span>Скачать презентацию</span>
+								</a>
+							</div>
+						</div>
+						<div class="page-services__content text">
+							<div class="green">
+								Незабываемые впечатления
+							</div>
+							<p>Обширный выбор готовых вариантов банкетного
+								и фуршетного меню, выбирайте готовое меню или составьте свой уникальный набор блюд.</p>
+
+							<div class="page-services__images">
+								<div class="page-services__item">
+									<img src="./img/page-services-l.png" alt="">
+								</div>
+								<div class="page-services__item">
+									<img src="./img/page-services-r.png" alt="">
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+
+					<div class="page-services__img-big">
+						<div class="page-services__bg"></div>
+						<img src="./img/page-services-b.png" alt="">
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="our-photos">
+			<div class="container">
+				<div class="our-photos__wrapper">
+					<div class="our-photos__title">
+						<div class="sub-title">Наши фото и видео</div>
+						<div class="title">Галерея работ с мероприятий</div>
+					</div>
+					<div class="our-photos__slider js-our-photos">
+						<div class="our-photos__slider-wrapper js-wrapper">
+
+							<div class="our-photos__slide js-slide">
+								<div class="our-photos__img">
+									<img src="./img/our-photos1.jpg" alt="our-photos">
+								</div>
+							</div>
+
+							<div class="our-photos__slide js-slide">
+								<div class="our-photos__img">
+									<img src="./img/our-photos2.jpg" alt="our-photos">
+								</div>
+							</div>
+
+							<div class="our-photos__slide js-slide">
+								<div class="our-photos__img">
+									<img src="./img/our-photos1.jpg" alt="our-photos">
+								</div>
+							</div>
+
+							<div class="our-photos__slide js-slide">
+								<div class="our-photos__img">
+									<img src="./img/our-photos2.jpg" alt="our-photos">
+								</div>
+							</div>
+
+							<div class="our-photos__slide js-slide">
+								<div class="our-photos__img">
+									<img src="./img/our-photos1.jpg" alt="our-photos">
+								</div>
+							</div>
+
+							<div class="our-photos__slide js-slide">
+								<div class="our-photos__img">
+									<img src="./img/our-photos2.jpg" alt="our-photos">
+								</div>
+							</div>
+
+						</div>
+
+						<button class="our-photos__prev">
+							<svg viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M20 41L4.38323 25.3586C2.53892 23.5114 2.53892 20.4886 4.38323 18.6414L20 3" stroke="#434248" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+
+						</button>
+						<button class="our-photos__next">
+							<svg viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3 41L18.6168 25.3586C20.4611 23.5114 20.4611 20.4886 18.6168 18.6414L3 3" stroke="#434248" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+
+						</button>
+						@@include('./template/pagination.html')
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages">
+			<div class="container">
+				<div class="advantages__wrapper">
+					<div class="advantages__title">
+						<div class="sub-title">Наши преимущества</div>
+						<div class="title">Почему выбирают именно нас</div>
+						<div class="text">
+							<p>Наша главная миссия: сделать вкусную и разнообразную еду на любое предпочтение. Попробуй идею на вкус!</p>
+						</div>
+					</div>
+					<div class="advantages__item bg-filter">
+						<div class="advantages__top">
+							<div class="advantages__icon">
+								<div class="green">
+									<svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M34.7904 39.541H15.207C14.332 39.541 13.3529 38.8535 13.0612 38.0202L4.43621 13.8952C3.20704 10.4368 4.64454 9.37435 7.60287 11.4993L15.7279 17.3119C17.082 18.2493 18.6237 17.7702 19.207 16.2493L22.8737 6.47852C24.0404 3.35352 25.9779 3.35352 27.1445 6.47852L30.8112 16.2493C31.3945 17.7702 32.9362 18.2493 34.2695 17.3119L41.8945 11.8743C45.1445 9.54102 46.707 10.7285 45.3737 14.4993L36.957 38.0618C36.6445 38.8535 35.6654 39.541 34.7904 39.541Z" stroke="#434248" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M13.543 45.834H36.4596" stroke="#434248" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M19.793 29.166H30.2096" stroke="#434248" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+
+								</div>
+							</div>
+							<span>01</span>
+						</div>
+						<div class="advantages__header">Качественное обслуживание</div>
+						<p>Организация мероприятий
+							и доставка блюд происходят точно в срок</p>
+					</div>
+					<div class="advantages__item bg-filter">
+						<div class="advantages__top">
+							<div class="advantages__icon">
+								<div class="green">
+									<svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.16797 45.834H45.8346" stroke="#434248" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M6.48047 45.834V27.084C6.48047 23.6257 9.58464 20.834 13.418 20.834H36.5638C40.3971 20.834 43.5013 23.6257 43.5013 27.084V45.834" stroke="#434248" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M11.582 20.8327V14.9368C11.582 12.4368 13.832 10.416 16.6237 10.416H33.3945C36.1654 10.416 38.4154 12.4368 38.4154 14.9368V20.8327" stroke="#434248" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M7.35547 29.125L8.1263 29.1458C9.66797 29.1667 10.8971 30.4167 10.8971 31.9583V32.6458C10.8971 34.1875 12.1471 35.4583 13.7096 35.4583C15.2513 35.4583 16.5221 34.2083 16.5221 32.6458V32C16.5221 30.4583 17.7721 29.1875 19.3346 29.1875C20.8763 29.1875 22.1471 30.4375 22.1471 32V32.6458C22.1471 34.1875 23.3971 35.4583 24.9596 35.4583C26.5013 35.4583 27.7721 34.2083 27.7721 32.6458V32C27.7721 30.4583 29.0221 29.1875 30.5846 29.1875C32.1263 29.1875 33.3971 30.4375 33.3971 32V32.6458C33.3971 34.1875 34.6471 35.4583 36.2096 35.4583C37.7513 35.4583 39.0221 34.2083 39.0221 32.6458V32C39.0221 30.4583 40.2721 29.1875 41.8346 29.1875H42.7721" stroke="#434248" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M16.668 10.4167V6.25" stroke="#434248" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M33.332 10.4167V6.25" stroke="#434248" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M25 10.416V4.16602" stroke="#434248" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+
+								</div>
+							</div>
+							<span>02</span>
+						</div>
+						<div class="advantages__header">Большой выбор
+							блюд</div>
+						<p>В нашем меню вы можете найти разнооборазные закуски и блюда</p>
+					</div>
+					<div class="advantages__item bg-filter">
+						<div class="advantages__top">
+							<div class="advantages__icon">
+								<div class="green">
+									<svg viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect x="1.5" y="14.502" width="35" height="24" rx="7.5" stroke="#434248" stroke-width="3" />
+										<rect x="29.5" y="22.1094" width="11" height="9" rx="2.5" fill="#E2E3E2" stroke="#434248" stroke-width="3" />
+										<path d="M28.5033 8.60419L26.3063 3.89644C25.5923 2.36627 23.7565 1.72665 22.2462 2.48179L4.82392 11.1927C3.36848 11.9203 3.47956 14.0331 5.00327 14.6042V14.6042" stroke="#434248" stroke-width="3" />
+										<path d="M3.5 14.6055L27.9526 7.99136C29.5978 7.54635 31.2829 8.55968 31.6611 10.2216L33 16.1045" stroke="#434248" stroke-width="3" />
+									</svg>
+
+								</div>
+							</div>
+							<span>03</span>
+						</div>
+						<div class="advantages__header">Самые приятные
+							цены</div>
+						<p>Вы останетесь приятно удивлены, как сможете вкусно и незатратно провести время</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	@@include('./template/reviews.html')
+	@@include('./template/granting.html')
+	@@include('./template/application.html')
+
+	</main>
+	@@include('./template/footer.html')
+</body>
+
+</html>
