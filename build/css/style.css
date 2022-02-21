@@ -3670,7 +3670,9 @@ select:-webkit-autofill:focus {
      -moz-column-gap: 6rem;
           column-gap: 6rem;
   row-gap: 0;
-  grid-template-areas: "it h t" "it ib t" "b ib t"; }
+  grid-template-areas: "it h t"
+ "it ib t"
+ "b ib t"; }
   @media (max-width: 48em) {
     .about-company__wrapper {
       display: block;
@@ -3945,13 +3947,23 @@ select:-webkit-autofill:focus {
   .banquet__img {
     -webkit-filter: drop-shadow(0 2rem 4rem rgba(36, 36, 36, 0.2));
             filter: drop-shadow(0 2rem 4rem rgba(36, 36, 36, 0.2));
-    width: 26rem;
-    height: 26rem;
+    max-width: 26rem;
+    max-height: 22rem;
+    width: 100%;
+    height: 100%;
     position: absolute;
     left: 50%;
     top: 0;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+    .banquet__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .banquet__gram {
     background: #FFFFFF;
     -webkit-box-shadow: 0 1rem 4rem rgba(67, 66, 72, 0.1);
@@ -4730,12 +4742,23 @@ select:-webkit-autofill:focus {
 .page-article__wrappwe {
   margin-top: 1rem;
   display: grid;
-  grid-template-areas: "i n n n n" "i t t t info" "i w c p info" "i ca ca ca info" "s s s s info";
+  grid-template-areas: "i n n n n"
+ "i t t t info"
+ "i w c p info"
+ "i ca ca ca info"
+ "s s s s info";
   grid-template-columns: 54rem 9.4rem 19.5rem 35.1rem 35rem;
   grid-template-rows: 8.1rem 18.3rem 13.7rem 5.9rem 31rem; }
   @media (max-width: 48em) {
     .page-article__wrappwe {
-      grid-template-areas: "n" "t" "p" "i" "c" "ca" "info" "s";
+      grid-template-areas: "n"
+ "t"
+ "p"
+ "i"
+ "c"
+ "ca"
+ "info"
+ "s";
       grid-template-columns: 100%;
       grid-template-rows: auto; } }
 
