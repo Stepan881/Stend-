@@ -208,3 +208,21 @@
 		display: none;
 	}
 }
+
+
+.scroll {
+  overflow-y: auto;
+  overflow-x: none;
+  &::-webkit-scrollbar {
+		border: 0.2rem solid rgba(255, 255, 255, 0.3);
+		width: 0.2rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+		position: relative;
+    border: 0.3rem solid #E0E0E0;
+		width: 0.3rem;
+		left: 0.05rem;		
+		border-radius: 0.5rem;
+  }
+}

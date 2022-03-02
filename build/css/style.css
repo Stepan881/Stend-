@@ -829,6 +829,19 @@ select:-webkit-autofill:focus {
     .bg-circle {
       display: none; } }
 
+.scroll {
+  overflow-y: auto;
+  overflow-x: none; }
+  .scroll::-webkit-scrollbar {
+    border: 0.2rem solid rgba(255, 255, 255, 0.3);
+    width: 0.2rem; }
+  .scroll::-webkit-scrollbar-thumb {
+    position: relative;
+    border: 0.3rem solid #E0E0E0;
+    width: 0.3rem;
+    left: 0.05rem;
+    border-radius: 0.5rem; }
+
 .logo {
   height: 5.52rem;
   width: 22.44rem; }
@@ -5956,7 +5969,8 @@ select:-webkit-autofill:focus {
     font-size: 1.8rem;
     line-height: 110%;
     color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    margin-top: 2.3rem; }
     @media (max-width: 48em) {
       .portfolio-filters legend {
         margin-bottom: 3rem;
@@ -6022,10 +6036,10 @@ select:-webkit-autofill:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0 1rem 1rem 1rem;
-    margin-top: -1rem;
+    margin-top: -2.2rem;
     border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
     margin-bottom: 2.3rem;
-    max-height: 31rem;
+    max-height: 32rem;
     overflow-x: auto; }
     .portfolio-filters__dots label {
       padding: 1.0rem 0;
