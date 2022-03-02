@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-  
+
   const jsOurPhotos = new Swiper('.js-our-photos', {
 
     loop: true,
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function () {
       768: {
         spaceBetween: 0,
         slidesPerView: 2,
-        
+
         navigation: {
           prevEl: '.our-photos__prev',
           nextEl: '.our-photos__next',
@@ -289,14 +289,60 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
+  const filtersPortgolioOpenDots = () => {
+    const btns = document.querySelectorAll(`.js-filters-btns`);
+   
+    if (!btns[0]) return;
+    btns.forEach(btn => {
+      btn.addEventListener(`click`, () => {
+        const fieldset = btn.closest(`fieldset`).classList.toggle(`active`);
+      })
+    })
+  }
+
+  filtersPortgolioOpenDots();
 
 
 
 
+  const sliderVideo = new Swiper('.js-slider-video', {
 
+    loop: true,
+    slidesPerView: 3,
+    
+    wrapperClass: 'js-wrapper',
+    slideClass: 'video__slide',
+    centeredSlides: true,
+    navigation: {
+      prevEl: '.pagination__prew',
+      nextEl: '.pagination__next',
+    },
+    pagination: {
+      el: ".pagination__fraction",
+      type: "fraction",
+      renderCustom: function (swiper, current, total) {
 
+        return `<span>${current}</span><span>/</span><span>${total}</span>`;
 
-
+      }
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 21,
+        centeredSlides: false,
+      },
+      768: {
+        centeredSlides: true,
+        slidesPerView: 3,
+        spaceBetween: 28,
+        navigation: {
+          prevEl: '.js-prev',
+          nextEl: '.js-next',
+        },
+      }
+    },
+  });
 
 
 });

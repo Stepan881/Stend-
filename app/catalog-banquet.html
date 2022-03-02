@@ -73,7 +73,7 @@
 						<div class="catalog__title">
 							<div class="title">Банкет</div>
 						</div>
-						
+
 						@@include('./template/sort.html')
 
 						<div class="catalog__filter-menu">
@@ -84,11 +84,13 @@
 											<img src="http://dummyimage.com/150x60.png/99cccc&text=150x60" alt="">
 										</div>
 										<span class="banquet__gram">40 г.</span>
-										<div class="banquet__title">TEST TEST TEST TEST TEST</div>
+										<div class="banquet__title"> TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST</div>
 										<span class="banquet__description">С лососем</span>
-										<div class="banquet__pirce">
-											320
-											<span>₽/шт</span>
+										<div class="banquet__pirce-wrapper">
+											<div class="banquet__pirce">
+												320
+												<span>₽/шт</span>
+											</div>
 										</div>
 										<a class="btn btn__arrow" href="#">
 											<span></span>
@@ -105,9 +107,11 @@
 										<span class="banquet__gram">40 г.</span>
 										<div class="banquet__title">Салат Цезарь</div>
 										<span class="banquet__description">С лососем</span>
-										<div class="banquet__pirce">
-											320
-											<span>₽/шт</span>
+										<div class="banquet__pirce-wrapper">
+											<div class="banquet__pirce">
+												320
+												<span>₽/шт</span>
+											</div>
 										</div>
 										<a class="btn btn__arrow" href="#">
 											<span></span>
@@ -130,8 +134,8 @@
 							@@include('./template/banquet.html', {})
 							@@include('./template/banquet.html', {})
 							@@include('./template/banquet.html', {})
-		
-						
+
+
 						</div>
 
 						<div class="catalog__pagination-m">

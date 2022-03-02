@@ -1,0 +1,266 @@
+.page-portfolio {
+  .container {
+    width: 150rem;
+
+    @media (max-width: $mobile-width) {
+      padding: 0 3.2rem;
+      width: 100%;
+    }
+  }
+
+  &__wrapper {
+    padding-bottom: 9rem;
+    display: grid;
+    grid-template-areas:
+      "n n ib ib"
+      "t t ib ib"
+      "b b ib ib"
+      "im im ib ib";
+    grid-template-columns: auto auto 12.2rem 59.8rem;
+    grid-template-rows: 7.1rem 18rem 13.1rem 39.2rem;
+
+    @media (max-width: $mobile-width) {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 6rem;
+    }
+  }
+
+  &__nav {
+    grid-area: n;
+    margin-bottom: 4.7rem;
+  }
+
+  .navivation {}
+
+  &__title {
+    grid-area: t;
+    position: relative;
+    margin-bottom: 3.1rem;
+
+    p {
+      width: 47.8rem;
+
+      @media (max-width: $mobile-width) {
+        width: 100%;
+      }
+    }
+  }
+
+  .text {}
+
+  .title {
+    margin-bottom: 1.7rem;
+    width: 68rem;
+    font-size: 6.5rem;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+
+  .lighter {}
+
+  &__left {
+    position: absolute;
+    transform: rotate(-90deg) translate(-50%, 0);
+    top: 0;
+    left: -20rem;
+    font-weight: 300;
+    font-size: 2.0rem;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    grid-area: b;
+    margin-bottom: 7.2rem;
+
+    @media (max-width: $mobile-width) {
+      display: flex;
+      flex-direction: column;
+
+      margin-top: 0;
+
+      a {
+        margin: 0;
+      }
+    }
+  }
+
+  .btn__light {
+    margin-left: 3rem;
+
+    @media (max-width: $mobile-width) {
+      margin-left: 0;
+      margin-top: 4rem;
+    }
+  }
+
+  &__img-min {
+    grid-area: im;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 150%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+
+    @media (max-width: $mobile-width) {
+      flex-wrap: wrap;
+      height: 21rem;
+      margin-bottom: 8rem;
+      align-items: flex-start;
+    }
+
+    a {
+      margin-left: 4.9rem;
+      font-weight: 600;
+      margin-bottom: 5.5rem;
+      line-height: 150%;
+
+      @media (max-width: $mobile-width) {
+        margin: 0 0 0 50%;
+        width: 50%;
+        font-size: 3.2rem;
+        order: 1;
+      }
+    }
+
+    span {
+      margin-left: 20rem;
+      font-weight: normal;
+      margin-bottom: 5.5rem;
+
+      @media (max-width: $mobile-width) {
+        margin: 0 0 4.8rem 50%;
+        width: 50%;
+        font-size: 3rem;
+        order: 0;
+      }
+    }
+
+    .page-portfolio__btn {
+      position: absolute;
+      bottom: 6rem;
+      left: -7rem;
+      width: 5.9rem;
+      height: 5.9rem;
+      margin: 0;
+
+      @media (max-width: $mobile-width) {
+        width: 13rem;
+        height: 13rem;
+        left: 23rem;
+        bottom: 0rem;
+      }
+
+      svg {
+        width: 11.9rem;
+        height: 11.9rem;
+
+        @media (max-width: $mobile-width) {}
+      }
+    }
+
+
+  }
+
+
+  &__img-min-wrapper {
+    position: absolute;
+    left: -27rem;
+    width: 26.1rem;
+    height: 39.2rem;
+    background: #FFFFFF;
+    box-shadow: .0rem 1.0rem 10.0rem rgba(67, 66, 72, 0.1);
+    border-radius: .0rem 2.0rem 2.0rem .0rem;
+    overflow: hidden;
+
+    @media (max-width: $mobile-width) {
+      width: 32.0rem;
+      height: 21rem;
+      left: -3.2rem;
+    }
+  }
+
+  .btn__arrow {}
+
+  &__img-big {
+    grid-area: ib;
+    position: relative;
+
+
+  }
+
+  &__img-big-wrapper {
+    background: #FFFFFF;
+    box-shadow: -2.0rem 4.0rem 10.0rem rgba(67, 66, 72, 0.1);
+    border-radius: 2.0rem;
+    overflow: hidden;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      height: 76.2rem;
+    }
+
+    img {
+      display: flex;
+    }
+  }
+
+  .bg-filter {
+    position: absolute;
+    top: 50%;
+    left: -57rem;
+    width: 70rem;
+    padding: 5.0rem 5.0rem 6.0rem 5.0rem;
+
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 150%;
+
+    @media (max-width: $mobile-width) {
+      position: static;
+      margin: -13.2rem -3.2rem 0 3.2rem;
+      border-radius: 2rem 0px 0px 2rem;
+    }
+
+    span {
+      margin-bottom: 3rem;
+      display: flex;
+
+      @media (max-width: $mobile-width) {
+        font-size: 4rem;
+        align-items: center;
+      }
+
+      svg {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-left: auto;
+
+        @media (max-width: $mobile-width) {
+          width: 6.6rem;
+        height: 6.6rem;
+        }
+      }
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 1.6rem;
+      line-height: 150%;
+
+      @media (max-width: $mobile-width) {
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  .bg-filter__dark {}
+}

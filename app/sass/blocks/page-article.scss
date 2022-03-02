@@ -12,7 +12,7 @@
       "i ca ca ca info"
       "s s s s info";
     grid-template-columns: 54rem 9.4rem 19.5rem 35.1rem 35rem;
-    grid-template-rows: 8.1rem 18.3rem 13.7rem 5.9rem 31rem;
+    grid-template-rows: 8.1rem auto 13.7rem 5.9rem 31rem;
 
 
     @media (max-width: $mobile-width) {
