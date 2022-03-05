@@ -1,130 +1,225 @@
 .services {
-    margin-bottom: 16.7rem;
-    .container {
-        width: 150rem;
-    }
-    &__title {
-        font-family: 'Exo 2', sans-serif;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 2rem;
-        line-height: 120%;
-        text-transform: uppercase;
-        color: #434248;
-        margin-bottom: 6.6rem;
-        padding-top: 0.1rem;
-        span {
-            display: inline-block;
-            width: 100%;
-            margin-bottom: 1.7rem;
-        }
-        strong {
-            font-size: 4.5rem;
-            font-weight: 800;
-            line-height: 3.1rem;
-            display: inline-block;
-            letter-spacing: 0;
-        }
-    }
-    &__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    &__table {
-        width: 47rem;
-        height: 28rem;
-        background: linear-gradient(149.74deg, rgba(221, 220, 221, 0.8) 1.03%, rgba(251, 251, 251, 0.8) 99.31%);
-        box-shadow: inset 0.2rem 0.3rem 0.4rem rgba(255, 255, 255, 0.5), inset -0.2rem -0.4rem 0.4rem rgba(67, 66, 72, 0.2);
-        border-radius: 2rem;
-        margin-right: 4.5rem;
-        padding-top: 4.4rem;
-        padding-left: 4rem;
-        padding-bottom: 5rem;
-        position: relative;
-        margin-bottom: 4.4rem;
-        overflow: hidden;
-        .all-btn {
-            width: 18.1rem;
-            height: 5.9rem;
-            background: #434248;
-            box-shadow: 0.5rem 1rem 3rem rgba(67, 66, 72, 0.3);
-            border-radius: 4rem 1rem;
-        }
-    }
-    &__table:nth-child(3n) {
-        margin-right: 0;
-    }
-    &__table-text {
-        margin-bottom: 4.2rem;
-        display: flex;
-        flex-direction: column;
-        strong {
-            font-style: normal;
-            font-weight: 600;
-            font-size: 2.2rem;
-            line-height: 150%;
-            color: #434248;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-        span {
-            display: inline-block;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.6rem;
-            line-height: 130%;
-            color: #434248;
-            width: 25.6rem;
-        }
-    }
-    &__table-image {
-        position: absolute;
-        top: 1rem;
-        right: -2rem;
-        mix-blend-mode: multiply;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-    }
-    &__table-image--cake {
-        width: 23.2rem;
-        height: 26.5rem;
-        top: 0;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-    }
-    &__table-image--pizza {
-        width: 31rem;
-        height: 21.8rem;
-        right: -5.8rem;
-        top: 6rem;
-    }
-    &__table-image--drink {
-        right: -5rem;
-        top: 3rem;
-        width: 28.9rem;
-        height: 22.6rem;
-    }
-    &__table-image--coffe {
-        width: 27.1rem;
-        height: 41.7rem;
-        top: -7rem;
-        right: -0.9rem;
-    }
-    &__table-image--ceic {
-        width: 27.1rem;
-        height: 42.7rem;
-        top: -7rem;
-        right: 0rem;
-    }
-    &__table-image--wood {
-        width: 41.3rem;
-        height: 28rem;
-        top: 0rem;
-    }
+	padding: 10rem 0;
+
+	@media (max-width: $mobile-width) {
+		padding: 0 0 12rem 0;
+		margin-top: -18rem;
+	}
+
+	&__title {
+		font-family: 'Exo 2', sans-serif;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 2rem;
+		line-height: 120%;
+		text-transform: uppercase;
+		color: #434248;
+		margin-bottom: 6.6rem;
+		padding-top: 0.1rem;
+
+		span {
+			display: inline-block;
+			width: 100%;
+			margin-bottom: 1.7rem;
+
+			@media (max-width: $mobile-width) {
+				font-size: 3.6rem;
+				margin-bottom: 2rem;
+			}
+		}
+
+		strong {
+			font-size: 4.5rem;
+			font-weight: 800;
+			line-height: 100%;
+			display: inline-block;
+			letter-spacing: 0;
+
+			@media (max-width: $mobile-width) {
+				font-size: 6rem;
+			}
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+
+		flex-wrap: wrap;
+	}
+
+	&__table {
+		width: 47rem;
+		height: 28rem;
+		background: linear-gradient(149.74deg, rgba(221, 220, 221, 0.8) 1.03%, rgba(251, 251, 251, 0.8) 99.31%);
+		box-shadow: inset 0.2rem 0.3rem 0.4rem rgba(255, 255, 255, 0.5), inset -0.2rem -0.4rem 0.4rem rgba(67, 66, 72, 0.2);
+		border-radius: 2rem;
+		margin-right: 4.5rem;
+		padding-top: 4.4rem;
+		padding-left: 4rem;
+		padding-bottom: 5rem;
+		position: relative;
+		margin-bottom: 4.4rem;
+		overflow: hidden;
+
+		@media (max-width: $mobile-width) {
+			width: 100%;
+			height: auto;
+			min-height: 52.2rem;
+			padding-bottom: 20rem;
+			margin-right: 0;
+		}
+	}
+
+	&__table:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	&__table-text {
+		margin-bottom: 4.2rem;
+		display: flex;
+		flex-direction: column;
+
+		@media (max-width: $mobile-width) {
+			margin-bottom: 0;
+			height: 100%;
+		}
+
+		strong {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 2.2rem;
+			line-height: 150%;
+			color: #434248;
+			display: inline-block;
+			margin-bottom: 1rem;
+
+			@media (max-width: $mobile-width) {
+				font-size: 4rem;
+			}
+		}
+
+		span {
+			display: inline-block;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1.6rem;
+			line-height: 130%;
+			color: #434248;
+			width: 25.6rem;
+
+			@media (max-width: $mobile-width) {
+				font-size: 3.2rem;
+			}
+		}
+	}
+
+	&__table-image {
+		position: absolute;
+		top: 1rem;
+		right: -2rem;
+		mix-blend-mode: multiply;
+
+
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__table-image--cake {
+		width: 23.2rem;
+		height: 26.5rem;
+		top: 0;
+
+		@media (max-width: $mobile-width) {
+			top: 0;
+			right: 0;
+			width: 57.2rem;
+			height: 38.5rem;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__table-image--pizza {
+		width: 31rem;
+		height: 21.8rem;
+		right: -5.8rem;
+		top: 6rem;
+
+		@media (max-width: $mobile-width) {
+			top: 6rem;
+			right: -10rem;
+			width: 47.2rem;
+			height: 30.5rem;
+		}
+	}
+
+	&__table-image--drink {
+		right: -5rem;
+		top: 3rem;
+		width: 28.9rem;
+		height: 22.6rem;
+
+		@media (max-width: $mobile-width) {
+			top: 6rem;
+			right: -12rem;
+			width: 47.2rem;
+			height: 30.5rem;
+		}
+	}
+
+	&__table-image--coffe {
+		width: 27.1rem;
+		height: 41.7rem;
+		top: -7rem;
+		right: -0.9rem;
+
+		@media (max-width: $mobile-width) {
+			top: 6rem;
+			right: -12rem;
+			width: 47.2rem;
+			height: 30.5rem;
+		}
+	}
+
+	&__table-image--ceic {
+		width: 27.1rem;
+		height: 42.7rem;
+		top: -7rem;
+		right: 0rem;
+
+		@media (max-width: $mobile-width) {
+			top: 6rem;
+			right: -15rem;
+			width: 65.2rem;
+			height: 36.5rem;
+		}
+	}
+
+	&__table-image--wood {
+		width: 41.3rem;
+		height: 28rem;
+		top: 0rem;
+
+		@media (max-width: $mobile-width) {
+			top: 12rem;
+			right: -11rem;
+			width: 74.2rem;
+			height: 49.5rem;
+		}
+	}
+
+	.btn {
+		@media (max-width: $mobile-width) {
+			width: 32.6rem;
+		}
+	}
 }

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Доставка и оплата</title>
+</head>
+
+<body>
+
+	@@include('./template/header.html')
+
+	<main>
+		@@include('./template/social-left.html')
+
+
+		<section class="catering">
+			<div class="container">
+				<div class="catering__wrapper">
+
+					<!-- /.catering__left -->
+					<div class="catering__right">
+
+						<div class="catering__bg">
+							<img src="./img/catering-bg.png" alt="">
+						</div>
+
+						<div class="catering__title">
+							Кейтеринг
+						</div>
+						<div class="catering__image">
+							<img src="./img/pexels.png" alt="блюдо">
+						</div>
+						<!-- title -->
+						<div class="catering__table">
+							<div class="catering__table-title">
+								<span>Организуем</span>
+								<strong>праздничный стол</strong>
+							</div>
+							<!-- title -->
+							<div class="catering__table-text">
+								Наша компания поможет сделать любое мероприятие незабываемым
+							</div>
+							<!-- /.catering__table-text -->
+							<div class="catering__table-btns">
+								<a class="btn" href="#">
+									<span>Оставить заявку</span>
+								</a>
+								<a class="btn btn__light" href="#">
+									<span>Скачать презентацию</span>
+								</a>
+
+								<!-- btn -->
+							</div>
+						</div>
+						<!-- table -->
+						<div class="catering__big">
+							<div class="catering__big-inner">
+								<div class="catering__big-inner-green">
+
+								</div>
+								<div class="catering__big-inner-text">
+									<strong>1000+</strong>
+									<span>Довольных клиентов</span>
+								</div>
+							</div>
+							<div class="catering__big-inner">
+								<div class="catering__big-inner-green">
+
+								</div>
+								<div class="catering__big-inner-text">
+									<strong>500+</strong>
+									<span>Мероприятий</span>
+								</div>
+
+							</div>
+							<div class="catering__big-inner">
+								<div class="catering__big-inner-green">
+
+								</div>
+								<div class="catering__big-inner-text">
+									<strong>100+</strong>
+									<span>Сотрудников</span>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- /.catering__right -->
+				</div>
+				<!-- /.catering__wrapper -->
+			</div>
+			<!-- /.container -->
+		</section>
+
+
+		<section class="article-other">
+			<div class="article-other__wrapper">
+				<div class="container container--min">
+					<div class="article-other__title">
+						<div class="title title--center">Популярные блюда из нашего меню</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="article-other__cards">
+						<div class="article-other__slider">
+							<div class="article-other__slider-wrapper js-article-other-slider">
+								<div class="article-other__items js-wrapper">
+									@@include('./template/catalog-article.html', {})
+									@@include('./template/catalog-article.html', {})
+									@@include('./template/catalog-article.html', {})
+									@@include('./template/catalog-article.html', {})
+								</div>
+
+								<button class="article-other__prev">
+									<svg viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M20 41L4.38323 25.3586C2.53892 23.5114 2.53892 20.4886 4.38323 18.6414L20 3" stroke="#434248" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+
+								</button>
+								<button class="article-other__next">
+									<svg viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3 41L18.6168 25.3586C20.4611 23.5114 20.4611 20.4886 18.6168 18.6414L3 3" stroke="#434248" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+
+								<div class="article-other__pagination">
+									@@include('./template/pagination.html', {})
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="services">
+			<div class="container">
+				<div class="services__title">
+					<span>Наши услуги</span>
+					<strong>Популярные форматы мероприятий</strong>
+				</div>
+				<div class="services__wrapper">
+					<div class="services__table">
+						<div class="services__table-text">
+							<strong>Свадебный банкет</strong>
+							<span>Торжественное</span>
+							<span>и праздничное мероприятие</span>
+						</div>
+						<!-- text -->
+						<a class="btn" href="#">
+							<span>Подробнее</span>
+						</a>
+						<!-- link -->
+						<div class="services__table-image services__table-image--cake">
+							<img src="./img/cake/cake1.png" alt="торт">
+						</div>
+						<!-- /.services__table-image -->
+					</div>
+					<!-- /.services__table -->
+					<div class="services__table">
+						<div class="services__table-text">
+							<strong>Корпоративное питание</strong>
+							<span>Доставка блюд прямо
+							</span>
+							<span>в ваш офис</span>
+						</div>
+						<!-- text -->
+						<a class="btn" href="#">
+							<span>Подробнее</span>
+						</a>
+						<!-- link -->
+						<div class="services__table-image services__table-image--pizza">
+							<img src="./img/cake/cake2.png" alt="пицца">
+						</div>
+						<!-- /.services__table-image -->
+					</div>
+					<!-- /.services__table -->
+					<div class="services__table">
+						<div class="services__table-text">
+							<strong>Коктейльный кейтеринг</strong>
+							<span>Организация коктейльных</span>
+							<span>вечеринок</span>
+						</div>
+						<!-- text -->
+						<a class="btn" href="#">
+							<span>Подробнее</span>
+						</a>
+						<!-- link -->
+						<div class="services__table-image services__table-image--drink">
+							<img src="./img/cake/cake3.png" alt="пицца">
+						</div>
+						<!-- /.services__table-image -->
+					</div>
+					<!-- /.services__table -->
+					<div class="services__table">
+						<div class="services__table-text">
+							<strong>Кофе-брейк</strong>
+							<span>Перерыв на кофе во время</span>
+							<span>деловых мероприятий</span>
+						</div>
+						<!-- text -->
+						<a class="btn" href="#">
+							<span>Подробнее</span>
+						</a>
+						<!-- link -->
+						<div class="services__table-image services__table-image--coffe">
+							<img src="./img/cake/cake4.png" alt="пицца">
+						</div>
+						<!-- /.services__table-image -->
+					</div>
+					<!-- /.services__table -->
+					<div class="services__table">
+						<div class="services__table-text">
+							<strong>Детский фуршет</strong>
+							<span>Организация питания </span>
+							<span> на детском мероприятии</span>
+						</div>
+						<!-- text -->
+						<a class="btn" href="#">
+							<span>Подробнее</span>
+						</a>
+						<!-- link -->
+						<div class="services__table-image services__table-image--ceic">
+							<img src="./img/cake/cake5.png" alt="кейки">
+						</div>
+						<!-- /.services__table-image -->
+					</div>
+					<!-- /.services__table -->
+					<div class="services__table">
+						<div class="services__table-text">
+							<strong>Новогодний фуршет</strong>
+							<span>Организация любого</span>
+							<span>новогоднего мероприятия</span>
+						</div>
+						<!-- text -->
+						<a class="btn" href="#">
+							<span>Подробнее</span>
+						</a>
+						<!-- link -->
+						<div class="services__table-image services__table-image--wood">
+							<img src="./img/cake/cake6.png" alt="кейки">
+						</div>
+						<!-- /.services__table-image -->
+					</div>
+					<!-- /.services__table -->
+				</div>
+			</div>
+		</section>
+
+		@@include('./template/advantages.html')
+
+		<section class="about">
+			<div class="container">
+				<div class="about__wrapper">
+					<div class="about__left">
+						<div class="about__title">
+							<span>О нашей компании</span>
+							<strong>Предоставляем услуги </strong>
+							<strong>по организации кейтеринга</strong>
+						</div>
+						<!-- title -->
+						<a class="btn" href="#">
+							<span>Подробнее</span>
+						</a>
+						<!-- /.all-btn -->
+					</div>
+					<!-- /.about__left -->
+					<div class="about__right">
+						<div class="about__right-image">
+							<img src="./img/frame1.png" alt="еда">
+						</div>
+						<!-- /.about__right-image -->
+						<div class="about__right-text">
+							<strong>Более 10 лет </strong>
+							<span> наша компания оказывает услуги выездного кейтеринга в Москве
+								и Московской области. Помимо классического мероприятия рады предложить Вам интересные
+								и оригинальные направления мероприятий: винное казино, молекулярный бар, станцию с азотным мороженым. Не боимся выполнять самые сложные и неординарные пожелания.</span>
+						</div>
+						<!-- /.about__right-text -->
+					</div>
+					<!-- /.about__right -->
+				</div>
+				<!-- wrapper -->
+				<div class="about__catering">
+					<div class="about__catering-image">
+						<img src="./img/frame3.png" alt="повар">
+					</div>
+					<!-- image -->
+					<div class="about__catering-inner">
+						<div class="about__catering-title">
+							Кейтеринг-компания PotterFamily
+						</div>
+						<!-- title -->
+						<div class="about__catering-text">
+							<p>
+								основана в 2010 году и за это время зарекомендовала себя как компания с высоким качеством организации, а также оказания услуг ресторанного обслуживания.
+							</p>
+							<p> Ежегодно нашак компания обслуживает 1000+ мероприятий различного масштаба, а также показала себя как надёжный партнёр для крупного бизнеса и ответственныйподрядчик на частных мероприятиях. Обладая большим опытом в реализации
+								нестандартных решений, специалисты нашей компании помогут провести любое мероприятие до 8000 человек.
+							</p>
+							<p>Наша команда профессионалов старается сделать каждое мероприятие уникальным и незабываемым.</p>
+						</div>
+						<!-- text -->
+					</div>
+					<!-- inner -->
+				</div>
+				<!-- /.about__catering -->
+			</div>
+			<!-- /.container -->
+		</section>
+
+
+
+
+		@@include('./template/slider-portfolio.html')
+
+
+
+		@@include('./template/reviews.html')
+
+
+
+		<section class="clients">
+			<div class="container container--min">
+				<div class="clients__title">
+					<h2>Наши клиенты</h2> <a class="btn" href="#">
+						<span>Показать ещё</span>
+					</a>
+					<!-- /.all-btn -->
+				</div>
+				<div class="clients__wrapper">
+					<div class="clients__tables">
+						<div class="clients__table">
+							<img src="./img/mark/audy.png" alt="audi">
+						</div>
+						<!-- table -->
+						<div class="clients__table">
+							<img src="./img/mark/bay.png" alt="audi">
+						</div>
+						<!-- table -->
+						<div class="clients__table">
+							<img src="./img/mark/well.png" alt="audi">
+						</div>
+						<!-- table -->
+						<div class="clients__table">
+							<img src="./img/mark/cisco.png" alt="audi">
+						</div>
+						<!-- table -->
+					</div>
+					<!-- /.clients__tables -->
+					<div class="clients__tables">
+						<div class="clients__table clients__table--big">
+							<div class="clients__table-text">
+								<p>А также <span>500+</span> Частных клиентов</p>
+							</div>
+						</div>
+						<!-- table -->
+						<div class="clients__table">
+							<img src="./img/mark/bay.png" alt="audi">
+						</div>
+						<!-- table -->
+						<div class="clients__table">
+							<img src="./img/mark/audy.png" alt="audi">
+						</div>
+						<!-- table -->
+					</div>
+					<!-- /.clients__tables -->
+					<div class="clients__tables">
+						<div class="clients__table">
+							<img src="./img/mark/audy.png" alt="audi">
+						</div>
+						<!-- table -->
+						<div class="clients__table">
+							<img src="./img/mark/bay.png" alt="audi">
+						</div>
+						<!-- table -->
+						<div class="clients__table">
+							<img src="./img/mark/well.png" alt="audi">
+						</div>
+						<!-- table -->
+						<div class="clients__table">
+							<img src="./img/mark/cisco.png" alt="audi">
+						</div>
+						<!-- table -->
+					</div>
+					<!-- /.clients__tables -->
+				</div>
+
+				<!-- /.clients__wrapper -->
+			</div>
+			<!-- /.container -->
+		</section>
+
+	</main>
+	@@include('./template/footer.html')
+</body>
+
+</html>

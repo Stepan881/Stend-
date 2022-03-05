@@ -93,6 +93,11 @@
 	@media (max-width: $mobile-width) {
 		font-size: 6rem;
 	}
+
+	&--center {
+		text-align: center;
+		width: 100%;
+	}
 }
 
 .sub-title {
