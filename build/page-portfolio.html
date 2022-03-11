@@ -15,62 +15,352 @@
   <div class="container">
     <div class="header__wrapper">
 
-      <button class="header__burger">
+      <button class="header__burger js-burger">
         <img src="./img/icon/burger.svg" alt="Burger">
       </button>
 
       <a href="./index.html" class="logo">
         <img src="./img/logo.svg" alt="logo">
       </a>
-    
-      <!-- /.header__logo -->
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li class="analytics-li">
-            <a class="analytics-link" href="#">Услуги</a>
-            <ul class="analytics bg-filter">
-              <li><a href="./catalog-services.html">Производственный комплекс</a></li>
-              <li><a href="./contact.html">Научно-исследовательский комплекс</a></li>
-              <li><a href="./review.html">История компании</a></li>
-              <li><a href="">Новости</a></li>
-              <li><a href="">Наше предназначение</a></li>
-              <li><a href=""> Команда</a></li>
-              <li><a href=""> Вакансии</a></li>
-              <li><a href=""> Партнеры</a></li>
-              <li><a href=""> Отзывы</a></li>
+
+      <!-- /.header__nav--open -->
+      <nav class="header__nav nav js-nav">
+        <a href="#" class="nav__close js-close">
+          <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 1L1 17" stroke="#434248" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M1 1L17 17" stroke="#434248" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+        </a>
+
+        <form action="#" class="nav__search">
+          <label>
+            <input type="text" name="search" placeholder="Поиск">
+          </label>
+          <button type="submit">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.44456 13.2751C11.0038 13.2751 13.8891 10.5272 13.8891 7.13756C13.8891 3.74788 11.0038 1 7.44456 1C3.88533 1 1 3.74788 1 7.13756C1 10.5272 3.88533 13.2751 7.44456 13.2751Z" stroke="#9F9F9F" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M15.5003 14.81L11.9961 11.4727" stroke="#9F9F9F" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+          </button>
+        </form>
+
+        <ul class="header__menu nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Услуги</a>
+            <button class="nav__open-list js-btn-list">
+              <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <ul class="nav__sub-list">
+              <li class="nav__sub-item">
+                <a class="nav__sub-link" href="./catalog-services.html">Событийный кейтеринг</a>
+
+                <button class="nav__open-list js-btn-list">
+                  <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+
+
+                <ul>
+                  <li>
+                    <a href="#">Форматы мероприятий</a>
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                    <ul>
+                      <li><a href="#">Фуршет</a></li>
+                      <li><a href="#">Банкет</a></li>
+                      <li><a href="#">Гала ужин</a></li>
+                      <li><a href="#">Коктейль</a></li>
+                      <li><a href="#">Кейтеринг в коробках</a></li>
+                      <li><a href="#">Кофе-брейк</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Частные мероприятия</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">Деловые мероприятия</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">Корпоративные мероприятия</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__sub-link" href="./contact.html">Кулинарная анимация</a>
+
+                <button class="nav__open-list js-btn-list">
+                  <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <ul>
+                  <li>
+                    <a href="#">Форматы мероприятий</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                    <ul>
+                      <li><a href="#">Фуршет</a></li>
+                      <li><a href="#">Банкет</a></li>
+                      <li><a href="#">Гала ужин</a></li>
+                      <li><a href="#">Коктейль</a></li>
+                      <li><a href="#">Кейтеринг в коробках</a></li>
+                      <li><a href="#">Кофе-брейк</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Частные мероприятия</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">Деловые мероприятия</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                    <ul>
+                      <li><a href="#">Фуршет</a></li>
+                      <li><a href="#">Банкет</a></li>
+                      <li><a href="#">Гала ужин</a></li>
+                      <li><a href="#">Коктейль</a></li>
+                      <li><a href="#">Кейтеринг в коробках</a></li>
+                      <li><a href="#">Кофе-брейк</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Корпоративные мероприятия</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__sub-link" href="./review.html">Барный кейтеринг</a>
+
+                <button class="nav__open-list js-btn-list">
+                  <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </li>
+
             </ul>
           </li>
-          <li>
+          <li class="nav__item">
             <a href="#">Каталог</a>
           </li>
-          <li>
+          <li class="nav__item">
             <a href="#">Портфолио</a>
           </li>
-          <li>
+          <li class="nav__item">
             <a href="#">О нас</a>
+
+
           </li>
-          <li>
+          <li class="nav__item">
             <a href="#">Блог</a>
           </li>
-          <li>
+          <li class="nav__item">
             <a href="#">Контакты</a>
+            <button class="nav__open-list js-btn-list">
+              <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <ul class="nav__sub-list">
+              <li class="nav__sub-item">
+                <a class="nav__sub-link" href="./catalog-services.html">Событийный кейтеринг</a>
+
+                <button class="nav__open-list js-btn-list">
+                  <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+
+
+                <ul>
+                  <li>
+                    <a href="#">Форматы мероприятий</a>
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                    <ul>
+                      <li><a href="#">Фуршет</a></li>
+                      <li><a href="#">Банкет</a></li>
+                      <li><a href="#">Гала ужин</a></li>
+                      <li><a href="#">Коктейль</a></li>
+                      <li><a href="#">Кейтеринг в коробках</a></li>
+                      <li><a href="#">Кофе-брейк</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Частные мероприятия</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">Деловые мероприятия</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">Корпоративные мероприятия</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__sub-link" href="./contact.html">Кулинарная анимация</a>
+
+                <button class="nav__open-list js-btn-list">
+                  <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <ul>
+                  <li>
+                    <a href="#">Форматы мероприятий</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                    <ul>
+                      <li><a href="#">Фуршет</a></li>
+                      <li><a href="#">Банкет</a></li>
+                      <li><a href="#">Гала ужин</a></li>
+                      <li><a href="#">Коктейль</a></li>
+                      <li><a href="#">Кейтеринг в коробках</a></li>
+                      <li><a href="#">Кофе-брейк</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Частные мероприятия</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">Деловые мероприятия</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                    <ul>
+                      <li><a href="#">Фуршет</a></li>
+                      <li><a href="#">Банкет</a></li>
+                      <li><a href="#">Гала ужин</a></li>
+                      <li><a href="#">Коктейль</a></li>
+                      <li><a href="#">Кейтеринг в коробках</a></li>
+                      <li><a href="#">Кофе-брейк</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Корпоративные мероприятия</a>
+
+                    <button class="nav__open-list js-btn-list">
+                      <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+
+              </li>
+              <li class="nav__sub-item">
+                <a class="nav__sub-link" href="./review.html">Барный кейтеринг</a>
+
+                <button class="nav__open-list js-btn-list">
+                  <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="#434248" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </li>
+
+            </ul>
+
           </li>
         </ul>
-        <!-- /.header__menu -->
+
       </nav>
-      <!-- /.header__nav -->
+
+
       <div class="header__btns">
         <button class="header__search">
-          
+
           <img src="./img/icon/search.svg" alt="поиск">
         </button>
         <!-- 1 -->
         <button class="header__user">
           <picture>
-						<source media="(max-width: 768px)" srcset="./img/icon/profile-m.svg">
+            <source media="(max-width: 768px)" srcset="./img/icon/profile-m.svg">
             <img src="./img/icon/profile.svg" alt="user">
-					</picture>
-          
+          </picture>
+
         </button>
         <!-- 2 -->
         <a class="header__basket">

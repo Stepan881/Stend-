@@ -1,4 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+  const burgerMenu = () => {
+    const burger = document.querySelector(`.js-burger`);
+    const close = document.querySelector(`.js-close`);
+    const menu = document.querySelector(`.js-nav`);
+    const header = document.querySelector(`.header`);
+
+    burger.addEventListener(`click`, () => {
+      menu.classList.add(`header__nav--open`);
+      header.classList.add(`header--open`);
+    });
+
+    close.addEventListener(`click`, (evt) => {
+      evt.preventDefault();
+      menu.classList.remove(`header__nav--open`);
+      header.classList.remove(`header--open`);
+    });
+
+  }
+  burgerMenu();
+
   const reviewsSlider = new Swiper('.js-reviews__slider', {
     slidesPerView: 2,
     // centeredSlides: true,
@@ -291,7 +312,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const filtersPortgolioOpenDots = () => {
     const btns = document.querySelectorAll(`.js-filters-btns`);
-   
+
     if (!btns[0]) return;
     btns.forEach(btn => {
       btn.addEventListener(`click`, () => {
@@ -303,13 +324,11 @@ document.addEventListener('DOMContentLoaded', function () {
   filtersPortgolioOpenDots();
 
 
-
-
   const sliderVideo = new Swiper('.js-slider-video', {
 
     loop: true,
     slidesPerView: 3,
-    
+
     wrapperClass: 'js-wrapper',
     slideClass: 'video__slide',
     centeredSlides: true,
@@ -344,5 +363,27 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
+  const mobileMenuList = () => {
+    const buttons = document.querySelectorAll(`.js-btn-list`);
+    const nav = document.querySelector(`.js-nav`);
+    buttons.forEach(btn => {
+      btn.addEventListener(`click`, (evt) => {
+        evt.preventDefault();
+        if (!evt.target.closest(`li`)) return;
+       
+        // const activeClass = nav.querySelectorAll(`.active`);
+        // console.log('activeClass: ', activeClass);
+        // activeClass.forEach(el => {
+        //   console.log(el);
+        //   el.classList.remove(`active`);
+        // })
 
+
+
+        evt.target.closest(`li`).classList.toggle(`active`);
+
+      })
+    })
+  }
+  mobileMenuList();
 });
