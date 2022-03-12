@@ -23,7 +23,8 @@
       content: '';
       top: -7.1rem;
       right: 0;
-      bottom: 100%;
+      bottom: 0;
+      z-index: -1;
       left: 0;
       display: flex;
       width: 100rem;
@@ -39,22 +40,22 @@
       display: flex;
       background: #B4B3B4;
       z-index: -1;
+      overflow: hidden;
+      border-radius: 0 0 0 2rem;
     }
 
     left: 0;
     width: 34.2rem;
     opacity: 0;
     visibility: hidden;
-    transition: 0.7s;
+    transition: 0.2s;
     padding: 3rem 0;
     height: 40rem;
     z-index: 111;
     position: absolute;
-    filter: drop-shadow(.0rem 6.9rem 8.0rem rgba(0, 0, 0, 0.1));
-    background: linear-gradient(245.32deg, #B4B3B4 -2.2%, rgba(208, 207, 208, 0) 48.36%);
-    background: #B4B3B4;
+
     top: calc(100% + 7.1rem);
-    border-radius: 0 0 0 2rem;
+
 
     ul,
     li {
@@ -65,8 +66,8 @@
     ul {
       opacity: 0;
       visibility: hidden;
-      transition: 0.7s;
-      background: linear-gradient(149.21deg, rgba(221, 220, 221, 0.8) -1.93%, rgba(251, 251, 251, 0.8) 103.4%);
+      transition: 0.2s;
+      background: transparent;
       filter: blur(0rem);
 
       &::after {
@@ -77,23 +78,46 @@
         bottom: 0;
         left: 0;
         display: flex;
-        background: linear-gradient(149.21deg, -1.93%, rgba(251, 251, 251, 0.8) 103.4%);
         filter: blur(0rem);
-
+        background: #dddcdd;
         z-index: -1;
 
+      }
+
+      ul {
+       
+        &::after {
+          border-radius: 0 0 2rem 0;
+          overflow: hidden;
+        }
       }
     }
 
     li {
       padding: 0 6rem;
+
+      &:hover {
+        // &::before {
+        //   position: relative;
+        //   content: '';
+        //   width: 10.2rem;
+        //   height: 31.2rem;
+        //   background-image: url(../../img/icon/arrow-bg.png);
+        //   background-repeat: no-repeat;
+        //   background-size: 3rem 8rem;
+        //   right: -8rem;
+        //   top: 50%;
+        //   transform: translate(0,-57%);
+        // }
+      }
+ 
     }
   }
 
 
 
   li:hover {
-    transition: 0.7s;
+    transition: 0.2s;
 
     &>a {
       color: #434248;
@@ -117,8 +141,6 @@
       left: 34.2rem;
       top: 0;
       bottom: 0;
-      background: linear-gradient(149.21deg, rgba(221, 220, 221, 0.8) -1.93%, rgba(251, 251, 251, 0.8) 103.4%);
-      background: rgba(221, 220, 221, 0.8);
       padding: 3rem 0;
       width: 34.2rem;
 
@@ -209,6 +231,13 @@
           line-height: 24px;
         }
 
+        ul {
+          li {
+            &:before {
+              content: none;
+            }
+          }
+        }
 
 
       }
@@ -316,7 +345,7 @@
       top: 0;
       padding: 3rem;
       transform: rotate(180deg);
-      transition: 0.3s;
+      transition: 0.2s;
     }
 
     &__sub-item {
@@ -328,16 +357,17 @@
     }
 
     .active {
-      
+
       &>button {
         transform: rotate(0);
-        transition: 0.3s;
+        transition: 0.2s;
       }
 
       &>ul {
         display: block !important;
-        
+
       }
+
       &>a {
         font-weight: 700;
       }
