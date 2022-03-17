@@ -1,0 +1,182 @@
+.personal-data {
+
+  .navivation {
+    width: 100%;
+    margin-bottom: 5.6rem;
+
+  }
+
+  &__wrappwe {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &__left {
+    width: 34rem;
+    margin-right: 3rem;
+
+    @media (max-width: $mobile-width) {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    margin-bottom: 3rem;
+    padding: 1.5rem 3rem;
+    position: relative;
+
+
+    ul {}
+
+    li {
+      padding: 1.5rem;
+    }
+
+    svg {
+      width: 4.0rem;
+      height: 4.0rem;
+
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 2.0rem;
+      line-height: 130%;
+    }
+
+    span {
+      margin-left: 2.2rem;
+    }
+
+    .active {
+      a {
+        font-weight: 600;
+      }
+
+      svg {
+        rect {
+          fill: #6EEC91;
+        }
+      }
+    }
+  }
+
+  &__ava {
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    background: #434248;
+    border-radius: 50%;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 130%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    top: -2rem;
+    left: 3rem;
+  }
+
+  &__name {
+    margin-left: 9rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 130%;
+
+    @media (max-width: $mobile-width) {
+      font-size: 4.4rem;
+    }
+  }
+
+  &__tel {
+    margin-left: 9rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 150%;
+
+    @media (max-width: $mobile-width) {
+      font-size: 3.2rem;
+    }
+  }
+
+
+
+
+
+  &__write {
+    width: 110rem;
+  }
+
+  &__top {
+    margin-bottom: 3rem;
+    min-height: 14rem;
+    padding: 3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 120%;
+    margin-left: 2.5rem;
+  }
+
+  &__img {
+    overflow: hidden;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: .0rem 4.0rem 10.0rem rgba(67, 66, 72, 0.04);
+    border-radius: 1.5rem;
+    width: 40rem;
+    height: 13rem;
+    right: 3rem;
+    top: -2rem;
+  }
+
+  &__content {
+
+    &>* {
+      display: none;
+    }
+    &>.active {
+      display: block;
+    }
+
+  }
+
+  &__sub-title {}
+
+  &__edit {}
+
+  &__sub {}
+
+}
+
+
+
+
+
+.personal-data {}
+
+.personal-data {}
+
+.active {}
+
+.bg-filter__dark {}
+
+.application__form {}
+
+.form {}
+
+.btn {}

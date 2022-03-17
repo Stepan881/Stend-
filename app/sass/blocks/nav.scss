@@ -10,7 +10,14 @@
 
   &__list {}
 
-  &__item {}
+  // &__item {
+  //   &:hover {
+  //     .nav__open-list {
+  //       transform: rotate(0);
+  //     }
+      
+  //   }
+  // }
 
   &__link {}
 
@@ -112,9 +119,27 @@
       }
  
     }
+
+
+
   }
 
+  // &__open-list {
+  //   width: 1.2rem;
+  //   height: .7rem;
+  //   margin-left: 1rem;
+  //   transform: rotate(180deg);
+  //   transition: 0.3s;
+  //   svg {
+  //     path {
 
+  //       @media (max-width: $mobile-width) {
+  //         stroke: rgba(67, 66, 72, 0.7);
+  //       }
+        
+  //     }
+  //   }
+  // }
 
   li:hover {
     transition: 0.2s;
@@ -232,9 +257,11 @@
         }
 
         ul {
-          li {
-            &:before {
-              content: none;
+          ul {
+            li {
+              &:before {
+                content: none;
+              }
             }
           }
         }

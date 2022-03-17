@@ -370,15 +370,6 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.addEventListener(`click`, (evt) => {
         evt.preventDefault();
         if (!evt.target.closest(`li`)) return;
-       
-        // const activeClass = nav.querySelectorAll(`.active`);
-        // console.log('activeClass: ', activeClass);
-        // activeClass.forEach(el => {
-        //   console.log(el);
-        //   el.classList.remove(`active`);
-        // })
-
-
 
         evt.target.closest(`li`).classList.toggle(`active`);
 
@@ -386,4 +377,69 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
   mobileMenuList();
+
+
+
+  const personalDataSlider = () => {
+    const dataSlider = document.querySelector(`.js-personal-data-slider`);
+    if (!dataSlider) return;
+    const dataSlide = document.querySelector(`.js-personal-data-slide`);
+    if (!dataSlide) return;
+
+
+    const items = dataSlider.querySelectorAll(`li`);
+    const slides = dataSlide.querySelectorAll(`.js-personal-data-blocks`);
+
+
+    items.forEach((item, i) => {
+      item.addEventListener(`click`, (evt) => {
+        evt.preventDefault();
+
+        items.forEach(el => {
+          el.classList.remove(`active`);
+        })
+        slides.forEach(el => {
+          el.classList.remove(`active`);
+        })
+        item.classList.add(`active`);
+        slides[i].classList.add(`active`);
+        
+        
+      })
+    })
+
+
+
+
+
+    
+
+    
+  }
+  personalDataSlider();
+
+
+
+  const commonEdit = () => {
+    const commonCansel = document.querySelectorAll(`.js-common-cansel`);
+    const commonEdit = document.querySelectorAll(`.js-common-edit`);
+
+    if (!commonCansel[0]) return;
+    if (!commonEdit[0]) return;
+
+    const linkClick = (links) => {
+      links.forEach(link => {
+        link.addEventListener(`click`, (evt) => {
+          evt.preventDefault();
+          evt.target.closest(`.common__block`).classList.toggle(`edit`);
+        })
+      })
+    }
+    linkClick(commonCansel);
+    linkClick(commonEdit);
+
+  }
+
+  commonEdit();
+
 });
