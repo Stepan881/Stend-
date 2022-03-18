@@ -7,6 +7,9 @@
     padding: 5.5rem 5.5rem 0 5.5rem;
     min-height: 16rem;
 
+    @media (max-width: $mobile-width) {
+      position: relative;
+    }
 
     &--pass {
       form {
@@ -80,18 +83,31 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+    }
   }
 
   &__sub-title {
     font-weight: 600;
     font-size: 2.5rem;
     line-height: 125%;
+
+    @media (max-width: $mobile-width) {
+      font-size: 4rem;
+    }
   }
 
   &__sub {
     font-weight: 600;
     font-size: 2.0rem;
     line-height: 125%;
+    @media (max-width: $mobile-width) {
+      font-size: 3.6rem;
+    }
   }
 
   &__edit {
@@ -113,6 +129,16 @@
       background-position: center;
       background-size: contain;
       right: 0;
+
+      @media (max-width: $mobile-width) {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 3.2rem;
+      padding-right: 5rem;
     }
 
     &--cansel {}

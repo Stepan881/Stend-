@@ -389,11 +389,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const items = dataSlider.querySelectorAll(`li`);
     const slides = dataSlide.querySelectorAll(`.js-personal-data-blocks`);
-
+    const title = document.querySelector(`.js-personal-data-title`);
 
     items.forEach((item, i) => {
       item.addEventListener(`click`, (evt) => {
         evt.preventDefault();
+
+        title.textContent = item.querySelector(`a`).textContent;
 
         items.forEach(el => {
           el.classList.remove(`active`);
@@ -401,24 +403,29 @@ document.addEventListener('DOMContentLoaded', function () {
         slides.forEach(el => {
           el.classList.remove(`active`);
         })
+
         item.classList.add(`active`);
         slides[i].classList.add(`active`);
         
         
       })
-    })
-
-
-
-
-
-    
-
-    
+    })    
   }
   personalDataSlider();
 
 
+  const personalDataMonileBurger = () => {
+    const btn = document.querySelector(`.js-personal-data-monile`);
+    if (!btn) return;
+    const wrapper = document.querySelector(`.js-open-menu`);
+
+    btn.addEventListener(`click`, (evt) => {
+      evt.preventDefault();
+      wrapper.classList.toggle(`active`);
+    });
+
+  }
+  personalDataMonileBurger();
 
   const commonEdit = () => {
     const commonCansel = document.querySelectorAll(`.js-common-cansel`);

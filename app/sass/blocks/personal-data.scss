@@ -12,12 +12,54 @@
 
   }
 
+  &__blocks {
+    display: flex;
+    width: 100%;
+
+    @media (max-width: $mobile-width) {
+      position: relative;
+      flex-direction: column;
+
+    }
+
+    .personal-data__menu {
+
+      @media (max-width: $mobile-width) {
+        display: none;
+      }
+
+    }
+
+    .personal-data__burger {
+      @media (max-width: $mobile-width) {
+        transform: rotate(180deg);
+        transition: 0.3s;
+      }
+    }
+
+    &.active {
+      .personal-data__burger {
+        @media (max-width: $mobile-width) {
+          transform: rotate(0);
+          transition: 0.3s;
+        }
+      }
+
+      .personal-data__menu {
+        display: flex;
+      }
+
+      @media (max-width: $mobile-width) {}
+    }
+  }
+
   &__left {
     width: 34rem;
     margin-right: 3rem;
 
     @media (max-width: $mobile-width) {
       margin-right: 0;
+      width: 100%;
     }
   }
 
@@ -26,17 +68,37 @@
     padding: 1.5rem 3rem;
     position: relative;
 
+    @media (max-width: $mobile-width) {
+      min-height: 20.6rem;
+      align-items: center;
+      padding: 4rem 6rem;
+
+      &--top {
+        height: 20.6rem;
+        margin-bottom: 35.6rem;
+      }
+    }
+
+
 
     ul {}
 
     li {
       padding: 1.5rem;
+
+      @media (max-width: $mobile-width) {
+        padding: 3rem 0;
+      }
     }
 
     svg {
       width: 4.0rem;
       height: 4.0rem;
 
+      @media (max-width: $mobile-width) {
+        width: 8rem;
+        height: 8rem;
+      }
     }
 
     a {
@@ -45,6 +107,10 @@
       font-weight: 400;
       font-size: 2.0rem;
       line-height: 130%;
+
+      @media (max-width: $mobile-width) {
+        font-size: 3.2rem;
+      }
     }
 
     span {
@@ -81,6 +147,13 @@
     color: #FFFFFF;
     top: -2rem;
     left: 3rem;
+
+    @media (max-width: $mobile-width) {
+      width: 12rem;
+      height: 12rem;
+      top: 4rem;
+      left: 6rem;
+    }
   }
 
   &__name {
@@ -92,6 +165,7 @@
 
     @media (max-width: $mobile-width) {
       font-size: 4.4rem;
+      margin-left: 17rem;
     }
   }
 
@@ -103,15 +177,16 @@
 
     @media (max-width: $mobile-width) {
       font-size: 3.2rem;
+      margin-left: 17rem;
     }
   }
 
-
-
-
-
   &__write {
     width: 110rem;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
   }
 
   &__top {
@@ -121,6 +196,28 @@
     position: relative;
     display: flex;
     align-items: center;
+
+    @media (max-width: $mobile-width) {
+      min-height: 24rem;
+      position: absolute;
+      top: 26.6rem;
+      width: 100%;
+    }
+
+    button {
+      display: none;
+
+      @media (max-width: $mobile-width) {
+        display: flex;
+
+        padding: 2rem;
+
+        svg {
+          width: 2.4rem;
+          height: 1.6rem;
+        }
+      }
+    }
   }
 
   &__title {
@@ -130,6 +227,15 @@
     font-size: 3.5rem;
     line-height: 120%;
     margin-left: 2.5rem;
+
+    @media (max-width: $mobile-width) {
+      font-size: 3.6rem;
+      margin-left: 5rem;
+
+      &::before {
+        top: -2.1rem;
+      }
+    }
   }
 
   &__img {
@@ -142,6 +248,19 @@
     height: 13rem;
     right: 3rem;
     top: -2rem;
+
+    img {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 11.4rem;
+      height: 22rem;
+
+    }
   }
 
   &__content {
@@ -149,34 +268,11 @@
     &>* {
       display: none;
     }
+
     &>.active {
       display: block;
     }
 
   }
 
-  &__sub-title {}
-
-  &__edit {}
-
-  &__sub {}
-
 }
-
-
-
-
-
-.personal-data {}
-
-.personal-data {}
-
-.active {}
-
-.bg-filter__dark {}
-
-.application__form {}
-
-.form {}
-
-.btn {}

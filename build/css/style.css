@@ -7524,22 +7524,72 @@ select:-webkit-autofill:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+.personal-data__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  @media (max-width: 48em) {
+    .personal-data__blocks {
+      position: relative;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  @media (max-width: 48em) {
+    .personal-data__blocks .personal-data__menu {
+      display: none; } }
+  @media (max-width: 48em) {
+    .personal-data__blocks .personal-data__burger {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+      -webkit-transition: 0.3s;
+      transition: 0.3s; } }
+  @media (max-width: 48em) {
+    .personal-data__blocks.active .personal-data__burger {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      -webkit-transition: 0.3s;
+      transition: 0.3s; } }
+  .personal-data__blocks.active .personal-data__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
 .personal-data__left {
   width: 34rem;
   margin-right: 3rem; }
   @media (max-width: 48em) {
     .personal-data__left {
-      margin-right: 0; } }
+      margin-right: 0;
+      width: 100%; } }
 
 .personal-data__item {
   margin-bottom: 3rem;
   padding: 1.5rem 3rem;
   position: relative; }
+  @media (max-width: 48em) {
+    .personal-data__item {
+      min-height: 20.6rem;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 4rem 6rem; }
+      .personal-data__item--top {
+        height: 20.6rem;
+        margin-bottom: 35.6rem; } }
   .personal-data__item li {
     padding: 1.5rem; }
+    @media (max-width: 48em) {
+      .personal-data__item li {
+        padding: 3rem 0; } }
   .personal-data__item svg {
     width: 4.0rem;
     height: 4.0rem; }
+    @media (max-width: 48em) {
+      .personal-data__item svg {
+        width: 8rem;
+        height: 8rem; } }
   .personal-data__item a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7550,6 +7600,9 @@ select:-webkit-autofill:focus {
     font-weight: 400;
     font-size: 2.0rem;
     line-height: 130%; }
+    @media (max-width: 48em) {
+      .personal-data__item a {
+        font-size: 3.2rem; } }
   .personal-data__item span {
     margin-left: 2.2rem; }
   .personal-data__item .active a {
@@ -7581,6 +7634,12 @@ select:-webkit-autofill:focus {
   color: #FFFFFF;
   top: -2rem;
   left: 3rem; }
+  @media (max-width: 48em) {
+    .personal-data__ava {
+      width: 12rem;
+      height: 12rem;
+      top: 4rem;
+      left: 6rem; } }
 
 .personal-data__name {
   margin-left: 9rem;
@@ -7590,7 +7649,8 @@ select:-webkit-autofill:focus {
   line-height: 130%; }
   @media (max-width: 48em) {
     .personal-data__name {
-      font-size: 4.4rem; } }
+      font-size: 4.4rem;
+      margin-left: 17rem; } }
 
 .personal-data__tel {
   margin-left: 9rem;
@@ -7599,10 +7659,14 @@ select:-webkit-autofill:focus {
   line-height: 150%; }
   @media (max-width: 48em) {
     .personal-data__tel {
-      font-size: 3.2rem; } }
+      font-size: 3.2rem;
+      margin-left: 17rem; } }
 
 .personal-data__write {
   width: 110rem; }
+  @media (max-width: 48em) {
+    .personal-data__write {
+      width: 100%; } }
 
 .personal-data__top {
   margin-bottom: 3rem;
@@ -7615,6 +7679,23 @@ select:-webkit-autofill:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 48em) {
+    .personal-data__top {
+      min-height: 24rem;
+      position: absolute;
+      top: 26.6rem;
+      width: 100%; } }
+  .personal-data__top button {
+    display: none; }
+    @media (max-width: 48em) {
+      .personal-data__top button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 2rem; }
+        .personal-data__top button svg {
+          width: 2.4rem;
+          height: 1.6rem; } }
 
 .personal-data__title {
   font-family: 'Exo 2';
@@ -7623,6 +7704,12 @@ select:-webkit-autofill:focus {
   font-size: 3.5rem;
   line-height: 120%;
   margin-left: 2.5rem; }
+  @media (max-width: 48em) {
+    .personal-data__title {
+      font-size: 3.6rem;
+      margin-left: 5rem; }
+      .personal-data__title::before {
+        top: -2.1rem; } }
 
 .personal-data__img {
   overflow: hidden;
@@ -7635,6 +7722,18 @@ select:-webkit-autofill:focus {
   height: 13rem;
   right: 3rem;
   top: -2rem; }
+  .personal-data__img img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  @media (max-width: 48em) {
+    .personal-data__img {
+      width: 11.4rem;
+      height: 22rem; } }
 
 .personal-data__content > * {
   display: none; }
@@ -7646,6 +7745,9 @@ select:-webkit-autofill:focus {
   margin-bottom: 3rem;
   padding: 5.5rem 5.5rem 0 5.5rem;
   min-height: 16rem; }
+  @media (max-width: 48em) {
+    .common__block {
+      position: relative; } }
   .common__block--pass form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7694,16 +7796,34 @@ select:-webkit-autofill:focus {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 4rem; }
+  @media (max-width: 48em) {
+    .common__top {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start; } }
 
 .common__sub-title {
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 125%; }
+  @media (max-width: 48em) {
+    .common__sub-title {
+      font-size: 4rem; } }
 
 .common__sub {
   font-weight: 600;
   font-size: 2.0rem;
   line-height: 125%; }
+  @media (max-width: 48em) {
+    .common__sub {
+      font-size: 3.6rem; } }
 
 .common__edit {
   font-weight: 600;
@@ -7727,6 +7847,14 @@ select:-webkit-autofill:focus {
     background-position: center;
     background-size: contain;
     right: 0; }
+    @media (max-width: 48em) {
+      .common__edit::before {
+        width: 4rem;
+        height: 4rem; } }
+  @media (max-width: 48em) {
+    .common__edit {
+      font-size: 3.2rem;
+      padding-right: 5rem; } }
 
 .common form {
   padding: 0;
