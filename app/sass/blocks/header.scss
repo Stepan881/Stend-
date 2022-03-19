@@ -80,6 +80,7 @@
 
     &__btns {
         display: flex;
+        display: none;
 
         @media (max-width: $mobile-width) {
             align-items: center;

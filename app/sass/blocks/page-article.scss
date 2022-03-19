@@ -99,7 +99,7 @@
 
   &__count {
     grid-area: c;
-
+    
     @media (max-width: $mobile-width) {
       margin-bottom: 8rem;
     }
