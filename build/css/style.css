@@ -6979,7 +6979,8 @@ select:-webkit-autofill:focus {
   padding-top: 5rem; }
   @media (max-width: 48em) {
     .about__left {
-      margin: 0; } }
+      margin: 0;
+      width: 100%; } }
 
 .about__right {
   width: 64.1rem;
@@ -7430,6 +7431,7 @@ select:-webkit-autofill:focus {
 
 @media (max-width: 48em) {
   .nav {
+    overflow: hidden;
     position: fixed;
     top: 0;
     right: 0;
@@ -7504,7 +7506,8 @@ select:-webkit-autofill:focus {
       position: fixed !important;
       height: calc(100vh - 35rem) !important;
       overflow-x: auto;
-      bottom: 0; }
+      bottom: 0;
+      overflow-x: hidden; }
     .nav__search {
       padding: 0 20rem 0 3.2rem;
       display: -webkit-box;
@@ -7556,7 +7559,9 @@ select:-webkit-autofill:focus {
         padding: 2rem; }
     .nav__sub-list li {
       padding: 0 0 0 5rem;
-      width: 71.6rem; }
+      width: 71.5rem; }
+      .nav__sub-list li li {
+        width: 66.6rem; }
     .nav__open-list {
       width: 9rem;
       height: 7.2rem;
