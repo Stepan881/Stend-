@@ -82,6 +82,7 @@
 		overflow: hidden;
 		box-shadow: 0 4rem 10rem rgba(67, 66, 72, 0.04);
 		border-radius: 2rem;
+		z-index: -1;
 		img {
 			height: 100%;
 			object-fit: cover;

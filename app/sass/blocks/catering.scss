@@ -303,6 +303,9 @@
 		border-radius: 2rem 0 0 0;
 		overflow: hidden;
 		width: 149.1rem;
+		z-index: -1;
+
+		
 		@media (max-width: $mobile-width) {
 			top: 21.2rem;
 			border-radius: 0;
