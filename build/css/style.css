@@ -6126,8 +6126,7 @@ select:-webkit-autofill:focus {
               flex-direction: column; } }
 
 .portfolio-project__title {
-  margin-bottom: 4rem;
-  margin-left: 6rem; }
+  margin-bottom: 4rem; }
   @media (max-width: 48em) {
     .portfolio-project__title {
       margin-left: 0rem; } }
@@ -6142,17 +6141,17 @@ select:-webkit-autofill:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 1.8rem; }
+  margin: 0 0 0 -3rem; }
   @media (max-width: 48em) {
     .portfolio-project__cards {
-      margin-left: 0rem; } }
+      margin: 0; } }
 
 @media (max-width: 48em) {
   .portfolio-project__pagination .pagination {
     display: none; } }
 
 .project-card {
-  margin-left: 4.2em;
+  margin-left: 3.7em;
   position: relative;
   width: 34.5rem;
   margin-bottom: 8.9rem;

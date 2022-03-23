@@ -24,7 +24,7 @@
 
   &__title {
     margin-bottom: 4rem;
-    margin-left: 6rem;
+    // margin-left: 6rem;
 
     @media (max-width: $mobile-width) {
       margin-left: 0rem;
@@ -40,10 +40,10 @@
   &__cards {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 1.8rem;
+    margin: 0 0 0 -3rem;
 
     @media (max-width: $mobile-width) {
-    margin-left: 0rem;
+    margin: 0;
     }
   }
 
