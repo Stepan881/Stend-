@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const burgerMenu = () => {
     const burger = document.querySelector(`.js-burger`);
+    if (!burger) return;
     const close = document.querySelector(`.js-close`);
+    if (!close) return;
     const menu = document.querySelector(`.js-nav`);
     const header = document.querySelector(`.header`);
 
